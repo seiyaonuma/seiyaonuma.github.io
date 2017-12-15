@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Partition1*/
+        var now = new Date();
+        console.log(now);
+        var day = now.getDate();
+        console.log(day);
+        var hours = now.getHours();
+        console.log(hours);
+        var minutes = now.getMinutes();
+        console.log(minutes);
+        var seconds = now.getSeconds();
+        console.log(seconds);
+
+        /*Partition2*/
+        var date1 = new Date();
+        console.log(date1.toString());
+        date1.setFullYear(2020);
+        date1.setMonth(6);
+        date1.setDate(24);
+        console.log(date1.toDateString());
+        console.log(date1.getTime());
+        console.log(now.getTime());
+
+        var diff =date1.getTime() - now.getTime();
+        console.log(diff);
+
+        diff = diff / (1000 * 60 * 60 * 24);
+        diff = Math.floor(diff);    /*Mathは小数を消す変数*/
+        console.log(diff);
+    </script>
+</body>
+</html>

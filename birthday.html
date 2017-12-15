@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>私の誕生日は3月18日です。</p>
+    <p>私の誕生日まで残り<span id="birthday"></span>日です。</p>
+    <script>
+        var birthday1 = new Date(2018,2,18,0,0);    /*月が-1で表示する*/
+        var now = new Date();
+        var birthday2 = birthday1.getTime() - now.getTime();
+        birthday2 = birthday2/(1000 * 60 * 60 * 24);
+        birthday2 = Math.ceil(birthday2);           /*Math.ceilは小数切り上げ*/
+        document.getElementById("birthday").textContent = birthday2;
+    </script>
+</body>
+</html>
