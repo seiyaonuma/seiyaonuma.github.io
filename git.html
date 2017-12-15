@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>gitの使い方とgithub-pagesの作り方</title>
+</head>
+
+<body>
+  <form>
+    <label for="susi">寿司ネタ</label>
+    <select name="susi" id="susi">
+      <option value="">寿司ネタを選んで下さい</option>
+      <option value="maguro.html">マグロ</option>
+      <option value="sarmon.html">サーモン</option>
+      <option value="tamago.html">たまご</option>
+      <option value="git.html">gitの使い方とgithub-pagesの作り方</option>
+    </select>
+  </form>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('susi').addEventListener('change', function () {
+        location.href = "https://seiyaonuma.GitHub.io/" + this.value;
+      }, false);
+    }, false);
+  </script>
+  <img src="https://seiyaonuma.github.io/images/okuto.jpg" alt="オクト" style="zoom:0.5">
+  <h1>-gitの使い方-</h1>
+  <br>
+  <p>ブランチとは、履歴の流れを分岐して記録していくためのものです。分岐したブランチは他のブランチの影響を受けないため、同じリポジトリ中で複数の変更を同時に進めていくことができます。</p>
+  <br>
+  <p>チームのメンバーは、他のメンバーの作業の影響を受けないように、メインのブランチから自分の作業専用のブランチを作成します。 そして作業の終わったメンバーは、メインのブランチに自分のブランチの変更を取り込んでいきます。このようにすることで、他のメンバーの作業による影響を受けることなく、自分の作業に取り込むことができます。また、作業単位で履歴を残すことで、問題が発生した場合に原因となる変更箇所の調査や対策を行うことが容易になります。</p>
+  <h2>github-pagesの作り方</h2>
+  <br>
+  <p>(A) master ブランチを使う<br>
+    
+    (B) master ブランチの docs フォルダを使う<br>
+    
+    (C) gh-pages ブランチを使う<br>
+    
+    テキストしか使わないサイトを作る場合にはどれを使っても問題有りません。<br>
+    
+    しかし、サイトで使う画像ファイルをリポジトリ内に置いておきたい場合には (B) を使うのがオススメです。<br>
+    
+    その様なサイトで (A) や (C) を使うとリポジトリに置かれた画像ファイルを初めて見た人がプログラム用かサイト用か簡単に見分ける事が出来なくなり、ドキュメントを除いてコードを使うのが大変になります。</p>
+  <h3>github-pagesの更新の仕方</h3>
+  <br>
+  <p>"GitHub"に"Push"するだけ！</p>
+
+
+</body>
+
+</html>
