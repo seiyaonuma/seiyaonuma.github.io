@@ -7,18 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>サーモン</title>
 </head>
-<a href="../サーモン/sarmon.JPG"></a>
-<img src="../サーモン/sarmon.JPG">
-
 <body>
     <form>
-        <select name="サーモン">
-            <h1>サーモンのページ</h1>
-            <option value="1">まぐろ</option>
-            <option value="2">サーモン</option>
-            <option value="3">たまご</option>
+     <label for="susi">寿司ネタ</label>
+     <select name="susi" id="susi"></select>
+     <option value="">寿司ネタを選んで下さい</option>
+     <option value="maguro.html">マグロ</option>
+     <option value="sarmon.html">サーモン</option>
+     <option value="tamago.html">たまご</option>
         </select>
     </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('susi').addEventListener('change',function() {
+                location.href = "https://seiyaonuma.GitHub.io/" + this.value;
+            },false);
+        } ,false);
+    </script>
+    <img src="" alt="サーモン" style="0.5">
 </body>
 
 </html>
