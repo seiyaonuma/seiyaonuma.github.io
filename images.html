@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8">
-<title>お気に入り画像集</title>
-<script>
-window.addEventListener("load", function(){
+    <meta charset="utf-8">
+    <title>お気に入り画像集</title>
+    <script>
+        window.addEventListener("load", function () {
 
-    // 画像インデックス
-    var imageIndex = 0;
+            // 画像インデックス
+            var imageIndex = 0;
 
-    // リスナー登録
-    document.getElementsByTagName("button")[0].addEventListener("click", function(){
-        // 画像イメージをインクリメント
-        if (imageIndex < 3) {
-            imageIndex++;
-        } else {
-            imageIndex = 0;
-        }
-        // 画像srcを変更
-        switch(imageIndex) {
-            case 0:
-                imageSrc = "./images/k1.png";
-                break;
-            case 1:
-                imageSrc = "./images/k2.png";
-                break;
-            case 2:
-                imageSrc = "./images/c1.png";
-                break;
-        }
-        document.getElementById("image").src = imageSrc;
+            // リスナー登録
+            document.getElementsByTagName("button")[0].addEventListener("click", function () {
+                // 画像イメージをインクリメント
+                if (imageIndex < 3) {
+                    imageIndex++;
+                } else {
+                    imageIndex = 0;
+                }
+                // 画像srcを変更
+                switch (imageIndex) {
+                    case 0:
+                        imageSrc = "./images/k1.png";
+                        break;
+                    case 1:
+                        imageSrc = "./images/k2.png";
+                        break;
+                    case 2:
+                        imageSrc = "./images/c1.png";
+                        break;
+                }
+                document.getElementById("image").src = imageSrc;
 
-    }, false);
-});
-</script>
+            }, false);
+        });
+    </script>
 </head>
+
 <body>
-        <form>
-                <label for="susi">寿司ネタ＋画像集</label>
-                <select name="susi" id="susi">
-                <option value="">選択して下さい</option>
-                <option value="maguro.html">マグロ</option>
-                <option value="sarmon.html">サーモン</option>
-                <option value="tamago.html">たまご</option>
-                <option value="images.html">お気に入り画像集</option>
-                   </select>
-               </form>
-<button>画像を変更</button>
-<p><img id ="image" src="./images/k1.png" alt="カエル" /></p>
+    <form>
+        <label for="susi">寿司ネタ＋画像集</label>
+        <select name="susi" id="susi">
+            <option value="">選択して下さい</option>
+            <option value="maguro.html">マグロ</option>
+            <option value="sarmon.html">サーモン</option>
+            <option value="tamago.html">たまご</option>
+            <option value="images.html">お気に入り画像集</option>
+        </select>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('susi').addEventListener('change', function () {
+                location.href = "https://seiyaonuma.GitHub.io/" + this.value;
+            }, false);
+        }, false);
+    </script>
+
+    <button>画像を変更</button>
+    <p>
+        <img id="image" src="./images/k1.png" alt="カエル" />
+    </p>
 </body>
+
 </html>
