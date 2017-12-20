@@ -21,10 +21,18 @@
         <option value="browser.html">ブラウザ判定</option>
            </select>
        </form>
+       <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('susi').addEventListener('change', function () {
+                location.href = "https://seiyaonuma.GitHub.io/" + this.value;
+            }, false);
+        }, false);
+
+       </script>
   <script>
     var ua = navigator.userAgent.toLowerCase();
     var ver = navigator.appVersion.toLowerCase();
-
+   
     // IE(11以外)
     var isMSIE = (ua.indexOf('msie') > -1) && (ua.indexOf('opera') == -1);
     // IE6
@@ -92,11 +100,7 @@
     if (isOpera) {
       alert('判定結果:Opera');
     }
-    document.addEventListener('DOMContentLoaded', function () {
-            document.getElementById('susi').addEventListener('change', function () {
-                location.href = "https://seiyaonuma.GitHub.io/" + this.value;
-            }, false);
-        }, false);
+   
   </script>
 </body>
 
