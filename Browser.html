@@ -12,23 +12,23 @@
     <form>
         <label for="susi">寿司ネタ＋画像集</label>
         <select name="susi" id="susi">
-        <option value="">選択して下さい</option>
-        <option value="maguro.html">マグロ</option>
-        <option value="sarmon.html">サーモン</option>
-        <option value="tamago.html">たまご</option>
-        <option value="git.html">GitHub使い方まとめ</option>
-        <option value="images.html">お気に入り画像集</option>
-        <option value="browser.html">ブラウザ判定</option>
-           </select>
-       </form>
-       <script>
-          document.addEventListener('DOMContentLoaded', function () {
+            <option value="">選択して下さい</option>
+            <option value="maguro.html">マグロ</option>
+            <option value="sarmon.html">サーモン</option>
+            <option value="tamago.html">たまご</option>
+            <option value="git.html">GitHub使い方まとめ</option>
+            <option value="images.html">お気に入り画像集</option>
+            <option value="browser.html">ブラウザ判定</option>
+        </select>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('susi').addEventListener('change', function () {
                 location.href = "https://seiyaonuma.GitHub.io/" + this.value;
             }, false);
         }, false);
+    </script> 
 
-       </script>
   <script>
     var ua = navigator.userAgent.toLowerCase();
     var ver = navigator.appVersion.toLowerCase();
