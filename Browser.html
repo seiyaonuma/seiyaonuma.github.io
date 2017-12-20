@@ -22,11 +22,6 @@
            </select>
        </form>
   <script>
-     document.addEventListener('DOMContentLoaded', function () {
-            document.getElementById('susi').addEventListener('change', function () {
-                location.href = "https://seiyaonuma.GitHub.io/" + this.value;
-            }, false);
-        }, false);
     var ua = navigator.userAgent.toLowerCase();
     var ver = navigator.appVersion.toLowerCase();
 
@@ -97,6 +92,11 @@
     if (isOpera) {
       alert('判定結果:Opera');
     }
+    document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('susi').addEventListener('change', function () {
+                location.href = "https://seiyaonuma.GitHub.io/" + this.value;
+            }, false);
+        }, false);
   </script>
 </body>
 
