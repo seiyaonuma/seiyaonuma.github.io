@@ -9,16 +9,18 @@
 </head>
 
 <body>
-  <form>
-    <label for="susi">寿司ネタ</label>
-    <select name="susi" id="susi">
-      <option value="">寿司ネタを選んで下さい</option>
-      <option value="maguro.html">マグロ</option>
-      <option value="sarmon.html">サーモン</option>
-      <option value="tamago.html">たまご</option>
-      <option value="git.html">gitの使い方とgithub-pagesの作り方</option>
-    </select>
-  </form>
+    <form>
+        <label for="susi">寿司ネタ＋画像集</label>
+        <select name="susi" id="susi">
+        <option value="">選択して下さい</option>
+        <option value="maguro.html">マグロ</option>
+        <option value="sarmon.html">サーモン</option>
+        <option value="tamago.html">たまご</option>
+        <option value="github_tutorial.html">GitHub使い方まとめ</option>
+        <option value="images.html">お気に入り画像集</option>
+        <option value="Browser.html">ブラウザ判定</option>
+           </select>
+       </form>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('susi').addEventListener('change', function () {
