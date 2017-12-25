@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>メソッドの使い方</title>
+</head>
+
+<body>
+    <form>
+        <label for="susi">【寿司ネタ/画像集/ブラウザ判定/メソッドの使い方/オブジェクトの使い方/タイマー】</label><br>
+        <select name="susi" id="susi">
+            <option value="">選択して下さい</option>
+            <option value="maguro.html">マグロ</option>
+            <option value="sarmon.html">サーモン</option>
+            <option value="tamago.html">たまご</option>
+            <option value="git.html">GitHub使い方まとめ</option>
+            <option value="images.html">お気に入り画像集</option>
+            <option value="ver.html">バージョン判定</option>
+            <option value="method.html">各メソッドの使い方</option>
+        </select>
+      </form>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('susi').addEventListener('change', function () {
+                    location.href = "https://seiyaonuma.GitHub.io/" + this.value;
+                }, false);
+            }, false);
+      </script>
+
+  <h1>3分!メソッドクッキング!</h1>
+  <div align="center">
+    <img src="./images/p.jpg">
+  </div>
+  <div align="center">
+    <p>使いたいけど分からない・・・そもそもそのメソッドが何を意味するか分からない・・・</p>
+    <br>
+    <font color="red"><b>そんなお悩みもこれを読めば3分で解決!君も今日からメソッドマスターになろう!!</b></font>
+  </div>
+  <h2>(1)windows.open()について</h2>
+  <div align="center">
+    <b>-定義-</b>
+    <br>
+    <p>新しい副ブラウザウィンドウを生成し、参照されているリソースをロードします。</p>
+    <b>-構文-</b>
+    <br>
+    <table border="4">
+      <tr>
+        <td>
+          var win = window.open(url, name [, features]);
+        </td>
+      </tr>
+    </table>
+    <b>-説明-</b>
+    <br>
+    <p>open() メソッドは、新しい副ブラウザウィンドウを生成します。それは、ファイルメニューから新しいウィンドウを選ぶのに似ています。引数 url は、新しいウィンドウにおいてフェッチしロードする URL を指定します。url が空文字列の場合は、メインウィンドウのデフォルトツールバーを持った新しい空白の空のウィンドウ（URL
+      は about:blank がロードされます）が生成されます。
+      <br> リモート URL は、すぐにはロードされないことに注意してください。window.open() が戻り値を返すとき、ウィンドウは、常に about:blank を含んでいます。URL が実際にフェッチされるまでには猶予期間があり、現在のスクリプトブロックが実行を終えた後に開始されます。ウィンドウの生成と参照されるリソースの読み込みは、非同期に行われます。
+      </p>
+    <b>-サンプル-</b>
+    <br>
+    <table border="4">
+      <tr>
+        <td>
+          var win;
+            <br>
+            <p></p>
+            var features = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+            <br> function openRequestedPopup()
+            <br> {
+            <br> win = window.open("http://www.cnn.com/", "CNN_WindowName", features);
+            <br> {
+            <br>
+        </td>
+      </tr>
+    </table>
+    <p></p>
+    <table border="4">
+      <tr>
+        <td>
+          var win;
+            <br>
+            <p></p>
+            function openRequestedPopup()
+            <br>
+            <br>{
+            <br>win = window.open("http://www.domainname.ext/path/ImageFile.png",
+            <br>"DescriptiveWindowName",
+            <br>"resizable=no,scrollbars=yes,status=no");
+            <br>{
+        </td>
+      </tr>
+    </table>
+  </div>
+  <h2>(2)close()について</h2>
+  <div align="center">
+  <b>-定義-</b>
+  <br>
+  リンクをクリックすることで閉じることが出来るスクリプトです。
+  <br>
+  <b>-サンプル-</b>
+  <table border="4">
+    <tr>
+      <td>
+        <a href="#" onClick="window.close(); return false;">サブウィンドウを閉じる</a>
+      </td>
+    </tr>
+  </table>
+  <p></p>
+  <table border="4">
+      <tr>
+          <td>
+            href="#" onClick="window.close(); return false"ウインドウを閉じる
+          </td>
+        </tr>
+  </table>
+</div>
+<h2>(3)focus()について</h2>
+<div align="center">
+  <b>-定義-</b>
+  <br>
+  ページを表示したときに、特定の入力欄にフォーカスを合わせておけるスクリプトです。
+  <br>
+  <b>-サンプル-</b>
+  <table border="4">
+    <tr>
+      <td>
+        body onLoad="document.form1.field1.focus()"
+        <br>
+        form action="#" name="form1"
+        <br>
+        p お名前 : input type="text" name="field1" size="25" /p
+      </td>
+    </tr>
+  </table>
+  <b>-説明-</b>
+    <p>フォーカスに合わせたい入力欄を、以下の方法で設定して下さい。</p><br>
+    <table border="4">
+      <tr>
+        <td>
+            <u>document.フォーム名.フィールド名.focus()</u><br>
+        </td>
+      </tr>
+    </table>
+    
+</div>
+</body>
+</html>
