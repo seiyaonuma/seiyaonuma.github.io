@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>consoleオブジェクト</title>
+</head>
+
+<body>
+    <form>
+        <label for="susi">【寿司ネタ/画像集/ブラウザ判定/メソッドの使い方/オブジェクトの使い方/タイマー】</label><br>
+        <select name="susi" id="susi">
+            <option value="">選択して下さい</option>
+            <option value="maguro.html">マグロ</option>
+            <option value="sarmon.html">サーモン</option>
+            <option value="tamago.html">たまご</option>
+            <option value="git.html">GitHub使い方まとめ</option>
+            <option value="images.html">お気に入り画像集</option>
+            <option value="ver.html">バージョン判定</option>
+            <option value="method.html">各メソッドの使い方</option>
+            <option value="console.html">色々なコンソール紹介</option>
+        </select>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('susi').addEventListener('change', function () {
+                location.href = "https://seiyaonuma.GitHub.io/" + this.value;
+            }, false);
+        }, false);
+    </script>
+  <font align="center">
+    <h1>意外と知られていない?!君も今日からconsoleオブジェクトマイスターになろう!</h1>
+  </font>
+
+  <div align="center">
+    <P>突然ですが、consoleオブジェクトと聞いて何を思い浮かべますか?
+      <br> consoleログ？正直自分もそのぐらいしか思い浮かびませんでした（笑） 今日は意外と知られていないconsoleログの便利な使い方を伝授していきたいと思います。
+    </p>
+  </div>
+  <p></p>
+  <div align="center">
+    <img src="./images/c.JPG">
+  </div>
+  <h2>Q＆A consoleってログぐらいしか使われない陰キャメソッドじゃないの？？</h2>
+  <div align="center">
+    <font color="red">
+      <h2>A.いいえ！意外と便利な使い方があるんですよ！</h2>
+    </font>
+    <p></p>
+    <table border="4">
+      <tr>
+        <td>
+          assert
+        </td>
+        <td>
+          count
+        </td>
+      </tr>
+      <tr>
+      <td>
+        debug
+      </td>
+      <td>
+        dir
+      </td>
+    </tr>
+    <tr>
+      <td>
+        dirxml
+      </td>
+      <td>
+        error
+      </td>
+    </tr>
+    <tr>
+      <td>
+        group
+      </td>
+      <td>
+        groupCollapsed
+      </td>
+    </tr>
+    <tr>
+      <td>
+        groupEnd
+      </td>
+      <td>
+        info
+      </td>
+    </tr>
+    <tr>
+      <td>
+        log
+      </td>
+      <td>
+        markTimeline
+      </td>
+    </tr>
+    <tr>
+      <td>
+        profile
+      </td>
+      <td>
+        profileEnd
+      </td>
+    </tr>
+    <tr>
+      <td>
+        time
+      </td>
+      <td>
+        timeEnd
+      </td>
+    </tr>
+    <tr>
+      <td>
+        timeStamp
+      </td>
+      <td>
+        trace
+      </td>
+    </tr>
+    <tr>
+      <td>
+        warn
+      </td>
+    </tr>
+    </table>
+    <p>console１つにしてもこんなにも沢山のメソッドがあるんです！</p>
+    <p>今回はこの中から確実に使える5つを紹介していきたいと思います。最初は、errorメソッドから見ていきましょう！</p>
+  </div>
+  <h2>errorメソッド</h2>
+  <div align="center">
+    <p>console.error(message-object)</p>
+    <p>エラーアイコン付きで表示してくれるメソッドです。</p>
+    <img src="./images/エラーメソッド.jpg">
+    <p></p>
+    <img src="./images/e.jpg">
+    <p>♪エラーを瞬時に発見し易いので便利ですね♪</p>
+  </div>
+  <h2>warnメソッド</h2>
+  <div align="center">
+    <p>メッセージを警告アイコン付で表示させる事が出来るメソッドです。</p>
+    <img src="./images/ww.jpg">
+    <p></p>
+    <img src="./images/w.jpg">
+    <p>♪メッセージの意味付けと言う意味で活用すると非常に便利ですね♪</p>
+  </div>
+  <h2>traceメソッド</h2>
+  <div align="center">
+    <p>console.trace();</p>
+    <p>実行時のスタックトレースを表示するメソッドです。</p>
+    <p></p>
+    <img src="./images/t.jpg">
+    <p></p>
+    <img src="./images/tt.jpg">
+    <p>♪経由して来たメソッドを確認する場合には便利ですね♪</p>
+  </div>
+  <h2>countメソッド</h2>
+  <div align="center">
+    <p> console.count([title])</p>
+    <p>何回通ったのかを出力するメソッドです。</p>
+    <img src="./images/c1.jpg">
+    <p></p>
+    <img src="./images/cc.jpg">
+    <p>♪指定した文字が何回通ったのか分かるのでラベル付けとして活用すると便利ですね♪</p>
+  </div>
+  <h2>infoメソッド</h2>
+  <div align="center">
+    <p>console.info(message-object)</p>
+    <p>このメソッドは名前の通りインフォメーションをお知らせするメソッドです。もちろんアイコン付!!</p>
+    <img src="./images/i.jpg">
+    <p></p>
+    <img src="./images/ii.jpg">
+    <p>♪こちらもerrorメッセージ同様意味付け・タグ付けとして活用すると便利ですね♪</p>
+    <font color="red">※何故かChromeのコンソール画面だとインフォメーションアイコンがでなくて画像はEdgeを使用しました。Edgeコンソール最強説・・・??</font>
+  </div>
+</body>
+
+</html>
