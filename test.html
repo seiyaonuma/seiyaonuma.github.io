@@ -4,30 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ブラウザVer判定</title>
+  <title>Document</title>
 </head>
 <body>
-  <form>
-    <label for="susi">【寿司ネタ/画像集/ブラウザ判定/メソッドの使い方/オブジェクトの使い方/タイマー】</label><br>
-    <select name="susi" id="susi">
-        <option value="">選択して下さい</option>
-        <option value="maguro.html">マグロ</option>
-        <option value="sarmon.html">サーモン</option>
-        <option value="tamago.html">たまご</option>
-        <option value="git.html">GitHub使い方まとめ</option>
-        <option value="images.html">お気に入り画像集</option>
-        <option value="ver.html">バージョン判定</option>
-    </select>
-  </form>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-            document.getElementById('susi').addEventListener('change', function () {
-                location.href = "https://seiyaonuma.GitHub.io/" + this.value;
-            }, false);
-        }, false);
-  </script>
-
-<script>
     function browser_name() {
       var userAgent = window.navigator.userAgent.toLowerCase();
       var appVersion = window.navigator.appVersion.toLowerCase();
@@ -71,6 +51,5 @@
   </script>
   <p>ブラウザを確認するには</p>
   <input type="button" value="こちらをクリックして下さい" onclick="browser_name();">
-
 </body>
 </html>
