@@ -1,3 +1,8 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
 /* headerここから ↓*/
 header {
 	height: 110px;
@@ -84,3 +89,17 @@ div {
   padding: 20px;
 }
 /*footer ここまで↑*/
+
+/*Googlefontここから↓*/
+h1{
+  font-family: "Sawarabi Gothic";
+}
+
+p {
+  font-family: "Sawarabi Gothic";
+}
+
+li {
+  font-family: "Sawarabi Gothic";
+}
+/*Googlefontここまで↑*/
