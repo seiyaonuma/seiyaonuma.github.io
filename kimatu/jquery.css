@@ -83,11 +83,15 @@ div {
 }
 /*liここまで↑*/
 /*footer ここから↓*/
-.footer {
-  background: rgba(12, 10, 10, 0.829);
-  color: white;
-  padding: 20px;
+footer {
+  text-align: center;
+  margin: auto;
+	height: 30px;
+	width: 100%;
+	background-color: #47B39D;
+	color: white;
 }
+ 
 /*footer ここまで↑*/
 
 /*Googlefontここから↓*/
