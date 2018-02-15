@@ -8,6 +8,7 @@
     <title>メニュー</title>
     <link rel="stylesheet" href="lunch.css">
     <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <style>
     </style>
 </head>
@@ -71,7 +72,7 @@
 
                     var display = document.cookie;
                     if (display >= hoge) {
-                        document.write("お客様はご注文済みです。" + hoge + "と" + text2 + "です。" + "しばらくお待ちください。");
+                        alert("お客様はご注文済みです。"  + hoge + "と" + text2 + "です。" + "しばらくお待ちください。");
 
                         setTimeout(function () {
                             alert("ヘイ!お待ち!冷めないうちにどうぞ");
