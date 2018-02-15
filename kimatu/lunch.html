@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>メニュー</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <p>ご注文は何でしょう？</p>
+    <form name="Sample3_form" action="event2.html">
+        <input type="radio" name="radio" value="蒙古ラーメン">蒙古ラーメン
+        <br>
+        <input type="radio" name="radio" value="一楽ラーメン">一楽ラーメン
+        <br>
+        <input type="radio" name="radio" value="節骨ラーメン">節骨ラーメン
+        <br>
+        <p>----------------------------------------</p>
+        <input type="checkbox" name="check" id="oomori">大盛り
+        <br>
+        <input type="checkbox" name="check" id="mesi">チャーシュー飯
+        <br>
+        <input type="checkbox" name="check" id="han">半チャーハン
+        <br>
+        <input type="checkbox" name="check" id="gixyouza">餃子
+        <br>
+    </form>
+    <input type="button" value="注文する" onclick="Sample3()">
+
+    <script type="text/javascript">
+        function Sample3() {
+            for (var i = 0; i < Sample3_form.radio.length; i++) {
+                if (Sample3_form.radio[i].checked == true) {
+
+                    var hoge = Sample3_form.radio[i].value;
+
+                    var hoges1 = Sample3_form.check[0].checked;
+                    var hoges2 = Sample3_form.check[1].checked;
+                    var hoges3 = Sample3_form.check[2].checked;
+                    var hoges4 = Sample3_form.check[3].checked;
+
+                    var text = "";
+                    var text2 = "";
+                    if (hoges1 == true) {
+                        text = text + "\n" + '大盛り';
+                        text2 = text2 + '大盛り';
+                    }
+                    if (hoges2 == true) {
+                        text = text + "\n" + 'チャーシュー飯';
+                        text2 = text2 + 'チャーシュー飯';
+                    }
+                    if (hoges3 == true) {
+                        text = text + "\n" + '半チャーハン';
+                        text2 = text2 + '半チャーハン';
+                    }
+                    if (hoges4 == true) {
+                        text = text + "\n" + '餃子';
+                        text2 = text2 + '餃子';
+                    }
+                    alert("注文は" + "\n" + hoge + text + "\n" + "ですね？");
+
+                    document.cookie = document.cookie + hoge + text2 + ";max-age=3;path=/";
+
+                    var display = document.cookie;
+                    if (display >= hoge) {
+                        document.write("お客様はご注文済みです。" + hoge + "と" + text2 + "です。" + "しばらくお待ちください。");
+
+                        setTimeout(function () {
+                            alert("ヘイ!お待ち!冷めないうちにどうぞ");
+                        }, 12000);
+                    }
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
