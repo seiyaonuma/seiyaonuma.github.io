@@ -6,33 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>メニュー</title>
+    <link rel="stylesheet" href="lunch.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
     <style>
     </style>
 </head>
 
 <body>
-    <p>ご注文は何でしょう？</p>
-    <form name="Sample3_form" action="event2.html">
-        <input type="radio" name="radio" value="蒙古ラーメン">蒙古ラーメン
-        <br>
-        <input type="radio" name="radio" value="一楽ラーメン">一楽ラーメン
-        <br>
-        <input type="radio" name="radio" value="節骨ラーメン">節骨ラーメン
-        <br>
-        <p>----------------------------------------</p>
-
-        <p>オプションはいかがでしょうか?</p>
-        <input type="checkbox" name="check" id="oomori">大盛り
-        <br>
-        <input type="checkbox" name="check" id="mesi">チャーシュー飯
-        <br>
-        <input type="checkbox" name="check" id="han">半チャーハン
-        <br>
-        <input type="checkbox" name="check" id="gixyouza">餃子
-        <br>
-    </form>
-    <input type="button" value="注文する" onclick="Sample3()">
-
+    <h2 class="midashi-b">ご注文はなんでしょう　選択して下さい</h2>
+    <div id="sentaku">
+        <form name="Sample3_form" action="event2.html">
+            <input type="radio" name="radio" value="蒙古ラーメン">蒙古ラーメン
+            <br>
+            <input type="radio" name="radio" value="一楽ラーメン">一楽ラーメン
+            <br>
+            <input type="radio" name="radio" value="節骨ラーメン">節骨ラーメン
+            <br>
+            <h2 class="midashi-b">オプションはいかがでしょうか　選択して下さい</h2>
+            <input type="checkbox" name="check" id="oomori">大盛り
+            <br>
+            <input type="checkbox" name="check" id="mesi">チャーシュー飯
+            <br>
+            <input type="checkbox" name="check" id="han">半チャーハン
+            <br>
+            <input type="checkbox" name="check" id="gixyouza">餃子
+            <br>
+            <p></p>
+        </form>
+        <input type="button" value="注文する" onclick="Sample3()">
+    </div>
     <script type="text/javascript">
         function Sample3() {
             for (var i = 0; i < Sample3_form.radio.length; i++) {

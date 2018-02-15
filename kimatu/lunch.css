@@ -1,0 +1,30 @@
+.midashi-b {
+  position:relative;
+  padding:10px;
+  border-bottom:solid 5px #ccc;
+}
+
+.midashi-b:before {
+  content:"";
+  position: absolute;
+  bottom:-5px; 
+  left:0;
+  width:42%; 
+  height:5px;
+  background-color:  rgb(255, 0, 8);
+}
+
+h2 { 
+  font-family: "Sawarabi Mincho"; 
+}
+#sentaku {
+  font-family: "Sawarabi Mincho"; 
+}
+
+footer {
+  text-align: center;
+	height: 30px;
+	width: 100%;
+	background-color: rgb(255, 0, 8);
+	color: white;
+}
