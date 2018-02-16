@@ -4,7 +4,7 @@ body{
 }
 
 /* headerここから ↓*/
-header {
+/* header {
 	height: 75px;
 	width: 100%;
 	background-color: #ff0000;
@@ -19,7 +19,7 @@ header p {
 	float: left;
 	font-size: 35px;
 	margin-left: 25px;
-}
+} */
 
 .midashi-b {
   position:relative;
