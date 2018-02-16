@@ -1,3 +1,25 @@
+body {
+margin: 0;
+padding: 0;
+}
+
+header {
+  height: 80px;
+	width: 100%;
+	background-color: rgb(255, 0, 8);
+  color: white;
+  display: flex;          /* 2 */
+    justify-content: center;/* 3 */
+    align-items: center; 
+}
+
+header p {
+	line-height: 100px;
+	float: left;
+	font-size: 35px;
+	margin-left: 25px;
+}
+
 .midashi-b {
   position:relative;
   padding:10px;
@@ -14,9 +36,25 @@
   background-color:  rgb(255, 0, 8);
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+	height: 40px;
+	width: 100%;
+	background-color: rgb(255, 0, 8);
+	color: white;
+}
+
 h2 { 
   font-family: "Sawarabi Mincho"; 
 }
 #sentaku {
   font-family: "Sawarabi Mincho"; 
+}
+header p{
+  font-family: "Sawarabi Mincho";
+}
+footer p {
+  font-family: "Sawarabi Mincho";
 }
