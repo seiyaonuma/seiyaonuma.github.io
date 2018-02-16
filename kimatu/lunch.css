@@ -11,12 +11,12 @@ body{
   color: white;
 }
  
-header p {
+/* header p { 
 	line-height: 100px;
 	float: left;
 	font-size: 35px;
 	margin-left: 25px;
-} 
+} */
 
 .midashi-b {
   position:relative;
