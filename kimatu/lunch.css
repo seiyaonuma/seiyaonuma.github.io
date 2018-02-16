@@ -5,13 +5,10 @@ body{
 
 /* headerここから ↓*/
  header {
-	height: 75px;
+	height: 110px;
 	width: 100%;
 	background-color: #ff0000;
   color: white;
-  display: flex;          
-  justify-content: center;
-  align-items: center; 
 }
  
 header p {
