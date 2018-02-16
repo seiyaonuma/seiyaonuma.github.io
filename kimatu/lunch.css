@@ -36,6 +36,12 @@ header p {
   background-color:  rgb(255, 0, 8);
 }
 
+img {
+  float: right;
+  max-width: 150px;
+  height: auto;
+}
+
 footer {
   position: fixed;
   bottom: 0;
