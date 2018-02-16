@@ -9,8 +9,8 @@ header {
 	width: 100%;
 	background-color: #ff0000;
   color: white;
-  display: flex;          /* 2 */
-    justify-content: center;/* 3 */
+  display: flex;          
+    justify-content: center;
     align-items: center; 
 }
  
