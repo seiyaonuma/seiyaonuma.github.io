@@ -8,6 +8,13 @@ header {
 	width: 100%;
 	background-color: rgb(255, 0, 8);
   color: white;
+  display: flex;          /* 2 */
+    justify-content: center;/* 3 */
+    align-items: center; 
+    line-height: 100px;
+	float: left;
+	font-size: 35px;
+	margin-left: 25px;
 }
 
 .midashi-b {
