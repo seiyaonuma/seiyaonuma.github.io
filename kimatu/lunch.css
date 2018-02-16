@@ -29,3 +29,6 @@ footer {
   color: white;
 
 }
+footer p{
+  margin-bottom: 0;
+}
