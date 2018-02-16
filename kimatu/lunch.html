@@ -68,7 +68,7 @@
                     }
                     alert("注文は" + "\n" + hoge + text + "\n" + "ですね？");
 
-                    document.cookie = document.cookie + hoge + text2 + ";max-age=3;path=/";
+                    document.cookie = document.cookie + hoge + text2 + ";max-age=180;path=/";
 
                     var display = document.cookie;
                     if (display >= hoge) {

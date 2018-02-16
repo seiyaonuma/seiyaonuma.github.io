@@ -8,7 +8,10 @@ header {
 	height: 110px;
 	width: 100%;
 	background-color: #47B39D;
-	color: white;
+  color: white;
+  display: flex;          /* 2 */
+    justify-content: center;/* 3 */
+    align-items: center; 
 }
  
 header p {
