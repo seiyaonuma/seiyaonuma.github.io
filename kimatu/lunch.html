@@ -41,42 +41,48 @@
         <img src="ramen.png" alt="ラーメン">
     </div>
     <script type="text/javascript">
-        function Sample3() {
-            for (var i = 0; i < Sample3_form.radio.length; i++) {
-                if (Sample3_form.radio[i].checked == true) {
+        var display = document.cookie;
+        if (display >= hoge) {
+            alert("お客様はご注文済みです。" + hoge + "と" + text2 + "です。" + "しばらくお待ちください。");
 
-                    var hoge = Sample3_form.radio[i].value;
+        } else {
 
-                    var hoges1 = Sample3_form.check[0].checked;
-                    var hoges2 = Sample3_form.check[1].checked;
-                    var hoges3 = Sample3_form.check[2].checked;
-                    var hoges4 = Sample3_form.check[3].checked;
 
-                    var text = "";
-                    var text2 = "";
-                    if (hoges1 == true) {
-                        text = text + "\n" + '大盛り';
-                        text2 = text2 + '大盛り';
-                    }
-                    if (hoges2 == true) {
-                        text = text + "\n" + 'チャーシュー飯';
-                        text2 = text2 + 'チャーシュー飯';
-                    }
-                    if (hoges3 == true) {
-                        text = text + "\n" + '半チャーハン';
-                        text2 = text2 + '半チャーハン';
-                    }
-                    if (hoges4 == true) {
-                        text = text + "\n" + '餃子';
-                        text2 = text2 + '餃子';
-                    }
-                    alert("注文は" + "\n" + hoge + text + "\n" + "ですね？");
+            function Sample3() {
+                for (var i = 0; i < Sample3_form.radio.length; i++) {
+                    if (Sample3_form.radio[i].checked == true) {
 
-                    document.cookie = document.cookie + hoge + text2 + ";max-age=180;path=/";
+                        var hoge = Sample3_form.radio[i].value;
 
-                    var display = document.cookie;
-                    if (display >= hoge) {
-                        alert("お客様はご注文済みです。" + hoge + "と" + text2 + "です。" + "しばらくお待ちください。");
+                        var hoges1 = Sample3_form.check[0].checked;
+                        var hoges2 = Sample3_form.check[1].checked;
+                        var hoges3 = Sample3_form.check[2].checked;
+                        var hoges4 = Sample3_form.check[3].checked;
+
+                        var text = "";
+                        var text2 = "";
+                        if (hoges1 == true) {
+                            text = text + "\n" + '大盛り';
+                            text2 = text2 + '大盛り';
+                        }
+                        if (hoges2 == true) {
+                            text = text + "\n" + 'チャーシュー飯';
+                            text2 = text2 + 'チャーシュー飯';
+                        }
+                        if (hoges3 == true) {
+                            text = text + "\n" + '半チャーハン';
+                            text2 = text2 + '半チャーハン';
+                        }
+                        if (hoges4 == true) {
+                            text = text + "\n" + '餃子';
+                            text2 = text2 + '餃子';
+                        }
+                        alert("注文は" + "\n" + hoge + text + "\n" + "ですね？");
+
+                        document.cookie = document.cookie + hoge + text2 + ";max-age=180;path=/";
+
+
+
 
                         setTimeout(function () {
                             alert("ヘイ!お待ち!冷めないうちにどうぞ");
