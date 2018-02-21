@@ -41,21 +41,18 @@
         <img src="ramen.png" alt="ラーメン">
     </div>
     <script type="text/javascript">
-        var display = document.cookie;
        
 
        
 
            
             function Sample3() {
-                var hoge ="";
-                if (display >= hoge) {
+                if (document.cookie != "") {
             alert("お客様はご注文済みです。" + hoge + "と" + text2 + "です。" + "しばらくお待ちください。");
         } else {
                 for (var i = 0; i < Sample3_form.radio.length; i++) {
                     if (Sample3_form.radio[i].checked == true) {
-
-                        hoge = Sample3_form.radio[i].value;
+                        var hoge = Sample3_form.radio[i].value;
 
                         var hoges1 = Sample3_form.check[0].checked;
                         var hoges2 = Sample3_form.check[1].checked;
