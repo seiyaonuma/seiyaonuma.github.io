@@ -41,15 +41,15 @@
         <img src="ramen.png" alt="ラーメン">
     </div>
     <script type="text/javascript">
-       
 
-       
 
-           
-            function Sample3() {
-                if (document.cookie != "") {
-            alert("お客様はご注文済みです。" + document.cookie + "です。" + "しばらくお待ちください。");
-        } else {
+
+
+
+        function Sample3() {
+            if (document.cookie != "") {
+                alert("お客様はご注文済みです。" + document.cookie + "です。" + "しばらくお待ちください。");
+            } else {
                 for (var i = 0; i < Sample3_form.radio.length; i++) {
                     if (Sample3_form.radio[i].checked == true) {
                         var hoge = Sample3_form.radio[i].value;
