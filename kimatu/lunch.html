@@ -42,13 +42,15 @@
     </div>
     <script type="text/javascript">
         var display = document.cookie;
-        if (display >= hoge) {
-            alert("お客様はご注文済みです。" + hoge + "と" + text2 + "です。" + "しばらくお待ちください。");
+       
 
-        } else {
+       
 
 
             function Sample3() {
+                if (display >= hoge) {
+            alert("お客様はご注文済みです。" + hoge + "と" + text2 + "です。" + "しばらくお待ちください。");
+        } else {
                 for (var i = 0; i < Sample3_form.radio.length; i++) {
                     if (Sample3_form.radio[i].checked == true) {
 
