@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* headerここから ↓*/
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #444444;
+  color: white;
+  display: flex;
+  /* 2 */
+  justify-content: center;
+  /* 3 */
+  align-items: center;
+  font-size: 60px;
+}
+
+/*headerここまで↑*/
+
+/*各見出しここから↓*/
+
+h1 {
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  margin-left: -14px;
+  padding: 8px 16px;
+  background: rgb(17, 163, 221);
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 8px solid #fff;
+  border-top: 8px solid rgba(0, 0, 0, 0.5);
+  border-left: 8px solid rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background: #5b6a78;
+}
+
+div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 14px;
+  background: #fff;
+}
+
+/*各見出しここまで↑*/
+
+/*紹介欄ここから↓*/
+
+.demo8 .heading {
+  font-size: 25px;
+  overflow: hidden;
+  align-items: center;
+  background: #d14;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+}
+
+.demo8 .heading:before, .demo8 .heading:after {
+  content: "";
+  flex: 1;
+  background: #fff;
+  padding: 3px 0;
+  height: 0;
+  transform: rotate(45deg);
+}
+
+/*紹介欄ここまで↑*/
+
+/*liここから↓*/
+
+.li {
+  padding: 5px;
+}
+
+/*liここまで↑*/
+
+/*footer ここから↓*/
+
+footer {
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  background-color: #47B39D;
+  color: white;
+}
+
+/*footer ここまで↑*/
+
+/*Googlefontここから↓*/
+
+header{
+  font-family: 'Tangerine', cursive;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h2{
+  font-family: "Sawarabi Gothic";
+}
+
+p {
+  font-family: "Sawarabi Gothic";
+}
+
+li {
+  font-family: "Sawarabi Gothic";
+}
+
+/*Googlefontここまで↑*/

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+  <link rel="shortcut icon" href="faviconJ.ico" />
+
+</head>
+
+<body>
+  <header id="top">PortFolio -Seiya Onuma-</header>
+  <p></p>
+
+  <div>
+    <h1>Profile</h1>
+      <p>秋田県由利本荘市出身</p>
+          <p>2017年4月に盛岡情報ビジネス専門学校へ入学</p>
+            <p>趣味は工作・自作PCなど。今年の目標はRaspberry PiとLinuxでサーバー構築する事と色んな場所に旅する事。</p>
+    <h1>My PR</h1>
+      <p>テスト</p>
+        <p>テスト</p>
+          <p>テスト</p>
+    <h1>test1</h1>
+      <p>テスト</p>
+        <p>テスト</p>
+          <p>テスト</p>
+    <h1>test2</h1>
+      <p>テスト</p>
+        <p>テスト</p>
+          <p>テスト</p>
+      <h1>test3</h1>
+        <p>テスト</p>
+          <p>テスト</p>
+            <p>テスト</p>
+      <h1>test4</h1>
+        <p>テスト</p>
+          <p>テスト</p>
+            <p>テスト</p>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+ 
+  
+  <script>
+    $(function() {
+      var offsetY = -30;
+        var time =1000;
+         $('a[href^="#"]').click(function() {
+           var target = $(this.hash);
+            if(!target.length) return;
+              var targetY = target.offset().top + offsetY;
+                $('html,body').animate({scrollTop: targetY},time,'swing');
+                  window.history.pushState(null,null,this.hash);
+                    return false;
+         });
+    });
+  </script>
+    <a href="#top"><img src="top.png" alt="top" align="right"></a>
+  <!-- <footer> -->
+    <!-- <p>Copyright © 2018 seiyaonuma. All Rights Reserved.</p> -->
+  <!-- </footer> -->
+  </div>
+</body>
+
+</html>
