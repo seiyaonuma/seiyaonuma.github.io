@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>portfolio</title>
+  <!-- 各種リンク -->
   <link rel="stylesheet" href="portfolio.css">
   <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
@@ -18,54 +19,68 @@
   <header id="top">PortFolio -Seiya Onuma-</header>
   <p></p>
   <div>
+    <!-- Profileここから↓ -->
      <h1>Profile</h1>
           <p>1999年3月18日生まれ</p>
             <p>秋田県由利本荘市出身</p>
               <p>中学校時代 吹奏楽部3年間所属</p>
                 <p>高校時代 サッカー部と美術部に所属</p>
                   <p>2017年4月 盛岡情報ビジネス専門学校 Webネットワーク科へ入学</p>
+    <!-- Profileここまで↑ -->
+
+    <!-- 趣味・特技ここから↓ -->
     <h1>趣味・特技</h1>
       <p>工作・自作PCなど</p>
         <p>自転車でサイクリングする事や掃除も趣味</p>
           <p>好きな色は、白・水色</p>
+    <!-- 趣味・特技ここまで↑ -->
+
+    <!-- 今年の目標ここから↓ -->
     <h1>今年の目標</h1>
       <p>Raspberry PiとLinuxを独学で学習しサーバー構築する事</p>
         <p>岩手県の色んなイベントに参加する事（盛岡さんさ踊り・東北絆まつり）</p>
           <p>色んな場所に旅に出ること</p>
             <div class="raspi"><img src="RasPi.png" alt="Raspberry Pi"></div>
+    <!-- 今年の目標ここから↑ -->
+
+    <!-- 長所・短所ここから↓ -->
     <h1>長所・短所</h1>
       <p>　長所は、困っている人の立場に立ち一緒に問題解決してあげられる事です。これは私が小学校の時の校長先生の教えで、「困っている人が居たら助けてあげられるような人間になる」と言う教えもあり、私は困っている人が居たら積極的に声を掛け問題解決に努めています。
               実際経験して例として、私が登校中信号待ちをしていた際ご年配の方が地図を持って困っているように見えたので私はスマートフォンの地図アプリを見せてあげ特徴のある建物などの位置など詳細に教えることが出来ました。</p>
                 <p>　短所は、周囲の意見を大事にしすぎて本来思っている自分の意見を言い出せないことです。グループワーク活動などの際周りの意見を大切にするあまり自分の意見を言い出せないことがあります。ですが、このままだと間違えている意見が飛び交った際、全て正しい意見だと思いこんでしまうので、改善策として1人1人ヒアリングしています。</p>
+    <!-- 長所・短所ここまで↑ -->
+
+    <!-- 最近の出来事ここから↓ -->
       <h1>最近の出来事</h1>
         <p>　3月上旬から1ヶ月間の間、就職活動で東京と盛岡を往復していた際、東京は3月なのにもう桜が満開で春の訪れを感じられた。ほぼ毎週移動をしていた為週を重ねるごとに東京は春の訪れが増して行くのが感じられた。盛岡に帰り夜10時ぐらいに到着し新幹線ホームに出た瞬間寒さからまだ春の訪れは感じられなかった。そんな盛岡だが最近は春の匂いが日に日に感じられるようになった。時より雨の影響でまた冬の寒さが戻ってくる日があるが、天気が良い日だと
-              春を感じる匂いがする。ただ、気温はまだ寒いので早く盛岡にも春本番が訪れて欲しいと最近思う。
-        </p>
-          <!-- <p>demo</p> -->
-            <!-- <p>demo</p> -->
+              春を感じる匂いがする。ただ、気温はまだ寒いので早く盛岡にも春本番が訪れて欲しいと最近思う。</p>
+    <!-- 最近の出来事ここまで↑ -->
+
+    <!-- Visionここから↓ -->
       <h1>Vision</h1>
         <p>　将来自分は、色々な人に何事も任せてもらえる人間になりたい。具体的にはこれから社会に出て仕事という物を経験していく上で１つの事だけでは無く沢山の経験をさせて頂けると思う。私はそこを有効的に使い沢山の経験を積み10年後沢山の人にいろいろな仕事を任せて貰える人間に成長したい。</p>
+    <!-- Visionここまで↑ -->
 
+    <!-- JavaScriptここから↓ -->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
- 
-  
-  <script>
-    $(function() {
-      var offsetY = -30;
-        var time =1000;
-         $('a[href^="#"]').click(function() {
-           var target = $(this.hash);
-            if(!target.length) return;
-              var targetY = target.offset().top + offsetY;
-                $('html,body').animate({scrollTop: targetY},time,'swing');
-                  window.history.pushState(null,null,this.hash);
-                    return false;
+    <script>
+      $(function() {
+        var offsetY = -30;
+          var time =1000;
+            $('a[href^="#"]').click(function() {
+              var target = $(this.hash);
+                if(!target.length) return;
+                  var targetY = target.offset().top + offsetY;
+                    $('html,body').animate({scrollTop: targetY},time,'swing');
+                      window.history.pushState(null,null,this.hash);
+                        return false;
          });
     });
   </script>
     <a href="#top"><img src="top.png" alt="top" align="right"></a>
+    <!-- JavaScriptここまで↑ -->
+    
   </div>
-
 </body>
 
 </html>
