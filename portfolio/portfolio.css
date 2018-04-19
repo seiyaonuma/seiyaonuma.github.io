@@ -80,13 +80,17 @@ div {
 
 /*紹介欄ここまで↑*/
 
-/*liここから↓*/
+/*ul・liここから↓*/
 
 .li {
   padding: 5px;
 }
 
-/*liここまで↑*/
+ul {
+  list-style-type: circle;
+}
+
+/*ul・liここまで↑*/
 
 /*Googlefontここから↓*/
 
@@ -103,7 +107,7 @@ h2{
 }
 
 p {
-  font-family: "Sawarabi Gothic";
+  font-family: "Sawarabi Mincho";
 }
 
 li {
@@ -111,6 +115,26 @@ li {
 }
 
 /*Googlefontここまで↑*/
+
+/* li詳細設定ここから↓ */
+
+li {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* li詳細設定ここまで↑ */
+
+/* p詳細設定ここから↓ */
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.6em;
+}
+
+/* p詳細設定ここまで↑ */
 
 /*各画像配置ここから↓*/
 
