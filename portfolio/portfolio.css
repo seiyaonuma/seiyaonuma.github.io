@@ -153,3 +153,14 @@ p {
 
 }
 /* 各種リンクここまで↑ */
+
+/*footer ここから↓*/
+footer {
+  text-align: center;
+	height: 30px;
+	width: 100%;
+	background-color: #444444;
+	color: white;
+}
+ 
+/*footer ここまで↑*/
