@@ -117,6 +117,14 @@ li {
 strong {
   font-family: "Sawarabi Mincho";
 }
+
+rb{
+  font-family: "Sawarabi Gothic";
+}
+
+rt{
+  font-family: "Sawarabi Gothic";
+}
 /*Googlefontここまで↑*/
 
 /* li詳細設定ここから↓ */
@@ -138,6 +146,12 @@ p {
 }
 
 /* p詳細設定ここまで↑ */
+
+/* rb詳細設定ここから↓ */
+rb {
+  font-size: 20px;
+}
+/* rb詳細設定ここから↑ */
 
 /*各画像配置ここから↓*/
 
