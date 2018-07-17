@@ -1,4 +1,5 @@
-/* 全てに適用するCSS */
+/* 480px以上に適用するCSS */
+@media screen and ( min-width:480px ){
 body{
   margin:0;
   padding: 0;
@@ -7,96 +8,246 @@ body{
 header{
   position: fixed !important;
   top: 0;
-  left: 0;
-  height: 70px;
   background: #fff;
   width: 100%;
+  height: 55px;
   min-width: 980px;
   z-index: 10;
-  /* overflow: hidden; */
   border-top: 4px solid #0054a7;
   box-shadow: 0 0 5px #d6d6d6;
-  -moz-box-shadow: 0 0 5px #d6d6d6;
-  -webkit-box-shadow: 0 0 5px #d6d6d6;
 }
-#nav-drawer {
+
+header .inner{
+  width: 980px;
+  margin: 15px auto 0;
+  clear: both;
+}
+
+header .logo{
+  float: left;
+  margin-top: 4px;
+}
+
+h1{
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #0054a7;
+  text-decoration: none;
+}
+
+a img{
+  border: none;
+}
+
+img{
+  border:bottom;
+}
+
+header nav{
+  float: left;
+  margin: 2px 0 0 36px;
+}
+
+nav{
+  display: block;
+}
+
+header #gnav{
   position: relative;
 }
 
-/*チェックボックス等は非表示に*/
-.nav-unshown {
-  display:none;
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/*アイコンのスペース*/
-#nav-open {
-  display: inline-block;
+header #gnav > li{
+  float: left;
+  width: 130px;
+}
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.sanka{
   width: 30px;
-  height: 22px;
-  vertical-align: middle;
+  border-bottom: 1px solid #0054a7;
+  border-top: 1px solid #0054a7;
+  border-left: 1px solid #0054a7;
+  border-right: 1px solid #0054a7;
+  text-align: center;
+}
+header #gnav li a{
+  color: #333;
 }
 
-/*ハンバーガーアイコンをCSSだけで表現*/
-#nav-open span, #nav-open span:before, #nav-open span:after {
-  position: absolute;
-  height: 3px;/*線の太さ*/
-  width: 25px;/*長さ*/
-  border-radius: 3px;
-  background: #0054a7;
-  display: block;
-  content: '';
-  cursor: pointer;
-}
-#nav-open span:before {
-  bottom: -8px;
-}
-#nav-open span:after {
-  bottom: -16px;
-}
-
-/*閉じる用の薄黒カバー*/
-#nav-close {
-  display: none;/*はじめは隠しておく*/
-  position: fixed;
-  z-index: 99;
-  top: 0;/*全体に広がるように*/
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  opacity: 0;
-  transition: .3s ease-in-out;
-}
-
-/*中身*/
-#nav-content {
-  overflow: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;/*最前面に*/
-  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
-  max-width: 330px;/*最大幅（調整してください）*/
-  height: 100%;
-  background: #fff;/*背景色*/
-  transition: .3s ease-in-out;/*滑らかに表示*/
-  -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);/*左に隠しておく*/
-}
-
-/*チェックが入ったらもろもろ表示*/
-#nav-input:checked ~ #nav-close {
-  display: block;/*カバーを表示*/
-  opacity: .5;
-}
-
-#nav-input:checked ~ #nav-content {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);/*中身を表示（右へスライド）*/
-  box-shadow: 6px 0 25px rgba(0,0,0,.15);
-}
 /* header ↑ */
 
+
+
+/* YouTube動画 ↓ */
+#player{
+  position: relative;
+  margin-top: 69px;
+  background: rgba(255, 255, 255, 0);
+}
+/* YouTube動画 ↑ */
+
+/* title ↓ */
+.taikentit{
+  text-align: center;
+  padding-top: 30px;
+}
+/* title ↑ */
+
+/* 体験授業 ↓ */
+.innerCont {
+  margin-top: 20px;
+  width: 980px;
+  margin: 0 auto;
+  padding-top: -60px;
+  margin-top: 40px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.taikenList {
+  width: 1005px;
+  margin-right: -25px;
+  overflow: hidden;
+  clear: both;
+}
+
+.taikenList > li {
+  width: 310px;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-shadow: rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+  -webkit-box-shadow: rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+  -moz-box-shadow: rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+  overflow: hidden;
+  float: left;
+  margin: 0 25px 30px 0;
+}
+
+.taikenList li .img {
+  width: 296px;
+  margin: 7px 7px 0 7px;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.taikenList li p {
+  color: #666;
+  margin: 16px 20px 0;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.taikenList li dl {
+  margin: 8px 20px 15px;
+  background: url(/img/oc/line_dot_1.gif) repeat-x 0 0;
+  padding-top: 14px;
+}
+/* 体験授業 ↑ */
+
+/* 三大特典 ↓ */
+.opentokuten .img{
+  text-align: center;
+}
+/* 三大特典 ↑ */
+
+/* 三大特典 バス ↓ */
+.opentokuten li h3 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.3;
+  padding: 16px 0 6px;
+  height: 59px;
+  text-align: center;
+  vertical-align: middle;
+  color: #333333;
+
+}
+
+.opentokuten li h3 span{
+  color: #0054a7;
+}
+.opentokuten li h3 small {
+  font-size: 13px;
+}
+
+.opentokuten li p {
+  color: #666;
+  letter-spacing: 0.5px;
+}
+/* 三大特典 バス ↑ */
+
+/* オープンキャンパスの一日の流れ ↓ */
+.day1 .img{
+  text-align: center;
+}
+
+.day1 li p{
+  text-align: center;
+  border-bottom: 1px solid #0054a7;
+}
+
+.day1 h3 {
+  text-align: center;
+}
+
+.day1 li span{
+  color: #0054a7;
+}
+.day1 li h3{
+  color: #333333;
+}
+/* オープンキャンパスの一日の流れ ↑ */
+
+/* 参加する前のQ&A ↓ */
+.qa{
+  text-align: center;
+}
+
+.openqa{
+  background: #f8f8f8;
+}
+.openqa p{
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+}
+.openqa h2{
+  padding-top: 30px;
+  color: #333333;
+  text-align: center;
+}
+.openqa span{
+  color: #0054a7;
+  text-align: center; 
+}
+/* 参加する前のQ&A ↑ */
+
+/* 参加申し込み ↓ */
+.mousikomi{
+  text-align: center;
+}
+/* 参加申し込み ↑ */
 /* footer ↓ */
 footer {
   background: #f2f2f2;
@@ -121,11 +272,6 @@ footer .school {
   line-height: 1.7;
   margin-top: -3px;
   color: #333333;
-}
-
-footer .school {
-  line-height: 1.7;
-  margin-top: -3px;
 }
 
 footer .school span {
@@ -156,20 +302,45 @@ footer .outsideLink {
   background: url(/common/img/bg_footer_dot.png) repeat-y 0 0;
   vertical-align: top;
 }
-  .fa-angle-right{
-    color: #333333;
+
+.schoolCont .outsideLink li:first-child {
+  margin-left: 0;
+}
+
+footer .outsideLink p {
+  font-weight: bold;
+  border-left: 3px solid #0054a7;
+  padding-left: 10px;
+  line-height: 1.4;
+  padding-top: 1px;
+}
+
+footer .outsideLink li{
+  padding-top: 10px;
+}
+.fa-angle-right{
+  color: #333333;
+}
+
+.courseBox .innerCont .add {
+  margin-top: -10px;
+}
 }
 /* footer ↑ */
 
 /* ウィンドウ幅が0〜479pxの場合に適用するCSS */
 @media screen and ( max-width:479px ){
 
+body{
+    margin:0;
+    padding: 0;
+}
 /* header ↓ */
 header{
   position: absolute !important;
   background: #fff;
   width: 100%;
-  height: 70px;
+  height: 50px;
   min-width: 200px;
   z-index: 10;
   /* overflow: hidden; */
@@ -180,11 +351,203 @@ header{
 }
 /* header ↑ */
 
+/* ハンバーガーメニュー ↓ */
+
+/*メニュー部分*/
+#ham-menu {
+  background-color: #FFFFFF; /*メニュー背景色*/
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px 40px; /*メニュー内部上下左右余白*/
+  position: fixed;
+  right: -300px; /*メニュー横幅①と合わせる*/
+  top: 0;
+  transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+  width: 300px; /*メニュー横幅①*/
+  z-index: 1000;
+}
+
+/*メニューアイコン部分は疑似要素で*/
+#ham-menu::before {
+  background-color: #fff; /*ボタン部分背景色*/
+  border-radius: 0 0 0 10px; /*左下角丸*/
+  color: #333; /*アイコン（フォント）色*/
+  content: "≡"; /*メニューアイコン*/
+  display: block;
+  font-size: 50px; /*アイコン（フォント）サイズ*/
+  height: 50px;
+  line-height: 50px; /*縦位置中央化*/
+  position: absolute;
+  right: 100%;
+  text-align: center;
+  top: 0;
+  width: 50px;
+}
+
+/*透過背景部分*/
+#menu-background {
+  background-color: #333; /*黒背景部分背景色*/
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+  width: 100%;
+  z-index: -1;
+}
+
+/*hover 時の処理*/
+#ham-menu:hover {
+  transform: translate(-300px); /*メニュー横幅①と合わせる*/
+}
+
+#ham-menu:hover + #menu-background {
+  opacity: 0.5; /*黒背景部分透過度*/
+  z-index: 999;
+}
+/* ハンバーガーメニュー ↑ */
+
 /* MCLロゴ ↓ */
 .logo{
   text-align: center;
+  padding-top: 15px;
 }
 /* MCLロゴ ↑ */
+
+/* 体験授業 ↓ */
+.taiken{
+  text-align: center;
+  width: 450px;
+}
+.innerCont {
+  margin-top: 20px;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: -60px;
+  margin-top: 40px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.taikenList {
+  width: 479px;
+  margin-right: -25px;
+  overflow: hidden;
+  clear: both;
+}
+
+.taikenList > li {
+  width: 310px;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-shadow: rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+  -webkit-box-shadow: rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+  -moz-box-shadow: rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+  overflow: hidden;
+  margin: 0 25px 30px 0;
+}
+
+.taikenList li .img {
+  width: 296px;
+  margin: 7px 7px 0 7px;
+}
+
+.qa img{
+  width: 400px;
+}
+
+.taikenList li p {
+  color: #666;
+  margin: 16px 20px 0;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.taikenList li dl {
+  margin: 8px 20px 15px;
+  background: url(/img/oc/line_dot_1.gif) repeat-x 0 0;
+  padding-top: 14px;
+}
+/* 体験授業 ↑ */
+
+/* 三大特典 ↓ */
+.opentokuten .img{
+  text-align: center;
+}
+/* 三大特典 ↑ */
+
+/* 三大特典 バス ↓ */
+.opentokuten li h3 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.3;
+  padding: 16px 0 6px;
+  height: 59px;
+  text-align: center;
+  vertical-align: middle;
+  color: #333333;
+}
+
+.opentokuten li h3 small {
+  font-size: 13px;
+}
+
+.opentokuten li p {
+  color: #666;
+  letter-spacing: 0.5px;
+}
+
+.opentokuten li span{
+  color: #0054a7;
+}
+/* 三大特典 バス ↑ */
+
+/* オープンキャンパスの一日の流れ ↓ */
+.day1 li span{
+  color: #0054a7;
+}
+.day1 li h3{
+  color: #333333;
+}
+.day1 li p{
+  border-bottom: 1px solid #0054a7;
+}
+/* オープンキャンパスの一日の流れ ↑ */
+
+/* 参加する前のQ&A ↓ */
+.qa{
+  text-align: center;
+}
+
+.openqa{
+  background: #f8f8f8;
+}
+.openqa p{
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+}
+.openqa h2{
+  padding-top: -35px;
+  color: #333333;
+  text-align: center;
+  font-size: 20px;
+}
+.openqa span{
+  color: #0054a7;
+  text-align: center; 
+}
+.openqa h2 img{
+  width: 150px;
+}
+/* 参加する前のQ&A ↑ */
+
 
 /* footer ↓ */
 footer {
@@ -194,16 +557,62 @@ footer {
   clear: both;
 }
 /* footer ↑ */
-.school{
+footer{
+  background: #f2f2f2;
+}
+
+footer .school{
   text-align: center;
-  font-size: 12px;
+  line-height: 1.7;
+  margin-top: -3px;
+  color: #333333;
+}
+
+footer .school span {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
 }
 
 footer .info{
   width: 100%;
 }
 
+footer .tel{
+  padding-left: 34px;
+  font-size: 25px;
+  background: url(../img/tel/tel.png) no-repeat;
+}
+
+footer .footerLink{
+  padding:0;
+}
+
+footer .footerLink li{
+  margin-left: 5px;
+}
+
 footer .outsideLink{
   width: 100%;
 }
+
+footer .outsideLink p{
+  text-align: justify;
+  font-weight: bold;
+  border-left: 3px solid #0054a7;
+  padding-left: 10px;
+  line-height: 1.4;
+  padding-top: 1px;
+  margin-left: 5px;
+}
+
+footer .outsideLink span{
+  text-align: justify;
+}
+
+footer .outsideLink li{
+  text-align: center;
+  padding-top: 10px;
+}
+
 }
