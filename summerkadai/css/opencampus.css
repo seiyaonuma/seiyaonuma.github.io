@@ -75,6 +75,7 @@
   }
   header #gnav li a {
     color: #333;
+    font-weight: bold;
   }
   /* header ↑ */
   /* fv ↓ */
@@ -85,7 +86,11 @@
     font-weight: bold;
     font-size: 60px;
     color: #fff;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: black 1px 1px 0, black -1px -1px 0, /*右下、左上*/
+    black -1px 1px 0, black 1px -1px 0, /*右上、左下*/
+    black 0px 1px 0, black 0-1px 0, /*右、左*/
+    black -1px 0 0, black 1px 0 0;
+    /*上、下*/
   }
   .fv h2 {
     position: absolute;
@@ -94,21 +99,30 @@
     font-weight: bold;
     font-size: 60px;
     color: #fff;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: black 1px 1px 0, black -1px -1px 0, /*右下、左上*/
+    black -1px 1px 0, black 1px -1px 0, /*右上、左下*/
+    black 0px 1px 0, black 0-1px 0, /*右、左*/
+    black -1px 0 0, black 1px 0 0;
+    /*上、下*/
   }
   .fv h3 {
     position: absolute;
     top: 23%;
-    left:36%;
+    left: 32%;
     font-weight: bold;
     font-size: 60px;
     color: #fff;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: black 1px 1px 0, black -1px -1px 0, /*右下、左上*/
+    black -1px 1px 0, black 1px -1px 0, /*右上、左下*/
+    black 0px 1px 0, black 0-1px 0, /*右、左*/
+    black -1px 0 0, black 1px 0 0;
+    /*上、下*/
   }
   .fv span {
     position: absolute;
-    top: 38%;
-    left: 41%;
+    top: 48%;
+    left: 38%;
     font-size: 32px;
     color: #fff;
     padding: 5px 0 5px;
@@ -122,7 +136,8 @@
   #player {
     position: relative;
     margin-top: 69px;
-    background: rgba(255, 255, 255, 0);
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.600);
   }
   /* YouTube動画 ↑ */
   /* title ↓ */
@@ -160,6 +175,7 @@
     overflow: hidden;
     float: left;
     margin: 0 25px 30px 0;
+    height: 100px;
   }
   .taikenList li .img {
     width: 296px;
@@ -173,6 +189,11 @@
     margin: 16px 20px 0;
     letter-spacing: 0.5px;
     text-align: justify;
+  }
+  .taikenList span{
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
   }
   .taikenList li dl {
     margin: 8px 20px 15px;
@@ -205,6 +226,7 @@
   .opentokuten li p {
     color: #666;
     letter-spacing: 0.5px;
+    border-bottom:5px dotted #0054a7;
   }
   /* 三大特典 バス ↑ */
   /* オープンキャンパスの一日の流れ ↓ */
@@ -233,7 +255,7 @@
     text-align: center;
   }
   .openqa {
-    background: #f8f8f8;
+    background: #ebebeb;
   }
   .openqa p {
     font-size: 18px;
@@ -307,6 +329,11 @@
     -webkit-box-shadow: 0 0 5px #d6d6d6;
   }
   /* 参加申し込み ↑ */
+  /* Twitter ↓ */
+  .twitter a {
+    padding-left: 100px;
+  }
+  /* Twitter ↑ */
   /* footer ↓ */
   footer {
     background: #f2f2f2;
@@ -375,7 +402,28 @@
 }
 
 /* footer ↑ */
-
+/* topに戻る ↓ */
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 77%;
+}
+#page-top a {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  padding: 20px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background: rgba(95, 95, 95, 0.932);
+}
+/* topに戻る ↑ */
 /* ウィンドウ幅が0〜497pxの場合に適用するCSS */
 
 @media screen and ( max-width:497px) {
@@ -471,6 +519,12 @@
     padding-top: 15px;
   }
   /* MCLロゴ ↑ */
+  /* YouTube動画 ↓ */
+  #player {
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.600);;
+  }
+  /* YouTube動画 ↑ */
   /* fv ↓ */
   .fv h1 {
     position: absolute;
@@ -479,30 +533,42 @@
     font-weight: bold;
     font-size: 40px;
     color: #fff;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: black 1px 1px 0, black -1px -1px 0, /*右下、左上*/
+    black -1px 1px 0, black 1px -1px 0, /*右上、左下*/
+    black 0px 1px 0, black 0-1px 0, /*右、左*/
+    black -1px 0 0, black 1px 0 0;
+    /*上、下*/
   }
   .fv h2 {
     position: absolute;
     top: 15%;
-    left: 29%;
+    left: 26%;
     font-weight: bold;
     font-size: 50px;
     color: #fff;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: black 1px 1px 0, black -1px -1px 0, /*右下、左上*/
+    black -1px 1px 0, black 1px -1px 0, /*右上、左下*/
+    black 0px 1px 0, black 0-1px 0, /*右、左*/
+    black -1px 0 0, black 1px 0 0;
+    /*上、下*/
   }
   .fv h3 {
     position: absolute;
-    top: 26%;
-    left:34%;
+    top: 28%;
+    left: 32%;
     font-weight: bold;
     font-size: 20px;
     color: #fff;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: black 1px 1px 0, black -1px -1px 0, /*右下、左上*/
+    black -1px 1px 0, black 1px -1px 0, /*右上、左下*/
+    black 0px 1px 0, black 0-1px 0, /*右、左*/
+    black -1px 0 0, black 1px 0 0;
+    /*上、下*/
   }
   .fv span {
     position: absolute;
-    top: 34%;
-    left: 32%;
+    top: 39%;
+    left: 30%;
     font-size: 18px;
     color: #fff;
     padding: 10px 0 10px;
@@ -515,7 +581,7 @@
   /* 体験授業 ↓ */
   .taiken {
     text-align: center;
-    width: 500px;
+    width: 430px;
   }
   .innerCont {
     margin-top: 20px;
@@ -532,6 +598,9 @@
     margin-right: -25px;
     overflow: hidden;
     clear: both;
+  }
+  .taikenList p{
+    padding-top: 40px;
   }
   .taikenList>li {
     width: 310px;
@@ -557,6 +626,11 @@
     margin: 16px 20px 0;
     letter-spacing: 0.5px;
     text-align: justify;
+  }
+  .taikenList span{
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
   }
   .taikenList li dl {
     margin: 8px 20px 15px;
@@ -586,6 +660,7 @@
   .opentokuten li p {
     color: #666;
     letter-spacing: 0.5px;
+    border-bottom:5px dotted #0054a7;
   }
   .opentokuten li span {
     color: #0054a7;
@@ -610,7 +685,7 @@
     text-align: center;
   }
   .openqa {
-    background: #f8f8f8;
+    background: #ebebeb;
   }
   .openqa p {
     font-size: 18px;
@@ -631,7 +706,7 @@
     width: 150px;
   }
   /* 参加する前のQ&A ↑ */
- /* 参加申し込み ↓ */
+  /* 参加申し込み ↓ */
   .mousikomi {
     text-align: center;
   }

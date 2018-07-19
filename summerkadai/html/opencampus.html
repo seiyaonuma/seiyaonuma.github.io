@@ -8,8 +8,10 @@
   <!-- ビューポートの設定 -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="../css/opencampus.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="../js/top.js"></script>
   <script>
     $(function () {
       $("#bgndVideo").YTPlayer();
@@ -141,16 +143,17 @@
   <div class="innerCont">
     <ul class="taikenList">
       <li style="height: 525px;">
+        <img src="../img/taiken/txt_taiken_system.png" alt="システム系学科">
         <div class="img">
           <img src="../img/taiken/taiken_system.jpg" alt="システム系学科の体験授業の様子" width="296" height="149">
         </div>
         <p>
-          <span>情報システム科</span>フローチャートでシステム構築
-          <span>ネットワークセキュリティ科</span>ネットワーク構築、HTMLでWEB制作
-          <span>総合システム工学科</span>フローチャートでシステム構築
-          <span>高度情報工学科</span>Androidで動くゲーム作り
+          <span>情報システム科</span><br>フローチャートでシステム構築<br>
+          <span>ネットワークセキュリティ科</span><br>ネットワーク構築、HTMLでWEB制作<br>
+          <span>総合システム工学科</span><br>フローチャートでシステム構築<br>
+          <span>高度情報工学科</span><br>Androidで動くゲーム作り<br>
         </p>
-        <dl>
+        <!-- <dl>
           <dt>
             <img src="../img/taiken/txt_taiken_aim.png" alt="こんな職業を目指す方！" width="156" height="22">
           </dt>
@@ -162,17 +165,18 @@
               <li>システムエンジニア</li>
             </ul>
           </dd>
-        </dl>
+        </dl> -->
       </li>
       <li style="height: 525px;">
+        <img src="../img/taiken/txt_taiken_business.png" alt="ビジネス系学科">
         <div class="img">
           <img src="../img/taiken/taiken_business.jpg" alt="ビジネス系学科の体験授業の様子" width="296" height="149">
         </div>
         <p>
-          <span>情報ビジネス科</span>PowerPointをつかって自己紹介
-          <span>会計ビジネス科</span>簿記演習、FP演習
+          <span>情報ビジネス科</span><br>PowerPointをつかって自己紹介<br>
+          <span>会計ビジネス科</span><br>簿記演習、FP演習<br>
         </p>
-        <dl>
+        <!-- <dl>
           <dt>
             <img src="../img/taiken/txt_taiken_aim.png" alt="こんな職業を目指す方！" width="156" height="22">
           </dt>
@@ -183,19 +187,20 @@
               <li>銀行員など</li>
             </ul>
           </dd>
-        </dl>
+        </dl> -->
       </li>
       <li style="height: 525px;">
+        <img src="../img/taiken/txt_taiken_design.png" alt="デザイン系系学科">
         <div class="img">
           <img src="../img/taiken/taiken_design.jpg" alt="デザイン系学科の体験授業の様子" width="296" height="149">
         </div>
         <p>
-          <span>グラフィックコース</span>IllustratorやPhotoshopを使いこなそう
-          <span>アニメ・マンガコース</span>Gペンを使ってマンガ制作
-          <span>CGクリエイトコース</span>CGアニメーション制作体験
-          <span>建築インテリアコース</span>CADを使って製図体験
+          <span>グラフィックコース</span><br>Photoshopを使いこなそう<br>
+          <span>アニメ・マンガコース</span><br>Gペンを使ってマンガ制作<br>
+          <span>CGクリエイトコース</span><br>CGアニメーション制作体験<br>
+          <span>建築インテリアコース</span><br>CADを使って製図体験<br>
         </p>
-        <dl>
+        <!-- <dl>
           <dt>
             <img src="../img/taiken/txt_taiken_aim.png" alt="こんな職業を目指す方！" width="156" height="22">
           </dt>
@@ -209,7 +214,7 @@
               <li>漫画家など</li>
             </ul>
           </dd>
-        </dl>
+        </dl> -->
       </li>
     </ul>
     <ul class="add">
@@ -388,7 +393,8 @@
             </th>
             <td>
               <select name="menu-o-subjest">
-                <optgroup label="システム系学科" disabled>
+                <option value="">学科を選択してください</option>
+                <optgroup label="システム系学科">
                   <option value="情報システム科 システムエンジニアコース">情報システム科 システムエンジニアコース</option>
                   <option value="情報システム科 スマートフォンアプリ開発コース">情報システム科 スマートフォンアプリ開発コース</option>
                   <option value="ネットワークセキュリティ科 ネットワークエンジニアコース">ネットワークセキュリティ科 ネットワークエンジニアコース</option>
@@ -398,13 +404,13 @@
                   <option value="総合システム工学科 ゲームプログラマコース">総合システム工学科 ゲームプログラマコース</option>
                   <option value="高度情報工学科">高度情報工学科</option>
                 </optgroup>
-                <optgroup label="ビジネス系学科" disabled>
+                <optgroup label="ビジネス系学科">
                   <option value="情報ビジネス科 情報ビジネスコース">情報ビジネス科 情報ビジネスコース</option>
                   <option value="情報ビジネス科 公共ビジネスコース">情報ビジネス科 公共ビジネスコース</option>
                   <option value="会計ビジネス科 会計ビジネスコース">会計ビジネス科 会計ビジネスコース</option>
                   <option value="会計ビジネス科 会計エキスパートコース">会計ビジネス科 会計エキスパートコース</option>
                 </optgroup>
-                <optgroup label="デザイン系学科" disabled>
+                <optgroup label="デザイン系学科">
                   <option value="デザイン科 グラフィックデザインコース">デザイン科 グラフィックデザインコース</option>
                   <option value="デザイン科 アニメ・マンガコース">デザイン科 アニメ・マンガコース</option>
                   <option value="デザイン科 CGクリエイトコース">デザイン科 CGクリエイトコース</option>
@@ -508,13 +514,23 @@
           </tr>
         </tbody>
       </table>
-      <p class="pp">
+      <p>
         <a href="http://www.mclnet.jp/policy/" target="_blank">プライバシーポリシー</a>をご確認いただき、同意の上で申し込みください。</p>
-      <div class="btnArea">
-        <input type="submit" value="送信する" class="wpcf7-form-control wpcf7-submit">
+      <div>
+        <input type="submit" value="送信する" />
       </div>
     </form>
   </div>
+
+  <!-- Twitter ↓ -->
+  <a class="twitter-timeline" width="500px" height="500px" href="https://twitter.com/morijyobi_olive?ref_src=twsrc%5Etfw">Tweets by morijyobi_olive</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <!-- Twitter ↑ -->
+
+  <!-- Facebook ↓ -->
+  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmorijyobi&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+    width="500" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  <!-- Facebook ↑ -->
 
   <!-- footer ↓ -->
 
@@ -575,6 +591,7 @@
     </div>
   </footer>
   <!-- footer ↑ -->
+  <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
 </body>
 
 </html>
