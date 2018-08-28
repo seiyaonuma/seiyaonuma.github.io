@@ -74,10 +74,6 @@ header .leaf {
   color: grey;
 }
 
-main {
-  height: 750px;
-
-}
 footer {
   height: 50px;
   background: #006A46;
@@ -105,12 +101,7 @@ footer small {
 /* ↑お品書きnav */
 
 /* ↓商品一覧 */
-#soba p{
-  text-align: center;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
+
 /* ↑商品一覧 */
 
 /* 
@@ -256,7 +247,7 @@ body{
   display: none;
 }
 #mobTop{
-  display: block;
+  display: flex;
   margin-top: 100px;
 }
 .menuNav{
@@ -275,7 +266,46 @@ body{
 /* ↑お品書きnav */
 
 /* ↓商品一覧 */
-
+#soba p{
+  text-align: center;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+#cold p{
+  padding-left: 50px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+#cold ul{
+  padding-left: 90px;
+}
+#cold li{
+  padding-right: 25px;
+  color: #fff;
+  font-size:1rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  line-height: 22px;
+}
+#hot p{
+  padding-left: 50px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+#hot ul{
+  padding-left: 90px;
+}
+#hot li{
+  padding-right: 25px;
+  color: #fff;
+  font-size:1rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  line-height: 22px;
+}
 /* ↑商品一覧 */
 
 }
