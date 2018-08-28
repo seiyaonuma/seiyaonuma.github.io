@@ -87,23 +87,6 @@ footer small {
   color: #fff;
 }
 
-/* ↓お品書きnav */
-
-/* 見出しの画像切り替え */
-#pcTop{
-  display: block;
-}
-#mobTop{
-  display: none;
-}
-/* 見出しの画像切り替え */
-
-/* ↑お品書きnav */
-
-/* ↓商品一覧 */
-
-/* ↑商品一覧 */
-
 /* 
 
 -- 共通とpc版の記述ここまで --
@@ -238,74 +221,5 @@ div.open {
 footer {
   margin-left: 0;
 }
-/* ↓お品書きnav */
-body{
-  background-image: url(../img/background1.jpg);
-}
-/* 見出しの画像切り替え */
-#pcTop{
-  display: none;
-}
-#mobTop{
-  display: flex;
-  margin-top: 100px;
-}
-.menuNav{
-  display: flex;
-  margin-left: 40%;
-}
-.name{
-  color: #fff;
-}
-.menuNav th{
-  text-decoration: underline #006A46;
-}
-
-  /* 見出しの画像おわり */
-
-/* ↑お品書きnav */
-
-/* ↓商品一覧 */
-#soba p{
-  text-align: center;
-  color: #fff;
-  font-size: 1.7rem;
-  font-weight: 500;
-}
-#cold p{
-  padding-left: 50px;
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 300;
-}
-#cold ul{
-  padding-left: 90px;
-}
-#cold li{
-  padding-right: 25px;
-  color: #fff;
-  font-size:1rem;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  line-height: 22px;
-}
-#hot p{
-  padding-left: 50px;
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 300;
-}
-#hot ul{
-  padding-left: 90px;
-}
-#hot li{
-  padding-right: 25px;
-  color: #fff;
-  font-size:1rem;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  line-height: 22px;
-}
-/* ↑商品一覧 */
 
 }
