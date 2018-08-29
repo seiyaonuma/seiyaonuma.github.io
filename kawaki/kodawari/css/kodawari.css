@@ -88,16 +88,50 @@ body{
 /* ↓地元釜石の土地 */
 .toti p{
   text-align: center;
-  padding-right: 130px;
+  padding-right:90px;
   margin-top: 40px;
-  font-size: 2.3vw;
+  font-size: 3vw;
 }
 .toti h2{
   text-align: center;
-  font-size: 3.3vw;
+  font-size: 4.5vw;
   font-weight: 500;
 }
+.toti h3{
+  padding-left: 80px;
+  font-size: 3vw;
+  color: #006A46;
+  font-weight: 500;
+}
+#toti{
+  padding-left: 90px;
+  font-size: 2.5vw;
+}
 /* ↑地元釜石の土地 */
+
+/* ↓地元釜石の水 */
+.mizu p{
+  text-align: center;
+  padding-right:90px;
+  margin-top: 40px;
+  font-size: 3vw;
+}
+.mizu h2{
+  text-align: center;
+  font-size: 4.5vw;
+  font-weight: 500;
+}
+.mizu h3{
+  padding-left: 80px;
+  font-size: 3vw;
+  color: #006A46;
+  font-weight: 500;
+}
+#mizu{
+  padding-left: 90px;
+  font-size: 2.5vw;
+}
+/* ↑地元釜石の水 */
 }
  /* 
 
