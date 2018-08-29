@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/*
+
+--PC版ここから--
+
+*/
+
+/* ↓お品書きnav */
+
+/* 見出しの画像切り替え */
+#pcTop{
+  display: block;
+}
+#mobTop{
+  display: none;
+}
+/* 見出しの画像切り替え */
+
+/* ↑お品書きnav */
+
+/* ↓商品一覧 */
+
+/* ↑商品一覧 */
+
+/* 
+
+--PC版ここまで--
+
+ */
+
+/* 
+
+--モバイル版ここから--
+
+ */
+@media only screen and (max-width:768px){
+/* ↓お品書きnav */
+body{
+  background-image: url(../img/background1.jpg);
+}
+/* お品書きタイトル */
+.nav{
+  position: relative;
+}
+.nav p{
+  position: absolute;
+  color: #fff;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 7vw;
+  text-shadow: 0 3px 6px #333333;
+  top: 100px;
+  left: 0;
+}
+.nav img{
+  width: 100%;
+}
+/* お品書きタイトルend */
+
+/* 見出しの画像切り替え */
+#pcTop{
+  display: none;
+}
+#mobTop{
+  display: flex;
+  margin-top: 100px;
+}
+.menuNav{
+  display: flex;
+  margin-left: 40%;
+}
+.name{
+  color: #fff;
+}
+.menuNav th{
+  text-decoration: underline #006A46;
+}
+
+body{
+  background-image: url(../img/background1.jpg);
+}
+
+/* 見出しの画像切り替え*/
+
+/* ↑お品書きnav */
+
+/* ↓地元釜石の土地 */
+.toti p{
+  text-align: center;
+  padding-right: 130px;
+  margin-top: 40px;
+  font-size: 2.3vw;
+}
+.toti h2{
+  text-align: center;
+  font-size: 3.3vw;
+  font-weight: 500;
+}
+/* ↑地元釜石の土地 */
+}
+ /* 
+
+ --モバイル版ここまで
+ 
+  */
