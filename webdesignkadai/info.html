@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MCL盛岡情報ビジネス専門学校|お問い合わせ</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/info.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="innerHeader">
+      <h1>
+        MCL盛岡情報ビジネス専門学校
+      </h1>
+      <div id="nav-toggle">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="global-nav">
+        <nav class="nav">
+          <div class="nav-inner">
+            <ul class="navList">
+              <li>
+                <a href="#">学科紹介</a>
+              </li>
+              <li>
+                <a href="#">オープンキャンパスに関して</a>
+              </li>
+              <li>
+                <a href="#">就職実績</a>
+              </li>
+              <li>
+                <a href="#">お問い合わせ</a>
+              </li>
+            </ul>
+            <div class="tel-box">
+              <p class="tel">TEL：(0193)-27-5811</p>
+              <p class="teltext">予約・貸切の際はこちらまで</p>
+              <img class="leaf" src="img/menu.png" alt="">
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ↓main -->
+  <main>
+    <!-- ↓FV -->
+    <div class="nav">
+      <img src="img/midasi.png" alt="PC用の画像" id="pcTop" width="100%">
+      <img src="img/form.jpg" alt="スマホ用の画像" id="mobTop" width="100%">
+      <p>お問い合わせ</p>
+    </div>
+    <!-- ↑FV -->
+    <!-- ↓form -->
+    <div class="form">
+      <form action="#" method="POST">
+        <p>お名前<br>
+        <input type="text" name="name"></p>
+        <p>メールアドレス<br>
+          <input type="text" name="mail"></p>
+        <p>お問い合わせ内容<br>
+          <textarea name="comment" cols="30" rows="5"></textarea></p>
+      </form>
+    </div>
+    <!-- ↑form -->
+
+  </main>
+  <!-- ↑main -->
+  <footer>
+    <small>©2018．Jyobi Web AP SeiyaOnuma</small>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('#nav-toggle').on('click', function () {
+        $(this).toggleClass('open');
+        $('.nav-inner').toggleClass('open');
+      });
+    });</script>
+</body>
+
+</html>
