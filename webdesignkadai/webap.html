@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MCL盛岡情報ビジネス専門学校|オープンキャンパスに関して</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/jyobi.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="innerHeader">
+      <h1>
+        MCL盛岡情報ビジネス専門学校
+      </h1>
+      <div id="nav-toggle">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="global-nav">
+        <nav class="nav">
+          <div class="nav-inner">
+            <ul class="navList">
+              <li>
+                <a href="webap.html">学科紹介</a>
+              </li>
+              <li>
+                <a href="oc.html">オープンキャンパスに関して</a>
+              </li>
+              <li>
+                <a href="#">就職実績</a>
+              </li>
+              <li>
+                <a href="info.html">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ↓main -->
+  <main>
+    <!-- ↓FV -->
+    <div class="nav">
+      <img src="img/midasi.png" alt="PC用の画像" id="pcTop" width="100%">
+      <img src="img/mac.jpg" alt="スマホ用の画像" id="mobTop" width="100%">
+      <p>Webネットワーク科</p>
+      <p id="fvwebap">Webアプリケーションコース</p>
+    </div>
+    <!-- ↑FV -->
+    <!-- ↓title -->
+    <div class="title">
+        <h2>Webアプリケーションコースの特徴</h2>
+        <p>ゼロから始めよう！Webについて</p>
+      </div>
+    <!-- ↑title -->
+    <!-- ↓カリキュラム -->
+    <div class="curriculum">
+        <h3>1.初心者でも安心なカリキュラム</h3>
+        <p id="fast">誰でも最初は初心者です</p>
+        <img src="img/mba.jpg" alt="MacBook Air" id="mba" width="90%">
+        <p>誰でも最初は初心者。分からないのが当然。</p>
+        <p>だから私達<span id="morijyobi">モリジョビ</span>があるのです。</p>
+        <p>初心者でも2年後の卒業するまでに立派なエンジニアに成長できるよう全面バックアップを約束します。</p>
+      </div>
+    <!-- ↑カリキュラム -->
+    <!-- ↓国家試験 -->
+    <div class="examanation">
+        <h3>2.高度な国家試験に挑戦できるのは<span class="morijyobi">モリジョビ</span>だけ</h3>
+        <p id="taisaku">モリジョビだと授業で国家試験対策も練り込まれています</p>
+        <img src="img/book.jpg" alt="図書館" id="book" width="90%">
+        <p>普通の学校だと試験は独学で勉強するのが当たり前。</p>
+        <p>そんな考えはもう時代遅れです。</p>
+        <p><span class="morijyobi">モリジョビ</span>では確実に国家試験合格に向けて独自のカリキュラムで対策します。</p>
+      </div>
+    <!-- ↑国家試験 -->
+    <!-- ↓study -->
+    <div class="study">
+        <h3>3.勉強も本気　遊びも本気</h3>
+        <p id="study">勉強だけの時代はもう終わりました</p>
+        <img src="img/asobi.jpg" alt="砂場" id="asobi" width="90%">
+        <p>学生なのに勉強だけではもったいない。</p>
+        <p><span class="morijyobi">モリジョビ</span>は勉強も遊びも本気です。</p>
+        <p><span class="morijyobi">モリジョビ</span>では各学科ごとにレクリエーションの実施をしています。BBQ,スポーツ大会,お好み焼き...etc</p>
+      </div>
+    <!-- ↑study -->
+  </main>
+  <!-- ↑main -->
+  <footer>
+    <small>©2018．Jyobi Web AP SeiyaOnuma</small>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('#nav-toggle').on('click', function () {
+        $(this).toggleClass('open');
+        $('.nav-inner').toggleClass('open');
+      });
+    });</script>
+</body>
+
+</html>

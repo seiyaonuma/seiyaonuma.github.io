@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* ↓PC版ここから */
+
+/* ↑PC版ここまで */
+
+/* ↓モバイル版ここから */
+
+@media only screen and (max-width:768px) {
+
+  /* ↓FV */
+  .nav {
+    position: relative;
+  }
+  .nav p {
+    position: absolute;
+    color: #fff;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 4vw;
+    text-shadow: 0 3px 6px #333333;
+    top: 130px;
+    left: 0;
+  }
+  #fvwebap{
+    position: absolute;
+    color: #fff;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 5vw;
+    text-shadow: 0 3px 6px #333333;
+    top: 150px;
+    left: 0;
+  }
+  .nav img {
+    width: 100%;
+  }
+  /* ↑FV */
+  
+  /* ↓form */
+  .form{
+    padding-left: 100 px;
+  }
+  .form p{
+    padding-right: 30px;
+  }
+  /* ↑form */
+
+  /* ↓title */
+  .title h2{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 500;
+    color: #333333;
+  }
+  .title p{
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: 400;
+    color: #333333;
+  }
+  /* ↑title */
+
+  /* ↓説明 */
+  .jyobioc p{
+    font-size: 3.8vw;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+  }
+  /* ↑説明 */
+
+  /* ↓bas */
+  .bas h3{
+    font-size: 5vw;
+    font-weight: 500;
+  }
+  #tada{
+    color: #0054A7;
+    font-weight: 600;
+  }
+  #iwateakitaaomori{
+    color: #666666;
+    font-size: 3.6vw;
+  }
+  .bas img{
+    padding-left: 18px;
+  }
+  .bas p{
+    color: #333333;
+    font-size:3.8vw;
+    font-weight: 500;
+    padding-left: 20px;
+  }
+  /* ↑bas */
+
+  /* ↓money */
+  .money h3{
+    font-size: 5vw;
+    font-weight: 500;
+  }
+  #money{
+    color: #0054A7;
+    font-weight: 600;
+  }
+  #High School{
+    color: #666666;
+    font-size: 3.6vw;
+  }
+  .money img{
+    padding-left: 18px;
+  }
+  .money p{
+    color: #333333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    padding-left: 20px;
+  }
+  /* ↑money */
+
+  /* ↓lunch */
+  .lunch h3{
+    font-size: 5vw;
+    font-weight: 500;
+  }
+  #present{
+    color: #0054A7;
+    font-weight: 600;
+  }
+  #athome{
+    color: #666666;
+    font-size: 3.6vw;
+  }
+  .lunch img {
+    padding-left: 18px;
+  }
+  .lunch p{
+    color: #333333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    padding-left: 20px;
+  }
+  /* ↑lunch */
+
+  /* ↓calendar */
+  .calendar h3{
+   font-size: 5vw;
+   font-weight: 500;
+   text-align: center;
+  }
+  #calendar{
+    color: #0054A7;
+    font-weight: 600;
+  }
+  .calendar p{
+    padding-left: 40px;
+  }
+  .day{
+    padding-left: 80px;
+  }
+  .dd{
+    padding-left: 72px;
+  }
+  /* ↑calendar */
+
+  /* ↓curriculum */
+  .curriculum h3{
+    font-size: 5vw;
+    font-weight: 500;
+  }
+  #fast{
+    color: #666666;
+    font-size: 3.6vw;
+  }
+  .curriculum img{
+    padding-left: 18px;
+  }
+  .curriculum p{
+    color: #333333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    padding-left: 20px;
+  }
+  /* ↑curriculum */
+}
+
+/* ↑モバイル版ここまで */

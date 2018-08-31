@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <header class="header">
+    <div class="innerHeader">
+      <h1><a href=""></a></h1>
+      <div id="nav-toggle">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </div>
+        <div class="global-nav">
+          <nav class="nav">
+              <div class="nav-inner">
+                  <!-- <div class="logo pcNone"><a href="./"><img src="img/logoMv.png" alt=""></a></div> -->
+                  <ul class="navList">
+                      <li><a href="#">TOPページ</a></li>
+                      <li><a href="#">こだわり</a></li>
+                      <li><a href="#">お品書き</a></li>
+                      <li><a href="#">川㐂家について</a></li>
+                      <li><a href="#">店舗情報</a></li>
+                  </ul>
+                  <div class="tel-box">
+                    <p class="tel">TEL：(0193)-27-5811</p>
+                    <p class="teltext">予約・貸切の際はこちらまで</p>
+                    <img  class="leaf"src="img/menu.png" alt="">
+                  </div>
+              </div>
+          </nav>
+        </div>
+    </div>
+  </header>
+  <!-- ↓ここから内容 -->
+
+  <!-- ↓見出しの画像 -->
+    <img src="img/midasi.png" alt="PC用の画像" id="pcTop" width="100%">
+    <img src="img/mobile_osinagakiTop.png" alt="スマホ用の画像" id="mobTop" width="100%">
+  <!-- ↑見出しの画像ここまで -->
+
+  <main>
+
+    <!-- ↓お品書きnav -->
+    <p class="title">お品書き</p>
+    <div class="MenuNavi">
+      <div class="inner">
+      <div class="nameNv"><a href="#" class="name">お蕎麦</a></div>
+      <div class="nameNv"><a href="#" class="name">うどん</a></div>
+      <div class="nameNv"><a href="#" class="name">ラーメン</a></div>
+      <div class="nameNv"><a href="#" class="name">ごはんもの</a></div>
+      <div class="nameNv"><a href="#" class="name">セットメニュー</a></div>
+      </div>
+    </div>
+    <!-- ↑お品書きnav -->
+
+    <!-- ↓商品一覧 -->
+    <div id="soba">
+      <p id="osoba">お蕎麦</p>
+    </div>
+    <div id="cold">
+      <p class="sobap">冷たいお蕎麦</p>
+      <ul>
+        <li>和山もり蕎麦</li>
+        <li>ぶっかけ蕎麦</li>
+        <li>めかぶ蕎麦</li>
+        <li>月見とろろ蕎麦</li>
+        <li>せいろ蕎麦</li>
+        <li>天せいろ蕎麦</li>
+        <li>手打ちせいろ蕎麦※夜限定</li>
+        <li>手打ち天せいろ蕎麦※夜限定</li>
+      </ul>
+    </div>
+    <div id="hot">
+        <p class="sobap">温かいお蕎麦</p>
+        <ul>
+          <li>ぶっかけ蕎麦</li>
+          <li>かけ蕎麦</li>
+          <li>野菜かきあげ蕎麦</li>
+          <li>めかぶ蕎麦</li>
+          <li>えび天蕎麦</li>
+        </ul>
+      </div>
+    <!-- ↑商品一覧 -->
+  </main>
+    <!-- ↑ここまで内容 -->
+  <footer>
+    <small>©2018．有限会社カワキ商事</small>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+$(function() {
+ $('#nav-toggle').on('click', function () {
+  $(this).toggleClass('open');
+  $('.nav-inner').toggleClass('open');
+ });
+});</script>
+</body>
+
+</html>
