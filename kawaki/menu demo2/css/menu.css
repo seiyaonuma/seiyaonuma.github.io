@@ -86,37 +86,49 @@ body{
 /* ↓メニュー */
 .title{
   font-size: 1.7rem;
+  font-weight: 500;
   text-align: center;
   color: #fff;
-  font-weight: 500;
+
 }
 
 .MenuNavi{
-  width: 200px;         /*横幅の指定*/
+  width: 210px;         /*横幅の指定*/
   margin: auto;         /*中央に寄せる*/
+
 }
 
 .inner{
   height: 150px;          /*高さの指定*/
-  width: 200px;         /*横幅の指定*/
+  width: 210px;         /*横幅の指定*/
   display: flex;          /*子要素の横並び*/
   flex-wrap: wrap;          /*子要素の折り返し　折り返しなし*/
   justify-content: space-around;          /*水平方向の位置揃え　均等配置*/
   align-items: center;          /*全体を中央揃え*/
   border-bottom: solid #fff;
+
 }
 
 .nameNv{
-  /*border-top: solid #fff;*/
-  width: 100px;
-  text-align: center;
-  border-top: solid #fff;
-  padding-top: 12px;
+  width: 100px;         /*幅の指定*/
+  text-align: center;         /*中央寄せ*/
+  border-top: solid #fff;         /*上線の指定　実線*/
+  padding-top: 12px;            /*上パディングの指定*/
+  border-right: solid #fff;         /*右横線の指定　実線*/
+  padding-right: 1px;         /*右パディングの指定*/
+  padding-bottom: 20px;         /*下パディングの指定*/
 }
 
-.nameNv:last-child{
-  padding-left: 50px;
-  padding-right: 50px;
+.inner .nameNv:nth-child(2n){         /*インナーの.nameNvの偶数に適用されるcss*/
+  overflow: hidden;         /*はみ出し非表示*/
+  border-right: none;         /*右線の表示を消す*/
+  padding-left: 5px;          /*左パディングの指定*/
+}
+
+.nameNv:last-child{         /*.nameNvの最後に適用されるcss*/
+  padding-left: 55px;         /*左パディングの指定*/
+  padding-right: 55px;          /*右パディングの指定*/
+  border-right: none;         /*右線の表示を消す*/
 }
 
 .name{
@@ -124,10 +136,12 @@ body{
   font-weight: bold;          /*フォントのサイズ指定*/
   color: #fff;          /*フォントのカラー指定*/
   border-bottom: solid #006A46;         /*下線の指定　実線*/
-  padding-bottom: 1px;          /*下線の位置指定*/
+  padding-bottom: 2px;          /*下線の位置指定*/
   white-space: nowrap;          /*文字の折り返し　折り返しなし*/
   /*background-color: black;*/
 }
+
+/* ↑お品書きnav */
 /* ↑メニュー */
 
 /* ↓商品一覧 */

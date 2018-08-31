@@ -88,7 +88,7 @@ body{
 /* ↓地元釜石の土地 */
 .toti p{
   text-align: center;
-  padding-right:90px;
+  padding-right:150px;
   margin-top: 40px;
   font-size: 3vw;
 }
@@ -104,7 +104,7 @@ body{
   font-weight: 500;
 }
 #toti{
-  padding-left: 90px;
+  padding-left: 130px;
   font-size: 2.5vw;
 }
 /* ↑地元釜石の土地 */
@@ -112,7 +112,7 @@ body{
 /* ↓地元釜石の水 */
 .mizu p{
   text-align: center;
-  padding-right:90px;
+  padding-right:130px;
   margin-top: 40px;
   font-size: 3vw;
 }
@@ -128,10 +128,42 @@ body{
   font-weight: 500;
 }
 #mizu{
-  padding-left: 90px;
+  padding-left: 130px;
   font-size: 2.5vw;
 }
 /* ↑地元釜石の水 */
+
+/* ↓岩手県産の蕎麦粉 */
+.sobako p{
+  text-align: center;
+  padding-right: 180px;
+  margin-top: 40px;
+  font-size: 3vw;
+}
+.sobako h2{
+  text-align: center;
+  font-size: 4.5vw;
+  font-weight: 500;
+}
+.sobako h3{
+  padding-left: 80px;
+  font-size: 3vw;
+  color: #006A46;
+  font-weight: 500;
+}
+#sobako{
+  padding-left: 170px;
+  font-size: 2.5vw;
+}
+/* ↑岩手県産の蕎麦粉 */
+
+/* ↓最後の説明文 */
+.explanatorytext p{
+  font-size: 3vw;
+  text-align: center;
+  letter-spacing: 0.4vw;
+}
+/* ↑最後の説明文 */
 }
  /* 
 
