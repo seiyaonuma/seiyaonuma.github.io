@@ -21,9 +21,9 @@ body {
 
 .global-nav ul{
   display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    list-style-type: none;
+  vertical-align: middle;
+  text-align: center;
+  list-style-type: none;
 }
 
 .global-nav ul a{

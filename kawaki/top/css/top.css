@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+.news , .cd{
+  background-image: url(../img/p0074_m.png);
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* ファーストビュー */
+
+.fv {
+  /* margin-top: 100px; */
+  height: 100vh;
+  background-image: url(../img/top/top_fv.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.fv p {
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.fv p span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+/* 新着情報 */
+
+.news {
+  width: 100%;
+}
+
+.news iframe {
+  width: 80%;
+  height: 100%;
+  margin: 10% 10%;
+}
+
+
+/* こだわり */
+
+.cd .textbox{
+  width: 90%;
+  margin: 50px auto;
+}
+.cd p {
+  line-height: 47px;
+  text-align: center;
+}
+
+.cd a {
+  display: block;
+  text-align: right;
+  
+}
+
+/* お品書き */
+
+.menuTop {
+  background-image: url(../img/top/background1.jpg);
+  color: #FFFFFF;
+  clear: both;
+  
+
+}
+
+.menuTop h2 {
+  /* -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl; */
+  display: block;
+  padding: 40px 0;
+  margin: 0 auto;
+  letter-spacing: 4px;
+  line-height: 1.4em;
+  width: 10px;
+}
+
+.menuTop p {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.menuTop img {
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.menuTop img:nth-of-type(2n+1) {
+  float: right;
+}
+.menuTop img:nth-of-type(2n) {
+  float: left;
+}
+
+.menuTop p:nth-of-type(2n) {
+  float: right;
+  padding-right: 5vw;
+}
+.menuTop p:nth-of-type(2n+1) {
+  float: left;
+  padding-left: 5vw;
+}
+
+.menuTop .textinfoBox p{
+  clear: both;
+  writing-mode: inherit;
+  float: none;
+  text-align: center;
+  line-height: 2.1em;
+}
+
+.menuTop .textBox p {
+  float: none;
+  writing-mode: horizontal-tb;
+  -ms-writing-mode: horizontal-tb;
+  line-height: 47px;
+  text-align: center;
+}
+
+.menuTop .button img {
+  clear: both;
+  float: none;
+  width: 50%;
+}
+
+.menuTop .button a {
+  display: block;
+  text-align: right;
+}
+
+/* カワキ家について */
+
+.kawakiInfo h2{
+  /* -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl; */
+  display: block;
+  padding: 30px;
+  margin: 0 auto;
+  letter-spacing: 4px;
+  width: 10px;
+  line-height: 1.4em;
+}
+
+.sam {
+  width: 100%;
+}
+
+.textbox {
+  /* writing-mode: horizontal-tb;
+  -ms-writing-mode: horizontal-tb; */
+  line-height: 47px;
+  text-align: center;
+}
+
+.button img {
+  width: 50%;
+}
+
+.button a {
+  display: block;
+  text-align: right;
+}
+
+/* 店舗ご案内 */
+
+.tenpoTop {
+  background-image: url(../img/top/background1.jpg);
+  color: #FFFFFF;
+}
+
+.tenpoTop h2 {
+  /* -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl; */
+  display: block;
+  padding: 30px;
+  margin: 0 auto;
+  letter-spacing: 4px;
+  width: 10px;
+  line-height: 1.4em;
+}
+
+/* マップと会社概要 */
+
+.gmap iframe {
+  width: 100%;
+  height: 430px;
+}
+
+.company {
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.dai {
+  font-size: 20px;
+}
+
+.dai::before {
+  content:'■';
+  color:#006A46;
+}
+
+.coment {
+  font-size: 14px;
+  color: #333232;
+  margin-left: 10px;
+}
+
+.round {
+  width: 40vw;
+  height: 20vw;
+  border: 1px solid #707070;
+  border-radius: 25vw;
+  text-align: center;
+  line-height: 20vw;
+}
+
+.round:first-child {
+  float: right;
+}
+
+.sns {
+  clear: both;
+  width: 85vw;
+  margin:auto;
+}
+
