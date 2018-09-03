@@ -80,10 +80,16 @@ h2 {
   width: 100%;
 }
 
-.news iframe {
+.news .facebookinfo{
+  text-align: center;
+  margin: auto;
+}
+
+.news iframe{
   width: 80%;
   height: 100%;
-  margin: 10% 10%;
+  padding: 0%;
+  margin: 10%;
 }
 
 
