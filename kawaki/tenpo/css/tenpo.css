@@ -133,6 +133,9 @@
     margin: 20px;
     margin-right: 10px;
   }
+  #contact{
+    padding-bottom: 5%;
+  }
   /* ↑店舗情報 */
   /* ↓Google Map */
   .map {
