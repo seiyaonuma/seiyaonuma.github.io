@@ -11,7 +11,9 @@ body {
   padding: 0px;
 }
 
-
+main {
+  margin-left: 200px;
+}
 
 
 #nav-toggle {
@@ -229,11 +231,5 @@ div.open {
 
 footer {
   margin-left: 0;
-}
-}
-
-@media only screen and (min-width: 769px){
-main {
-  margin-left: 200px;
 }
 }
