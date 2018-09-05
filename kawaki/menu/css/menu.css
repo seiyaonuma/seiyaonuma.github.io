@@ -188,6 +188,46 @@ body{
   letter-spacing: 0.1em;
   line-height: 28px;
 }
+.Name_M{
+  text-align: center;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.Name_p::before{
+  content: '■';
+  color: #23D900;
+  margin: 10px;
+}
+.Menulist p{
+  padding-left: 50px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.Menulist ul{
+  padding-left: 103px;
+}
+.Menulist li{
+  color: #fff;
+  font-size:1rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  line-height: 28px;
+}
+.Menulist span{
+  overflow: hidden;
+  padding-left: 80px;
+  color: #fff;
+  font-size:1rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  line-height: 28px;
+}
+
+#setmenu{
+  padding-bottom: 3rem;
+}
 /* ↑商品一覧 */
 
 }
