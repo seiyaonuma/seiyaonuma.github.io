@@ -1,5 +1,27 @@
 @charset "UTF-8";
 
+/* ↓PC版 */
+
+/* ↑PC版 */
+.tenpoTop h2{
+  padding-left: 50%;
+  /* color: #fff; */
+}
+.sam{
+  width: 100%;
+  width:1448px;
+  height: 915px;
+  padding-left: 16%;
+}
+.textbox {
+  line-height: 47px;
+  padding-left: 44%;
+}
+.button img {
+  padding-left: 70%;
+}
+/* ↓モバイル版 */
+@media only screen and (max-width:768px) {
 .news , .cd{
   background-image: url(../img/p0074_m.png);
 }
@@ -284,3 +306,5 @@ h2 {
   margin:auto;
 }
 
+}
+/* ↑モバイル版 */

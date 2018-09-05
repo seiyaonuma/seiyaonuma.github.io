@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MCL盛岡情報ビジネス専門学校|オープンキャンパスに関して</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/common.css"> -->
+  <link rel="stylesheet" href="css/jyobi.css">
+</head>
+
+<body>
+  <header class="header">
+      <h1>
+        MCL盛岡情報ビジネス専門学校
+      </h1>
+      <div id="nav-toggle">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="global-nav">
+        <nav class="nav">
+          <div class="nav-inner">
+            <ul class="navList">
+              <li>
+                <a href="webap.html">学科紹介</a>
+              </li>
+              <li>
+                <a href="oc.html">オープンキャンパスに関して</a>
+              </li>
+              <li>
+                <a href="#">就職実績</a>
+              </li>
+              <li>
+                <a href="info.html">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  </header>
+  <!-- ↓main -->
+  <main>
+    <!-- ↓FV -->
+    <div class="nav">
+      <img src="img/midasi.png" alt="PC用の画像" id="pcTop" width="100%">
+      <img src="img/mac.jpg" alt="スマホ用の画像" id="mobTop" width="100%">
+      <p>就職実績</p>
+    </div>
+    <!-- ↑FV -->
+    <!-- ↓title -->
+    <div class="title">
+      <h2>専門就職に強いモリジョビ!</h2>
+      <p>毎年、東北県内トップレベルの就職実績</p>
+    </div>
+    <!-- ↑title -->
+    <!-- ↓内定一覧title -->
+    <div class="listtitle">
+      <h2>平成29年度就職内定一覧</h2>
+    </div>
+    <!-- ↑内定一覧title -->
+    <!-- ↓会社一覧 -->
+    <div class="list">
+      <table border="1" width="300" cellspacing="0" cellpadding="7" bordercolor="#333333">
+        <tr>
+          <th>会社名</th>
+          <th>性別</th>
+        </tr>
+        <tr>
+          <th>株式会社Webエンジニアリング</th>
+          <th>男性</th>
+        </tr>
+        <tr>
+          <th>株式会社Web Net</th>
+          <th>男性</th>
+        </tr>
+        <tr>
+          <th>Systems Morioka</th>
+          <th>女性</th>
+        </tr>
+        <tr>
+          <th>Web Net盛岡</th>
+          <th>男性</th>
+        </tr>
+        <tr>
+          <th>Web Design</th>
+          <th>女性</th>
+        </tr>
+      </table>
+    </div>
+    <!-- ↑会社一覧 -->
+  </main>
+  <!-- ↑main -->
+  <footer>
+    <small>©2018．Jyobi Web AP SeiyaOnuma</small>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('#nav-toggle').on('click', function () {
+        $(this).toggleClass('open');
+        $('.nav-inner').toggleClass('open');
+      });
+    });</script>
+</body>
+
+</html>

@@ -1,31 +1,20 @@
 @charset "UTF-8";
-
-/* 
-
--- 共通とpc版の記述ここから --
-
-*/
-
+/* ↓PC common */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
   margin: 0px;
   padding: 0px;
 }
-
-
 #nav-toggle {
-  display: none; /* ハンバーガーメニューをpcでは非表示*/
+  display: none;
 }
-
 /* メニュー */
-
 .global-nav ul{
   display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    list-style-type: none;
+  vertical-align: middle;
+  text-align: center;
+  list-style-type: none;
 }
-
 .global-nav ul a{
   display: block;
   height: 40px;
@@ -34,88 +23,21 @@ body {
   font-size: 16px;
 }
 
-/* ヘッダー全体 */
-
-header {
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    height: 100%;
-    width: 200px;
-    font-weight: 600;
-    background-color: #fff;
-    background-image: url(../img/p0074_m.png);
-}
-
-header h1{
-  display: block;
-  height: 200px;
-  font-size: 5vw;
-  padding-top: 25px;
-  color: #0054A7;
-  text-shadow: 1px 1px #fff;
-  text-align: left;
-}
-
-header .leaf {
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  width: 50%;
-}
-
-footer {
-  height: 50px;
-  background: #0054A7;
-  text-align: center;
-  margin-left: 200px;
-}
-
-footer small {
-  line-height: 42px;
-  font-size: 16px;
-  color: #fff;
-}
-
-/* 
-
--- 共通とpc版の記述ここまで --
-
-*/
-
-
-
-/* 
-
-モバイル（768px）の記述 
-
-*/
-
-@media only screen and (max-width: 768px){
-
-  header {
+/* ↓header */
+header{
   width: 100%;
-  height: 80px;
-  background-size: cover;
+  position: fixed;
+  background-color: #fff;
 }
-
-header .leaf {
-  right: 20px;
-  bottom: 120px;
+header h1{
+  padding-top: 10px;
+  padding-left: 20px;
+  color: #0054A7;
+  text-shadow: #333333;
 }
+/* ↑header */
 
-header h1 a{
-  margin: 30px 10px;
-  width: 160px;
-  height: 40px;
-  background: url(../img/logoMv.png) no-repeat;
-  background-size: 100%;
-
-}
-
-/* ハンバーガーメニュー */
+/* ↓humber menu */
 #nav-toggle {
   display: block;
   position: absolute;
@@ -126,7 +48,6 @@ header h1 a{
   cursor: pointer;
   z-index: 9999;
 }
-
 #nav-toggle span {
   display: block;
   position: absolute;
@@ -138,7 +59,6 @@ header h1 a{
   -moz-transition: .35s ease-in-out;
   transition: .35s ease-in-out;
 }
-
 #nav-toggle span:nth-child(2) {
   top: 13px;
 }
@@ -146,10 +66,6 @@ header h1 a{
 #nav-toggle span:nth-child(3) {
   top: 26px;
 }
-
-
-/* ハンバーガーメニュー　開いたときの記述  */
-
 #nav-toggle.open span:nth-of-type(1) {
   -webkit-transform: translateY(15px) rotate(-45deg);
   transform: translateY(15px) rotate(-45deg);
@@ -166,9 +82,6 @@ header h1 a{
 #nav-toggle.open span:nth-child(3)::before {
   content: ""
 }
-
-/* モバイル版メニュー */
-
 .nav-inner {
   position:fixed;
   top:0px;
@@ -184,25 +97,138 @@ header h1 a{
   transition:ease .5s;
   z-index:1;
 }
-
 div.open {
   -webkit-transform:translateX(0);
   transform:translateX(0);
 }
-
 .global-nav ul{
   display: inline;
     vertical-align: auto;
     text-align: left;
 }
-
 .global-nav ul a {
   height: 60px;
   font-size: 20px;
 }
+/* ↑humber menu */
 
+/* ↓footer */
+
+/* ↑footer */
+
+/* ↑PC common */
+
+/* ↓mobile common */
+
+@media only screen and (max-width: 768px){
+
+/* ↓header */
+header {
+  width: 100%;
+  height: 80px;
+  z-index: 9999;
+  position: fixed;
+  font-weight: 600;
+  background-size: cover;
+  background-color: #fff;
+}
+header h1{
+  margin-top: 3%;
+  padding-top: 3%;
+  padding-left: 2%;
+  font-size: 4vw;
+  color: #0054A7;
+  text-shadow: #333333;
+}
+header .leaf {
+  right: 20px;
+  bottom: 120px;
+}
+
+header h1 a{
+  margin: 30px 10px;
+  width: 160px;
+  height: 40px;
+  background-size: 100%;
+}
+/* ↑header */
+
+/* ↓humber menu */
+#nav-toggle {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 9999;
+}
+#nav-toggle span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #0054A7;
+  left: 0;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+}
+#nav-toggle span:nth-child(2) {
+  top: 13px;
+}
+#nav-toggle span:nth-child(3) {
+  top: 26px;
+}
+#nav-toggle.open span:nth-of-type(1) {
+  -webkit-transform: translateY(15px) rotate(-45deg);
+  transform: translateY(15px) rotate(-45deg);
+}
+#nav-toggle.open span:nth-of-type(2) {
+  opacity: 0;
+}
+#nav-toggle.open span:nth-of-type(3) {
+  -webkit-transform: translateY(-15px) rotate(45deg);
+  transform: translateY(-13px) rotate(45deg);
+}
+#nav-toggle.open span:nth-child(3)::before {
+  content: ""
+}
+.nav-inner {
+  position:fixed;
+  top:0px;
+  right:0;
+  width: 230px;
+  height: 100%;
+  background: #fff;
+  background-image: url(../img/p0074_m.png);
+  padding: 100px 10px 0 10px;
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+  -webkit-transition:ease .5s;
+  transition:ease .5s;
+  z-index:1;
+}
+div.open {
+  -webkit-transform:translateX(0);
+  transform:translateX(0);
+}
+.global-nav ul{
+  display: inline;
+    vertical-align: auto;
+    text-align: left;
+}
+.global-nav ul a {
+  height: 60px;
+  font-size: 20px;
+}
+/* ↑humber menu */
+
+/* ↓footer */
 footer {
   margin-left: 0;
 }
-
+/* ↑footer */
 }
+/* ↑mobile common */
