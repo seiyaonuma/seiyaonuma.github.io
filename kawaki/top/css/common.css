@@ -1,15 +1,18 @@
 @charset "UTF-8";
 
 /* 
-
 -- 共通とpc版の記述ここから --
-
 */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
   margin: 0px;
   padding: 0px;
+}
+
+main {
+  margin-left: 200px;
 }
 
 
@@ -96,16 +99,13 @@ footer small {
 }
 
 /* 
-
 -- 共通とpc版の記述ここまで --
-
 */
 
 
+
 /* 
-
 モバイル（768px）の記述 
-
 */
 
 @media only screen and (max-width: 768px){
@@ -124,11 +124,15 @@ header .leaf {
 
 header h1 a{
   margin: 30px 10px;
-  width: 160px;
-  height: 40px;
-  background: url(../img/logoMv.png) no-repeat;
+  width: 240px;
+  height: 41px;
+  background: url(../img/LOGO.png) no-repeat;
   background-size: 100%;
 
+}
+
+main {
+  margin-left: 0;
 }
 
 /* ハンバーガーメニュー */
