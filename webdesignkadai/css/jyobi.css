@@ -39,6 +39,7 @@ header {
 header h1 {
   padding-top: 10px;
   padding-left: 20px;
+  font-size: 28px;
   color: #0054A7;
   text-shadow: #333333;
 }
@@ -131,7 +132,15 @@ div.open {
 /* ↑humber menu */
 
 /* ↓footer */
-
+footer{
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 3/5vw;
+  background-color: #0054A7;
+}
 /* ↑footer */
 
 /* ↑PC common */
@@ -257,9 +266,9 @@ div.open {
   color: #fff;
   padding-left: 10px;
   font-weight: 500;
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-shadow: 0 3px 6px #333333;
-  top: 30vw;
+  top: 14vw;
   padding-left: 20px;
 }
 
@@ -274,19 +283,281 @@ div.open {
   font-weight: 500;
   color: #333333;
 }
+
 .title p {
   text-align: center;
   font-size: 18px;
   font-weight: 400;
   color: #333333;
 }
+
 .listtitle h2 {
   color: #333333;
   font-size: 26px;
   font-weight: bold;
   text-align: center;
 }
+
 /* ↑FV */
+
+/* ↓form */
+
+.form {
+  padding-left: 100 px;
+}
+
+.form p {
+  padding-right: 30px;
+}
+
+/* ↑form */
+
+/* ↓title */
+
+.title h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.title p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* ↑title */
+
+/* ↓説明 */
+
+.jyobioc p {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+/* ↑説明 */
+
+/* ↓bas */
+
+.bas h3 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-left: 60px;
+}
+
+#tada {
+  color: #0054A7;
+  font-weight: 600;
+}
+
+#iwateakitaaomori {
+  color: #666666;
+  font-size: 16px;
+}
+
+.bas img {
+  padding-left: 70px;
+  height: 600px;
+}
+
+.bas p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 70px;
+}
+
+/* ↑bas */
+
+/* ↓money */
+
+.money h3 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-left: 60px
+}
+
+#money {
+  color: #0054A7;
+  font-weight: 600;
+}
+
+#High School {
+  color: #666666;
+  font-size: 16px;
+}
+
+.money img {
+  padding-left: 70px;
+  height: 600px;
+}
+
+.money p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 70px;
+}
+
+/* ↑money */
+
+/* ↓lunch */
+
+.lunch h3 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-left: 60px;
+}
+
+#present {
+  color: #0054A7;
+  font-weight: 600;
+}
+
+#athome {
+  color: #666666;
+  font-size: 16px;
+}
+
+.lunch img {
+  padding-left: 70px;
+  height: 600px;
+}
+
+.lunch p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 70px;
+}
+
+/* ↑lunch */
+
+/* ↓calendar */
+
+.calendar h3 {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#calendar {
+  color: #0054A7;
+  font-weight: 600;
+}
+
+.calendar p {
+  padding-left: 350px;
+}
+
+.day {
+  padding-left: 200px;
+}
+
+.dd {
+  padding-left: 192px;
+}
+
+/* ↑calendar */
+
+/* ↓curriculum */
+
+.curriculum h3 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-left: 60px;
+}
+
+#fast {
+  color: #666666;
+  font-size: 16px;
+}
+
+.curriculum img {
+  padding-left: 70px;
+  height: 600px;
+}
+
+.curriculum p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 70px;
+}
+.morijyobi{
+  color: #0054A7;
+  font-weight: 500;
+}
+/* ↑curriculum */
+
+/* ↓examanation */
+
+.examanation h3 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-left: 60px;
+}
+
+#taisaku {
+  color: #666666;
+  font-size: 16px;
+}
+
+.examanation img {
+  padding-left: 70px;
+  height: 600px;
+}
+
+.examanation p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 70px;
+}
+
+/* ↑examanation */
+
+/* ↓study */
+
+.study h3 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-left: 60px;
+}
+
+#study {
+  color: #666666;
+  font-size: 16px;
+}
+
+.study img {
+  padding-left: 70px;
+  height: 600px;
+}
+
+.study p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 70px;
+}
+
+/* ↑study*/
+
+/* ↓list_title */
+
+.listtitle h2 {
+  color: #333333;
+  font-size: 3.6vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ↑list_title */
 
 /* ↑PC版ここまで */
 
@@ -364,7 +635,9 @@ div.open {
     font-size: 3.6vw;
   }
   .bas img {
-    padding-left: 18px;
+    padding-left: 3%;
+    height: 60vw;
+    width: 90vw;
   }
   .bas p {
     color: #333333;
@@ -387,7 +660,9 @@ div.open {
     font-size: 3.6vw;
   }
   .money img {
-    padding-left: 18px;
+    padding-left: 3%;
+    height: 60vw;
+    width: 90vw;
   }
   .money p {
     color: #333333;
@@ -410,7 +685,9 @@ div.open {
     font-size: 3.6vw;
   }
   .lunch img {
-    padding-left: 18px;
+    padding-left: 3%;
+    height: 60vw;
+    width: 90vw;
   }
   .lunch p {
     color: #333333;
@@ -449,7 +726,9 @@ div.open {
     font-size: 3.6vw;
   }
   .curriculum img {
-    padding-left: 18px;
+    padding-left: 3%;
+    height: 60vw;
+    width: 90vw;
   }
   .curriculum p {
     color: #333333;
@@ -458,6 +737,48 @@ div.open {
     padding-left: 20px;
   }
   /* ↑curriculum */
+  /* ↓examanation */
+  .examanation h3 {
+    font-size: 5vw;
+    font-weight: 500;
+  }
+  #taisaku {
+    color: #666666;
+    font-size: 3.6vw;
+  }
+  .examanation img {
+    padding-left: 3%;
+    height: 60vw;
+    width: 90vw;
+  }
+  .examanation p {
+    color: #333333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    padding-left: 20px;
+  }
+  /* ↑examanation */
+  /* ↓study */
+  .study h3 {
+    font-size: 5vw;
+    font-weight: 500;
+  }
+  #study {
+    color: #666666;
+    font-size: 3.6vw;
+  }
+  .study img {
+    padding-left: 3%;
+    height: 60vw;
+    width: 90vw;
+  }
+  .study p {
+    color: #333333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    padding-left: 20px;
+  }
+  /* ↑study */
   /* ↓list_title */
   .listtitle h2 {
     color: #333333;
