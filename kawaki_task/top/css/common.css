@@ -8,7 +8,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", YuMincho,    /* Mac用 */
-	'Yu Mincho', /* Windows用 */"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  'Yu Mincho', sans-serif,/* Windows用 */"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -60,7 +60,7 @@ header h1 a{
   display: block;
   height: 200px;
   background: url(../img/logoPC.png) no-repeat;
-  margin: 35px 70px ;
+  margin: 35px 70px;
 }
 
 header .leaf {
