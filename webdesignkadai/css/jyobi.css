@@ -33,6 +33,8 @@ body {
 header {
   width: 100%;
   position: fixed;
+  z-index: 99;
+  border-top: 4px solid #0054A7;
   background-color: #fff;
 }
 
@@ -162,7 +164,7 @@ footer{
     margin-top: 3%;
     padding-top: 3%;
     padding-left: 2%;
-    font-size: 4vw;
+    font-size: 3vw;
     color: #0054A7;
     text-shadow: #333333;
   }
@@ -316,14 +318,14 @@ footer{
 
 .title h2 {
   text-align: center;
-  font-size: 34px;
+  font-size: 33px;
   font-weight: 500;
   color: #333333;
 }
 
 .title p {
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: #333333;
 }
@@ -361,7 +363,8 @@ footer{
 
 .bas img {
   padding-left: 70px;
-  height: 600px;
+  object-fit:cover;
+  height:400px;
 }
 
 .bas p {
@@ -393,7 +396,8 @@ footer{
 
 .money img {
   padding-left: 70px;
-  height: 600px;
+  object-fit:cover;
+  height:400px;
 }
 
 .money p {
@@ -425,7 +429,8 @@ footer{
 
 .lunch img {
   padding-left: 70px;
-  height: 600px;
+  object-fit:cover;
+  height:400px;
 }
 
 .lunch p {
@@ -479,7 +484,8 @@ footer{
 
 .curriculum img {
   padding-left: 70px;
-  height: 600px;
+  object-fit:cover;
+  height:400px;
 }
 
 .curriculum p {
@@ -509,7 +515,8 @@ footer{
 
 .examanation img {
   padding-left: 70px;
-  height: 600px;
+  object-fit:cover;
+  height:400px;
 }
 
 .examanation p {
@@ -536,7 +543,8 @@ footer{
 
 .study img {
   padding-left: 70px;
-  height: 600px;
+  object-fit:cover;
+  height:400px;
 }
 
 .study p {
@@ -552,7 +560,7 @@ footer{
 
 .listtitle h2 {
   color: #333333;
-  font-size: 3.6vw;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
@@ -590,6 +598,8 @@ footer{
   }
   .nav img {
     width: 100%;
+    height: 35vw;
+    margin-top: 80px;
   }
   /* ↑FV */
   /* ↓form */
@@ -623,7 +633,8 @@ footer{
   /* ↑説明 */
   /* ↓bas */
   .bas h3 {
-    font-size: 5vw;
+    font-size: 4vw;
+    padding-left: 3%;
     font-weight: 500;
   }
   #tada {
@@ -648,7 +659,8 @@ footer{
   /* ↑bas */
   /* ↓money */
   .money h3 {
-    font-size: 5vw;
+    font-size: 4vw;
+    padding-left: 3%;
     font-weight: 500;
   }
   #money {
@@ -673,7 +685,8 @@ footer{
   /* ↑money */
   /* ↓lunch */
   .lunch h3 {
-    font-size: 5vw;
+    font-size: 4vw;
+    padding-left: 3%;
     font-weight: 500;
   }
   #present {
@@ -718,7 +731,8 @@ footer{
   /* ↑calendar */
   /* ↓curriculum */
   .curriculum h3 {
-    font-size: 5vw;
+    font-size: 4vw;
+    padding-left: 3%;
     font-weight: 500;
   }
   #fast {
@@ -739,7 +753,8 @@ footer{
   /* ↑curriculum */
   /* ↓examanation */
   .examanation h3 {
-    font-size: 5vw;
+    font-size: 4vw;
+    padding-left: 3%;
     font-weight: 500;
   }
   #taisaku {
@@ -760,7 +775,8 @@ footer{
   /* ↑examanation */
   /* ↓study */
   .study h3 {
-    font-size: 5vw;
+    font-size: 4vw;
+    padding-left: 3%;
     font-weight: 500;
   }
   #study {
