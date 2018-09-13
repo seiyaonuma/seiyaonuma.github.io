@@ -5,73 +5,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MCL盛岡情報ビジネス専門学校|お問い合わせ</title>
+  <title>MCL盛岡情報ビジネス専門学校|オープンキャンパスに関して</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/common.css">
+  <!-- <link rel="stylesheet" href="css/common.css"> -->
   <link rel="stylesheet" href="css/jyobi.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="innerHeader">
-      <h1>
-        MCL盛岡情報ビジネス専門学校
-      </h1>
-      <div id="nav-toggle">
-        <div>
-          <span></span>
-          <span></span>
-          <span></span>
+    <h1>
+      MCL盛岡情報ビジネス専門学校
+    </h1>
+    <div id="nav-toggle">
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="global-nav">
+      <nav class="nav">
+        <div class="nav-inner">
+          <ul class="navList">
+            <li>
+              <a href="webap.html">学科紹介</a>
+            </li>
+            <li>
+              <a href="oc.html">オープンキャンパスに関して</a>
+            </li>
+            <li>
+              <a href="findingemployment.html">就職実績</a>
+            </li>
+            <li>
+              <a href="info.html">お問い合わせ</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="global-nav">
-        <nav class="nav">
-          <div class="nav-inner">
-            <ul class="navList">
-              <li>
-                <a href="webap.html">学科紹介</a>
-              </li>
-              <li>
-                <a href="oc.html">オープンキャンパスに関して</a>
-              </li>
-              <li>
-                <a href="#">就職実績</a>
-              </li>
-              <li>
-                <a href="info.html">お問い合わせ</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      </nav>
     </div>
   </header>
   <!-- ↓main -->
   <main>
     <!-- ↓FV -->
     <div class="nav">
-      <img src="img/midasi.png" alt="PC用の画像" id="pcTop" width="100%">
-      <img src="img/form.jpg" alt="スマホ用の画像" id="mobTop" width="100%">
+      <img src="demo_img/info_mbp.png" alt="スマホ用の画像" id="mobTop" width="100%">
       <p>お問い合わせ</p>
     </div>
     <!-- ↑FV -->
+    <!-- ↓title -->
+    <div class="title">
+      <h2>ご不明な点が御座いましたらお問い合わせ下さい</h2>
+      <p>資料請求・オープンキャンパスに関してなど随時受け付けております</p>
+    </div>
+    <!-- ↑title -->
     <!-- ↓form -->
     <div class="form">
-      <form action="#" method="POST">
-        <p>お名前<br>
-        <input type="text" name="name"></p>
-        <p>メールアドレス<br>
-          <input type="text" name="mail"></p>
-        <p>お問い合わせ内容<br>
-          <textarea name="comment" cols="30" rows="5"></textarea></p>
-      </form>
+      <table>
+        <tr>
+          <th>名前
+            <span class="required">必須</span>
+          </th>
+          <td>
+            <input type="text" size="50%">
+          </td>
+        </tr>
+        <tr>
+          <th>メールアドレス
+            <span class="required">必須</span>
+          </th>
+          <td>
+            <input type="mail" size="50%">
+          </td>
+        </tr>
+        <tr>
+          <th>お問い合わせ内容
+            <span class="required">必須</span>
+          </th>
+          <td>
+            <textarea name="form" cols="30" rows="10"></textarea>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="送信する" class="wpcf7-form-control wpcf7-submit">
     </div>
-    <!-- ↑form -->
-
+    <!-- ↑form-->
   </main>
   <!-- ↑main -->
   <footer>
-    <small>©2018．Jyobi Web AP SeiyaOnuma</small>
+    <p>©2018．Jyobi Web AP SeiyaOnuma</p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>

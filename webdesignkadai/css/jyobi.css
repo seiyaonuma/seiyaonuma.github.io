@@ -134,7 +134,8 @@ div.open {
 /* ↑humber menu */
 
 /* ↓footer */
-footer{
+
+footer {
   bottom: 0;
   width: 100%;
   height: 30px;
@@ -143,6 +144,7 @@ footer{
   font-size: 3/5vw;
   background-color: #0054A7;
 }
+
 /* ↑footer */
 
 /* ↑PC common */
@@ -363,8 +365,8 @@ footer{
 
 .bas img {
   padding-left: 70px;
-  object-fit:cover;
-  height:400px;
+  object-fit: cover;
+  height: 400px;
 }
 
 .bas p {
@@ -396,8 +398,8 @@ footer{
 
 .money img {
   padding-left: 70px;
-  object-fit:cover;
-  height:400px;
+  object-fit: cover;
+  height: 400px;
 }
 
 .money p {
@@ -429,8 +431,8 @@ footer{
 
 .lunch img {
   padding-left: 70px;
-  object-fit:cover;
-  height:400px;
+  object-fit: cover;
+  height: 400px;
 }
 
 .lunch p {
@@ -484,8 +486,8 @@ footer{
 
 .curriculum img {
   padding-left: 70px;
-  object-fit:cover;
-  height:400px;
+  object-fit: cover;
+  height: 400px;
 }
 
 .curriculum p {
@@ -494,10 +496,12 @@ footer{
   font-weight: 500;
   padding-left: 70px;
 }
-.morijyobi{
+
+.morijyobi {
   color: #0054A7;
   font-weight: 500;
 }
+
 /* ↑curriculum */
 
 /* ↓examanation */
@@ -515,8 +519,8 @@ footer{
 
 .examanation img {
   padding-left: 70px;
-  object-fit:cover;
-  height:400px;
+  object-fit: cover;
+  height: 400px;
 }
 
 .examanation p {
@@ -543,8 +547,8 @@ footer{
 
 .study img {
   padding-left: 70px;
-  object-fit:cover;
-  height:400px;
+  object-fit: cover;
+  height: 400px;
 }
 
 .study p {
@@ -560,12 +564,79 @@ footer{
 
 .listtitle h2 {
   color: #333333;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: bold;
   text-align: center;
 }
 
 /* ↑list_title */
+
+/* ↓list */
+
+.col-head-type1 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.col-head-type1 th, .col-head-type1 td {
+  border: 1px solid #dbe1e8;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.col-head-type1 th {
+  background: #f9fafc;
+  text-align: left;
+  width: 120px;
+  text-align: center;
+}
+
+/* ↑list */
+
+/* ↓form */
+.form{
+  padding-top: 2%;
+}
+.form table th {
+  width: 230px;
+  background: #f2f2f2;
+  padding: 0 40px 0 30px;
+  font-weight: bold;
+}
+.form table td {
+  padding: 20px 40px;
+  font-size: 14px;
+}
+.form table th .required {
+  background: #e63737;
+}
+.form table th span {
+  float: right;
+  font-size: 12px;
+  display: inline-block;
+  color: #fff;
+  padding: 3px 5px 2px;
+  font-weight: normal;
+  margin-top: 1px;
+  line-height: 1;
+}
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 310px;
+  text-align: center;
+  color: #fff;
+  background: #0054a7;
+  position: relative;
+  font-size: 16px;
+  padding: 11px 0;
+  margin-top: 35px;
+  box-shadow: 0 0 5px #d6d6d6;
+  -moz-box-shadow: 0 0 5px #d6d6d6;
+  -webkit-box-shadow: 0 0 5px #d6d6d6;
+}
+/* ↑form */
 
 /* ↑PC版ここまで */
 
@@ -804,7 +875,17 @@ footer{
   }
   /* ↑list_title */
   /* ↓list */
-  .list table {}
+  .col-head-type1 tr, .col-head-type1 th, .col-head-type1 td {
+    display: block;
+    width: auto;
+  }
+  .col-head-type1 tr:first-child {
+    border-top: 1px solid #dbe1e8;
+  }
+  .col-head-type1 th, .col-head-type1 td {
+    border-top: none;
+    font-size: 3.2vw;
+  }
   /* ↑list */
 }
 
