@@ -8,7 +8,7 @@
 /* ↓お品書きnav */
 
 /* 見出しの画像切り替え */
-
+@media only screen and (min-width:769px) {
 #pcTop {
   display: block;
 }
@@ -74,11 +74,14 @@
 /* ↓toti h3 */
 
 .toti h3 {
-  padding-left: 39vw;
-  display: block;
-  font-size: 20px;
+  padding-left: 33vw;
+  display: inline-block;
+  font-size: 23px;
   padding-top: 10px;
   color: #006A46;
+}
+.totih3 br{
+  display: none;
 }
 
 /* ↑toti h3 */
@@ -126,12 +129,14 @@
 /* ↓mizu h3 */
 
 .mizu h3 {
-  padding-left: 39vw;
-  font-size: 20px;
+  padding-left: 35vw;
+  font-size: 23px;
   padding-top: 10px;
   color: #006A46;
 }
-
+.mizuh3 br{
+  display: none;
+}
 /* ↑mizu h3 */
 
 /* ↓mizup */
@@ -177,12 +182,14 @@
 /* ↓sobako h3 */
 
 .sobako h3 {
-  padding-left: 39vw;
-  font-size: 20px;
+  padding-left: 34vw;
+  font-size: 23px;
   padding-top: 10px;
   color: #006A46;
 }
-
+.sobakoh3 br{
+  display: none;
+}
 /* ↑sobako h3 */
 
 /* ↓sobakop */
@@ -204,6 +211,7 @@
   line-height: 70px;
 }
 /* ↑explanatorytext */
+}
 /* 
 
 --PC版ここまで--
