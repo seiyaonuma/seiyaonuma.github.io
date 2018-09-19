@@ -39,18 +39,18 @@
   /* ↑toti */
   /* ↓toti p */
   .toti p {
-    padding-left: 18vw;
+    padding-left: 16vw;
     font-size: 20px;
   }
   /* ↑toti p */
   /* ↓toti h2 */
   .toti h2 {
-    padding-left: 18vw;
+    padding-left: 16vw;
   }
   /* ↑toti h2 */
   /* ↓toti img */
   .toti img {
-    padding-left: 20vw;
+    padding-left: 18vw;
   }
   /* ↑toti img */
   /* ↓toti h3 */
@@ -78,18 +78,18 @@
   /* ↑mizu p */
   /* ↓mizu p */
   .mizu p {
-    padding-left: 18vw;
+    padding-left: 16vw;
     font-size: 20px;
   }
   /* ↑mizu p */
   /* ↓mizu h2 */
   .mizu h2 {
-    padding-left: 18vw;
+    padding-left: 16vw;
   }
   /* ↑mizu h2 */
   /* ↓mizu img */
   .mizu img {
-    padding-left: 20vw;
+    padding-left: 18vw;
   }
   /* ↑mizu img */
   /* ↓mizu h3 */
@@ -116,18 +116,18 @@
   /* ↑sobako */
   /* ↓sobako p */
   .sobako p {
-    padding-left: 18vw;
+    padding-left: 16vw;
     font-size: 20px;
   }
   /* ↑sobako p */
   /* ↓sobako h2 */
   .sobako h2 {
-    padding-left: 18vw;
+    padding-left: 16vw;
   }
   /* ↑sobako h2 */
   /* ↓sobako img */
   .sobako img {
-    padding-left: 20vw;
+    padding-left: 18vw;
   }
   /* ↑sobako img */
   /* ↓sobako h3 */
@@ -152,7 +152,7 @@
     padding-top: 80px;
   }
   .explanatorytext p {
-    padding-left: 30vw;
+    padding-left: 29vw;
     font-size: 24px;
     line-height: 70px;
   }
