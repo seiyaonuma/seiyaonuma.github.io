@@ -166,7 +166,7 @@ footer {
     margin-top: 3%;
     padding-top: 3%;
     padding-left: 2%;
-    font-size: 5vw;
+    font-size: 5vxw;
     color: #0054A7;
     text-shadow: #333333;
   }
@@ -659,7 +659,7 @@ input[type="submit"] {
     color: #fff;
     padding-left: 10px;
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 6vw;
     text-shadow: 0 3px 6px #333333;
     top: 70%;
     left: 0;
