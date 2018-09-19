@@ -8,218 +8,286 @@
 /* ↓お品書きnav */
 
 /* 見出しの画像切り替え */
+
 @media only screen and (min-width:769px) {
-#pcTop {
-  display: block;
+  #pcTop {
+    display: block;
+  }
+  #mobTop {
+    display: none;
+  }
+  /* 見出しの画像切り替え */
+  /* ↓FV img */
+  #pcTop {
+    width: 100%;
+    height: 100vh;
+  }
+  /* ↑FV img */
+  /* ↓FV p */
+  .pnav {
+    position: absolute;
+    padding-left: 80px;
+    color: #fff;
+    font-size: 4.5vw;
+    top: 300px;
+  }
+  /* ↑FV p */
+  /* ↓toti */
+  .toti {
+    padding-top: 100px;
+  }
+  /* ↑toti */
+  /* ↓toti p */
+  .toti p {
+    padding-left: 18vw;
+    font-size: 20px;
+  }
+  /* ↑toti p */
+  /* ↓toti h2 */
+  .toti h2 {
+    padding-left: 18vw;
+  }
+  /* ↑toti h2 */
+  /* ↓toti img */
+  .toti img {
+    padding-left: 20vw;
+  }
+  /* ↑toti img */
+  /* ↓toti h3 */
+  .toti h3 {
+    padding-left: 29vw;
+    display: inline-block;
+    font-size: 23px;
+    padding-top: 10px;
+    color: #006A46;
+  }
+  .totih3 br {
+    display: none;
+  }
+  /* ↑toti h3 */
+  /* ↓totip */
+  #totip {
+    padding-left: 8vw;
+    padding-top: 40px;
+  }
+  /* ↑totip */
+  /* ↓mizu p*/
+  .mizu {
+    padding-top: 100px;
+  }
+  /* ↑mizu p */
+  /* ↓mizu p */
+  .mizu p {
+    padding-left: 18vw;
+    font-size: 20px;
+  }
+  /* ↑mizu p */
+  /* ↓mizu h2 */
+  .mizu h2 {
+    padding-left: 18vw;
+  }
+  /* ↑mizu h2 */
+  /* ↓mizu img */
+  .mizu img {
+    padding-left: 20vw;
+  }
+  /* ↑mizu img */
+  /* ↓mizu h3 */
+  .mizu h3 {
+    padding-left: 33vw;
+    font-size: 23px;
+    padding-top: 10px;
+    color: #006A46;
+  }
+  .mizuh3 br {
+    display: none;
+  }
+  /* ↑mizu h3 */
+  /* ↓mizup */
+  #mizup {
+    padding-left: 5vw;
+    padding-top: 40px;
+  }
+  /* ↑mizup */
+  /* ↓sobako */
+  .sobako {
+    padding-top: 100px;
+  }
+  /* ↑sobako */
+  /* ↓sobako p */
+  .sobako p {
+    padding-left: 18vw;
+    font-size: 20px;
+  }
+  /* ↑sobako p */
+  /* ↓sobako h2 */
+  .sobako h2 {
+    padding-left: 18vw;
+  }
+  /* ↑sobako h2 */
+  /* ↓sobako img */
+  .sobako img {
+    padding-left: 20vw;
+  }
+  /* ↑sobako img */
+  /* ↓sobako h3 */
+  .sobako h3 {
+    padding-left: 30vw;
+    font-size: 23px;
+    padding-top: 10px;
+    color: #006A46;
+  }
+  .sobakoh3 br {
+    display: none;
+  }
+  /* ↑sobako h3 */
+  /* ↓sobakop */
+  #sobakop {
+    padding-left: 5vw;
+    padding-top: 40px;
+  }
+  /* ↑sobakop */
+  /* ↓explanatorytext */
+  .explanatorytext {
+    padding-top: 80px;
+  }
+  .explanatorytext p {
+    padding-left: 30vw;
+    font-size: 24px;
+    line-height: 70px;
+  }
+  /* ↑explanatorytext */
 }
 
-#mobTop {
-  display: none;
+/* 1920×1080対応ここから */
+
+@media only screen and (min-width:1920px) {
+  .toti p {
+    padding-left: 26vw;
+    font-size: 20px;
+  }
+  /* ↑toti p */
+  /* ↓toti h2 */
+  .toti h2 {
+    padding-left: 26vw;
+  }
+  /* ↑toti h2 */
+  /* ↓toti img */
+  .toti img {
+    padding-left: 26vw;
+  }
+  /* ↑toti img */
+  /* ↓toti h3 */
+  .toti h3 {
+    padding-left: 34vw;
+    display: inline-block;
+    font-size: 23px;
+    padding-top: 10px;
+    color: #006A46;
+  }
+  .totih3 br {
+    display: none;
+  }
+  /* ↑toti h3 */
+  /* ↓totip */
+  #totip {
+    padding-left: 15vw;
+    padding-top: 40px;
+  }
+  /* ↑totip */
+  /* ↓mizu p*/
+  .mizu {
+    padding-top: 100px;
+  }
+  /* ↑mizu p */
+  /* ↓mizu p */
+  .mizu p {
+    padding-left: 26vw;
+    font-size: 20px;
+  }
+  /* ↑mizu p */
+  /* ↓mizu h2 */
+  .mizu h2 {
+    padding-left: 26vw;
+  }
+  /* ↑mizu h2 */
+  /* ↓mizu img */
+  .mizu img {
+    padding-left: 26vw;
+  }
+  /* ↑mizu img */
+  /* ↓mizu h3 */
+  .mizu h3 {
+    padding-left: 34vw;
+    font-size: 23px;
+    padding-top: 10px;
+    color: #006A46;
+  }
+  .mizuh3 br {
+    display: none;
+  }
+  /* ↑mizu h3 */
+  /* ↓mizup */
+  #mizup {
+    padding-left: 7vw;
+    padding-top: 40px;
+  }
+  /* ↑mizup */
+  /* ↓sobako */
+  .sobako {
+    padding-top: 100px;
+  }
+  /* ↑sobako */
+  /* ↓sobako p */
+  .sobako p {
+    padding-left: 26vw;
+    font-size: 20px;
+  }
+  /* ↑sobako p */
+  /* ↓sobako h2 */
+  .sobako h2 {
+    padding-left: 26vw;
+  }
+  /* ↑sobako h2 */
+  /* ↓sobako img */
+  .sobako img {
+    padding-left: 26vw;
+  }
+  /* ↑sobako img */
+  /* ↓sobako h3 */
+  .sobako h3 {
+    padding-left: 34vw;
+    font-size: 23px;
+    padding-top: 10px;
+    color: #006A46;
+  }
+  .sobakoh3 br {
+    display: none;
+  }
+  /* ↑sobako h3 */
+  /* ↓sobakop */
+  #sobakop {
+    padding-left: 7vw;
+    padding-top: 40px;
+  }
+  /* ↑sobakop */
+  /* ↓explanatorytext */
+  .explanatorytext {
+    padding-top: 80px;
+  }
+  .explanatorytext p {
+    padding-left: 36vw;
+    font-size: 24px;
+    line-height: 70px;
+  }
+  /* ↑explanatorytext */
 }
 
-/* 見出しの画像切り替え */
+/* 1920×1080対応ここまで */
 
-/* ↓FV img */
+/* ↑PC版ここまで */
 
-#pcTop {
-  width: 100%;
-  height: 100vh;
-}
-
-/* ↑FV img */
-
-/* ↓FV p */
-
-.pnav {
-  position: absolute;
-  padding-left: 80px;
-  color: #fff;
-  font-size: 5vw;
-  top: 300px;
-}
-
-/* ↑FV p */
-
-/* ↓toti */
-.toti{
-  padding-top: 100px;
-}
-/* ↑toti */
-
-/* ↓toti p */
-
-.toti p {
-  padding-left: 25vw;
-  font-size: 20px;
-}
-
-/* ↑toti p */
-
-/* ↓toti h2 */
-
-.toti h2 {
-  padding-left: 24vw;
-}
-
-/* ↑toti h2 */
-
-/* ↓toti img */
-
-.toti img {
-  padding-left: 24vw;
-}
-
-/* ↑toti img */
-
-/* ↓toti h3 */
-
-.toti h3 {
-  padding-left: 33vw;
-  display: inline-block;
-  font-size: 23px;
-  padding-top: 10px;
-  color: #006A46;
-}
-.totih3 br{
-  display: none;
-}
-
-/* ↑toti h3 */
-
-/* ↓totip */
-
-#totip {
-  padding-left: 12vw;
-  padding-top: 40px;
-}
-
-/* ↑totip */
-
-/* ↓mizu p*/
-.mizu{
-  padding-top: 100px;
-}
-/* ↑mizu p */
-
-/* ↓mizu p */
-
-.mizu p {
-  padding-left: 25vw;
-  font-size: 20px;
-}
-
-/* ↑mizu p */
-
-/* ↓mizu h2 */
-
-.mizu h2 {
-  padding-left: 24vw;
-}
-
-/* ↑mizu h2 */
-
-/* ↓mizu img */
-
-.mizu img {
-  padding-left: 24vw;
-}
-
-/* ↑mizu img */
-
-/* ↓mizu h3 */
-
-.mizu h3 {
-  padding-left: 35vw;
-  font-size: 23px;
-  padding-top: 10px;
-  color: #006A46;
-}
-.mizuh3 br{
-  display: none;
-}
-/* ↑mizu h3 */
-
-/* ↓mizup */
-
-#mizup {
-  padding-left: 5vw;
-  padding-top: 40px;
-}
-
-/* ↑mizup */
-
-/* ↓sobako */
-.sobako{
-  padding-top: 100px;
-}
-/* ↑sobako */
-
-/* ↓sobako p */
-
-.sobako p {
-  padding-left: 25vw;
-  font-size: 20px;
-}
-
-/* ↑sobako p */
-
-/* ↓sobako h2 */
-
-.sobako h2 {
-  padding-left: 24vw;
-}
-
-/* ↑sobako h2 */
-
-/* ↓sobako img */
-
-.sobako img {
-  padding-left: 24vw;
-}
-
-/* ↑sobako img */
-
-/* ↓sobako h3 */
-
-.sobako h3 {
-  padding-left: 34vw;
-  font-size: 23px;
-  padding-top: 10px;
-  color: #006A46;
-}
-.sobakoh3 br{
-  display: none;
-}
-/* ↑sobako h3 */
-
-/* ↓sobakop */
-
-#sobakop {
-  padding-left: 5vw;
-  padding-top: 40px;
-}
-
-/* ↑sobakop */
-
-/* ↓explanatorytext */
-.explanatorytext{
-  padding-top: 80px;
-}
-.explanatorytext p{
-  padding-left: 35vw;
-  font-size: 24px;
-  line-height: 70px;
-}
-/* ↑explanatorytext */
-}
-/* 
-
---PC版ここまで--
-
-
---モバイル版ここから--
-
- */
+/* ↓モバイル版ここから */
 
 @media only screen and (max-width:768px) {
   /* ↓お品書きnav */
@@ -376,7 +444,7 @@
     font-size: 5vw;
     text-align: center;
     letter-spacing: 0.4vw;
-    padding-left: 0px;  
+    padding-left: 0px;
   }
   /* ↑最後の説明文 */
 }
