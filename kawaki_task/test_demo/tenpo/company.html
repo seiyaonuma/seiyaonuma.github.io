@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>そば処 川㐂家 | 川㐂家について</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/company.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="innerHeader">
+      <h1><a href="top.html"></a></h1>
+      <div id="nav-toggle">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </div>
+        <div class="global-nav">
+          <nav class="gnav">
+              <div class="nav-inner">
+                  <!-- <div class="logo pcNone"><a href="./"><img src="img/logoMv.png" alt=""></a></div> -->
+                  <ul class="navList">
+                      <li><a href="top.html">TOPページ</a></li>
+                      <li><a href="kodawari.html">こだわり</a></li>
+                      <li><a href="menu.html">お品書き</a></li>
+                      <li><a class="active"href="company.html">川㐂家について</a></li>
+                      <li><a href="tenpo.html">店舗ご案内</a></li>
+                  </ul>
+                  <div class="tel-box">
+                    <p class="tel">TEL：(0193)-27-5811</p>
+                    <p class="teltext">予約・貸切の際はこちらまで</p>
+                    <img  class="leaf"src="img/menu.png" alt="蕎麦の葉">
+                  </div>
+              </div>
+          </nav>
+        </div>
+    </div>
+  </header>
+  <!-- ↓ここから内容 -->
+  <main class="company">
+    <div class="nav">
+      <img src="img/top/kawakiyanituite.jpg" alt="" class="fvsc">
+      <img src="" alt="" class="fvpc">
+      <p>川㐂家について</p>
+    </div>
+    <div class="speechbg">
+      <div class="speech">
+        <h2>社長挨拶</h2>
+        <h3 class="second">震災を乗り越えて<br>そば処 川㐂家を開店</h3>
+        <img src="img/company/kawabatamanabu.jpg" alt="代表取締役社長川端学の写真" class="syachoimg">
+        <p>2011年の震災で03年から営業してきた食堂「喜庵」が津波で被災し。食堂は閉店せざるを得なかった。</p>
+        <p>震災から数年が立った時、グループ会社である株式会社川喜の事業が好転した事も手助けになり、念願だった食堂の再開に踏み切った。</p>
+        <p>お店は川喜の工場だった場所をリニューアルすることに。</p>
+        <p>わやま高原に11万平方メートル自家栽培の蕎麦畑を管理している社長の蕎麦屋として蕎麦を直接栽培し、直接お客様に食べさせたいとの思いから蕎麦をメインに再開した。</p>
+        <p>「　　　」を信念にお客様をお待ちしています。</p>
+        <img src="img/company/tennai.jpg"" alt="店内の様子">
+        <img src="img/company/ennkaku.jpg" alt="そばの写真">
+        <p class="name">代表取締役社長<br>川端 学</p>
+      </div>
+    </div>
+    <div class="infomation">
+      <h2>会社概要</h2>
+      <div class="content">
+        <p class="dai">会社名</p>
+        <p>有限会社 川㐂商事　そば処 川㐂家</p>
+      </div>
+      <div class="content">
+        <p class="dai">代表者</p>
+        <p>代表取締役社長  川端 学</p>
+      </div>
+      <div class="content">
+        <p class="dai">本社</p>
+        <p>〒026-0054<br>岩手県釜石市野田町三丁目11-8</p>
+      </div>
+      <div class="content">
+        <p class="dai">TEL</p>
+        <p>(0193)27-5811</p>
+      </div>
+    </div>
+  </main>
+  <!-- ↑ここまで内容 -->
+  <footer>
+    <small>©2018．有限会社カワキ商事</small>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('#nav-toggle').on('click', function () {
+        $(this).toggleClass('open');
+        $('.nav-inner').toggleClass('open');
+      });
+    });</script>
+</body>
+
+</html>
