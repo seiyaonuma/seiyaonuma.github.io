@@ -593,7 +593,7 @@ h2 {
 .cd .button{
   position: relative;
   background: url(../img/top/button/buttonbg1.jpg);
-  margin: 80px -15vw 80px auto;
+  margin: 80px auto 80px 15vw;
   text-align: left;
   letter-spacing: 3px;
   padding-top: 20px;
@@ -697,7 +697,7 @@ h2 {
 .menuTop .button{
   position: relative;
   background: #9a9440;
-  margin: 80px -15vw 80px auto;
+  margin: 80px auto 80px 15vw;
   text-align: left;
   letter-spacing: 3px;
   padding-top: 20px;
@@ -787,7 +787,7 @@ h2 {
 .kawakiInfo .button{
   position: relative;
   background: url(../img/top/button/buttonbg1.jpg);
-  margin: 80px -15vw 80px auto;
+  margin: 80px auto 80px 15vw;
   text-align: left;
   letter-spacing: 3px;
   padding-top: 20px;
@@ -852,7 +852,7 @@ h2 {
 .tenpoTop .button{
   position: relative;
   background: #9a9440;
-  margin: 80px -15vw 80px auto;
+  margin: 80px auto 80px 15vw;
   text-align: left;
   letter-spacing: 3px;
   padding-top: 20px;
@@ -918,23 +918,18 @@ h2 {
     font-size: 14px;
     color: #333232;
     margin-left: 10px;
-    text-align: right;
   }
   .sns {
-    width: 100%;
+    /* width: 100%;
     margin: auto;
     padding-bottom: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-around; */
+    display: block;
   }
-  .facebook {
-    float: left;
-    margin-left: 30%;
-  }
-  .facebook img {
-    width: 50px;
-  }
-  .Instagram img {
-    width: 50px;
+  #instagram{
+    margin-left: 5px;
   }
 }
 
