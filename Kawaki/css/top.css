@@ -31,7 +31,7 @@
 
 .fv{
     height: 100vh;
-    background: url(../img/top/fv/top_fv.png);
+    background: url(../img/top/fv/top_fv.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -483,7 +483,7 @@ h2 {
 .fv {
   /* margin-top: 100px; */
   height: 100vh;
-  background: url(../img/top/fv/top_fv.png);
+  background: url(../img/top/fv/top_fv.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -937,16 +937,11 @@ h2 {
 
 @media screen and (min-width:500px) and (max-width:768px) {
   .cd .button, .menuTop .button, .kawakiInfo .button, .tenpoTop .button {
-    width: 60vw;
+    width: 55vw;
+    margin-left: 45vw;
   }
   .cd .button a span, .menuTop .button a span, .kawakiInfo .button a span, .tenpoTop .button a span {
     position: absolute;
     right: -25vw;
-  }
-}
-
-@media screen and (orientation:landscape){
-  .cd .button, .menuTop .button, .kawakiInfo .button, .tenpoTop .button {
-    margin: 80px auto 80px 45vw;
   }
 }

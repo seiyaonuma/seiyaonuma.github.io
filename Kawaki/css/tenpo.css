@@ -378,9 +378,9 @@
     padding-left: 18%;
   }
 
-  .access .car .atitle {
+  .access .car .cartitle {
     position: absolute;
-    top: 50px;
+    top: 50vw;
     left: 0;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
