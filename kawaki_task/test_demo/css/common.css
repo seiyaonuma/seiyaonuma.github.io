@@ -52,13 +52,13 @@ header {
     width: 200px;
     font-weight: 600;
     background-color: #fff;
-    background-image: url(../img/p0074_m.png);
+    background-image: url(../img/gnav/p0074_m.png);
 }
 
 header h1 a{
   display: block;
   height: 200px;
-  background: url(../img/logoPC.png) no-repeat;
+  background: url(../img/gnav/logoPC.png) no-repeat;
   margin: 35px 70px;
 }
 
@@ -80,7 +80,7 @@ header .leaf {
   color: grey;
 }
 
-.active {
+.active ,.navList li a:hover{
   border-bottom: 3px solid #006A46;
 }
 

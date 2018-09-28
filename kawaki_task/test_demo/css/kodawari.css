@@ -14,32 +14,8 @@
     display: none;
   }
 
-  .header{
-    box-shadow: 2px 2px 20px #11111155;
-  }
-
-  .navList{
-    width: 180px;
-    padding-left: 0px;
-  }
-  
-  .navList li{
-    text-align: right;
-  }
-  
-  .navList li a{
-    font-size: 19px;
-  }
-
-  .navList li a:hover{
-    text-decoration: #006A46 underline;
-  }
-  
-  .tel-box{
-    font-size: 12px;
-  }
   main{
-    background:url(../img/background1.png);
+    background:url(../img/kodawari/background/background1.png);
     
   }
   

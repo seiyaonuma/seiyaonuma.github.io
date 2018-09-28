@@ -31,7 +31,7 @@
 
 .fv{
     height: 100vh;
-    background: url(../img/top/top_fv.png);
+    background: url(../img/top/fv/top_fv.png);
     background-position: center center;
     background-size: cover;
 }
@@ -106,9 +106,10 @@
 
 .news{
   text-align: center;
-  background: url(../img/p0074_m.png);
+  padding-top: 30px;
+  padding-bottom: 120px;
+  background: url(../img/top/background/background3.jpg);
   padding-bottom: 80px;
-  background-size: cover;
 }
 
 .news h2{
@@ -140,8 +141,10 @@
 /* こだわり */
 
 .cd{
-  background: url(../img/top/background2.jpg);
-  background-size: cover;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  background: url(../img/top/background/background2.jpg);
   padding-bottom:90px;
 }
 
@@ -159,7 +162,7 @@
 }
 
 .cd .button{
-  background: url(../img/top/buttonbg1.jpg);
+  background: url(../img/top/button/buttonbg1.jpg);
   margin: 80px auto 80px auto;
   text-align: center;
   padding-top: 25px;
@@ -185,7 +188,7 @@
 .menuTop{
   padding-top: 30px;
   padding-bottom: 120px;
-  background: url(../img/top/background1.jpg);
+  background: url(../img/top/background/background1.jpg);
   color: #fff;
   text-align: center;
 }
@@ -261,7 +264,7 @@
 .kawakiInfo{
   padding-top: 100px;
   text-align: center;
-  background: url(../img/p0074_m.png);
+  background: url(../img/top/background/p0074_m.png);
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -305,7 +308,7 @@
 }
 
 .kawakiInfo .button{
-  background: url(../img/top/buttonbg1.jpg);
+  background: url(../img/top/button/buttonbg1.jpg);
   margin: 80px auto 80px auto;
   text-align: center;
   padding-top: 25px;
@@ -330,7 +333,7 @@
 
 .tenpoTop{
   text-align: center;
-  background: url(../img/top/background1.jpg);
+  background: url(../img/top/background/background1.jpg);
   color: #fff;
   padding-bottom: 70px;
 }
@@ -381,7 +384,7 @@
 /* マップ */
 
 .info{
-  background: url(../img/p0074_m.png);
+  background: url(../img/top/background/p0074_m.png);
   background-size: cover;
 }
 
@@ -482,7 +485,7 @@ h2 {
 .fv {
   /* margin-top: 100px; */
   height: 100vh;
-  background: url(../img/top/top_fv.png);
+  background: url(../img/top/fv/top_fv.png);
   background-position: center center;
   background-size: cover;
 }

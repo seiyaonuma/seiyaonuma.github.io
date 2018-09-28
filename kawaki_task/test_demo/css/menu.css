@@ -10,7 +10,7 @@
     display: none;
   }
 body{
-  background-image: url(../img/background1.jpg);
+  background-image: url(../img/menu/background/background1.jpg);
 }
 main{
   color: #fff;
@@ -165,7 +165,7 @@ main{
   color: #fff;
   padding-bottom: 20px;
 }
-p{
+main p{
   font-size: 1.4rem;
   line-height: 2rem;
   font-weight: 500;

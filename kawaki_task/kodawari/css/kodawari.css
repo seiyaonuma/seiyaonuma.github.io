@@ -7,6 +7,18 @@
 /* 見出しの画像切り替え */
 
 @media only screen and (min-width:769px) {
+  .pc{
+    display: block;
+  }
+  .sp{
+    display: none;
+  }
+
+  main{
+    background:url(../img/background1.png);
+    
+  }
+  
   #pcTop {
     display: block;
   }
@@ -32,28 +44,37 @@
   /* ↓toti */
   .toti {
     padding-top: 100px;
+    background-size: cover;
+    padding-bottom: 4vw;
+    background: rgba(230,230,125,.25);
   }
   /* ↑toti */
   /* ↓toti p */
   .toti p {
-    padding-left: 16vw;
+    padding-left: 11vw;
     font-size: 20px;
   }
   /* ↑toti p */
   /* ↓toti h2 */
   .toti h2 {
-    padding-left: 16vw;
+    padding-left: 10vw;
   }
   /* ↑toti h2 */
   /* ↓toti img */
-  .toti img {
-    padding-left: 18vw;
+  .toti .kodawariimg{
+   text-align: center;
+   margin: auto;
+   width: 100%;
+  }
+
+  .toti .kodawariimg img{
+    max-width: 85%;
+    width: 85%;
   }
   /* ↑toti img */
   /* ↓toti h3 */
   .toti h3 {
-    padding-left: 29vw;
-    display: inline-block;
+    text-align: center;
     font-size: 23px;
     padding-top: 10px;
     color: #006A46;
@@ -62,74 +83,135 @@
     display: none;
   }
   /* ↑toti h3 */
-  /* ↓totip */
-  #totip {
-    padding-left: 8vw;
-    padding-top: 40px;
+
+  #totip{
+    padding: 0;
+  }  
+  .daititext{
+    max-width: 600px;
+    margin:70px auto;
+    line-height: 2em;
   }
-  /* ↑totip */
+
   /* ↓mizu p*/
   .mizu {
-    padding-top: 100px;
+    position: relative;
+    background: #d6e8f055;
+    background-size: cover;
+    padding-top: 10vw;
+    padding-bottom: 2vw;
+    overflow: hidden;
+  }
+
+  .mizu:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-style: solid;
+    border-color: #e6e67d44 transparent transparent transparent;
+    border-width: 10vw 42vw 0 42vw;
   }
   /* ↑mizu p */
+  .mizutext{
+    max-width: 600px;
+    margin: auto;
+    line-height: 2em;
+  }
   /* ↓mizu p */
   .mizu p {
-    padding-left: 16vw;
+    padding-left: 11vw;
     font-size: 20px;
   }
   /* ↑mizu p */
   /* ↓mizu h2 */
   .mizu h2 {
-    padding-left: 16vw;
+    padding-left: 10vw;
   }
   /* ↑mizu h2 */
   /* ↓mizu img */
-  .mizu img {
-    padding-left: 18vw;
+  .mizu .mizuimg {
+    text-align: center;
+    margin: auto;
+  }
+
+  .mizu .mizuimg img{
+    width: 85%;
+    max-width: 85%;
   }
   /* ↑mizu img */
   /* ↓mizu h3 */
   .mizu h3 {
-    padding-left: 33vw;
+   text-align: center;
+   margin: auto;
+   padding-top: 30px;
     font-size: 23px;
-    padding-top: 10px;
     color: #006A46;
   }
   .mizuh3 br {
     display: none;
   }
   /* ↑mizu h3 */
+  .mizutext{
+    margin: 50px auto 70px auto;
+  }
   /* ↓mizup */
   #mizup {
-    padding-left: 5vw;
-    padding-top: 40px;
+    padding-left: 0;
   }
   /* ↑mizup */
   /* ↓sobako */
   .sobako {
-    padding-top: 100px;
+    padding-top: 120px;
+    background: #ffefea55;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sobako:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0px;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-style: solid;
+    border-color: #d6e8f055 transparent transparent transparent;
+    border-width: 10vw 42vw 0 42vw;
   }
   /* ↑sobako */
+
   /* ↓sobako p */
   .sobako p {
-    padding-left: 16vw;
+    padding-left: 11vw;
     font-size: 20px;
   }
   /* ↑sobako p */
   /* ↓sobako h2 */
   .sobako h2 {
-    padding-left: 16vw;
+    padding-left: 10vw;
   }
   /* ↑sobako h2 */
   /* ↓sobako img */
-  .sobako img {
-    padding-left: 18vw;
+  .sobako .sobakoimg {
+    text-align: center;
+    margin: auto;
+  }
+
+  .sobako .sobakoimg img{
+    width: 85%;
+    max-width: 85%;
   }
   /* ↑sobako img */
   /* ↓sobako h3 */
   .sobako h3 {
-    padding-left: 30vw;
+   text-align: center;
     font-size: 23px;
     padding-top: 10px;
     color: #006A46;
@@ -140,144 +222,91 @@
   /* ↑sobako h3 */
   /* ↓sobakop */
   #sobakop {
-    padding-left: 5vw;
-    padding-top: 40px;
+    padding-left: 0;
   }
   /* ↑sobakop */
+  .sobakotext{
+    max-width: 600px;
+    margin: 50px auto 0px auto;
+    line-height: 2em;
+  }
+
   /* ↓explanatorytext */
+  .lastmessage{
+   width: 100%;
+   display: flex;
+   position: relative;
+   justify-content: space-around;
+   flex-wrap: nowrap;
+   padding-right: 0;
+   padding-top: 10vw;
+   margin: auto;
+   overflow: hidden;
+  }
+  .lastmessage:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0vw;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-style: solid;
+    border-color: #ffefea55 transparent transparent transparent;
+    border-width: 10vw 42vw 0 42vw;
+   }
   .explanatorytext {
-    padding-top: 80px;
+    margin-top: 10vw;
+   width: 33%;
+   text-align: center;
   }
   .explanatorytext p {
-    padding-left: 29vw;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 70px;
   }
   /* ↑explanatorytext */
+
+  .lastimages1{
+    margin: auto;
+    text-align: center;
+    width: 33%;
+  }
+
+  .lastimages1 img{
+    width: 66%;
+    max-width: 66%;
+    margin: 0px auto 140px auto;
+    text-align: center;
+  }
+
+  .lastimages2{
+    margin-top: 120px;
+    text-align: center;
+    width: 33%
+  }
+
+  .lastimages2 img{
+    width: 66%;
+    max-width: 66%;
+    margin: 0px auto 140px auto;
+    text-align: center;
+  }
+  
 }
 
 /* 1920×1080対応ここから */
 
 @media only screen and (min-width:1920px) {
-  .toti p {
-    padding-left: 26vw;
+  .toti p,.mizu p,.sobako p{
     font-size: 20px;
+    line-height: 2.2em;
   }
-  /* ↑toti p */
-  /* ↓toti h2 */
-  .toti h2 {
-    padding-left: 26vw;
-  }
-  /* ↑toti h2 */
-  /* ↓toti img */
-  .toti img {
-    padding-left: 26vw;
-  }
-  /* ↑toti img */
-  /* ↓toti h3 */
-  .toti h3 {
-    padding-left: 34vw;
-    display: inline-block;
+
+  .toti h3,.mizu h3,.sobako h3{
     font-size: 23px;
-    padding-top: 10px;
     color: #006A46;
   }
-  .totih3 br {
-    display: none;
-  }
-  /* ↑toti h3 */
-  /* ↓totip */
-  #totip {
-    padding-left: 15vw;
-    padding-top: 40px;
-  }
-  /* ↑totip */
-  /* ↓mizu p*/
-  .mizu {
-    padding-top: 100px;
-  }
-  /* ↑mizu p */
-  /* ↓mizu p */
-  .mizu p {
-    padding-left: 26vw;
-    font-size: 20px;
-  }
-  /* ↑mizu p */
-  /* ↓mizu h2 */
-  .mizu h2 {
-    padding-left: 26vw;
-  }
-  /* ↑mizu h2 */
-  /* ↓mizu img */
-  .mizu img {
-    padding-left: 26vw;
-  }
-  /* ↑mizu img */
-  /* ↓mizu h3 */
-  .mizu h3 {
-    padding-left: 36vw;
-    font-size: 23px;
-    padding-top: 10px;
-    color: #006A46;
-  }
-  .mizuh3 br {
-    display: none;
-  }
-  /* ↑mizu h3 */
-  /* ↓mizup */
-  #mizup {
-    padding-left: 7vw;
-    padding-top: 40px;
-  }
-  /* ↑mizup */
-  /* ↓sobako */
-  .sobako {
-    padding-top: 100px;
-  }
-  /* ↑sobako */
-  /* ↓sobako p */
-  .sobako p {
-    padding-left: 26vw;
-    font-size: 20px;
-  }
-  /* ↑sobako p */
-  /* ↓sobako h2 */
-  .sobako h2 {
-    padding-left: 26vw;
-  }
-  /* ↑sobako h2 */
-  /* ↓sobako img */
-  .sobako img {
-    padding-left: 26vw;
-  }
-  /* ↑sobako img */
-  /* ↓sobako h3 */
-  .sobako h3 {
-    padding-left: 35vw;
-    font-size: 23px;
-    padding-top: 10px;
-    color: #006A46;
-  }
-  .sobakoh3 br {
-    display: none;
-  }
-  /* ↑sobako h3 */
-  /* ↓sobakop */
-  #sobakop {
-    padding-left: 7vw;
-    padding-top: 40px;
-  }
-  /* ↑sobakop */
-  /* ↓explanatorytext */
-  .explanatorytext {
-    padding-top: 80px;
-  }
-  .explanatorytext p {
-    padding-left: 36vw;
-    font-size: 24px;
-    line-height: 70px;
-  }
-  /* ↑explanatorytext */
 }
 
 /* 1920×1080対応ここまで */
@@ -289,24 +318,36 @@
 @media only screen and (max-width:768px) {
   /* ↓お品書きnav */
   body {
-    background-image: url(../img/background1.jpg);
+    /* background-image: url(../img/background1.jpg); */
+  }
+  .pc{
+    display: none;
+  }
+  .sp{
+    display: block;
+  }
+  header .leaf{
+    right: 20px;
+    bottom: 120px;
   }
   /* お品書きタイトル */
   .nav {
     position: relative;
   }
   .nav p {
+    color: #000;
+  }
+  p.pnav{
     position: absolute;
+    left: 7vw;
+    top: 11vw;
     color: #fff;
-    padding-left: 10px;
-    font-weight: 500;
-    font-size: 7vw;
-    text-shadow: 0 3px 6px #333333;
-    top: 100px;
-    left: 0;
+    font-size: 10vw;
+  }
+  p.teltext{
+    color: gray;
   }
   .nav img {
-    width: 100%;
     padding-left: 0px;
   }
   /* お品書きタイトルend */
@@ -328,19 +369,20 @@
   .menuNav th {
     text-decoration: underline #006A46;
   }
-  body {
-    background-image: url(../img/background1.png);
-  }
   /* 見出しの画像切り替え*/
   /* ↑お品書きnav */
+  main{
+    position: relative;
+    background:#fafadd;
+  }
   /* ↓地元釜石の土地 */
   .toti p {
     text-align: center;
     padding-right: 120px;
     margin-top: 40px;
-    margin-bottom: 0;
     font-size: 4vw;
     padding-left: 0px;
+    padding-bottom: 5vw;
   }
   .toti h2 {
     text-align: center;
@@ -364,9 +406,30 @@
     padding-left: 40px;
     font-size: 4vw;
     line-height: 6vw;
+    text-align: left;
+    padding-bottom: 5vw;
   }
   /* ↑地元釜石の土地 */
-  /* ↓地元釜石の水 */
+  /* ↓地元釜石の水 */  
+  .mizu{
+    position: relative;
+    z-index: 1;
+    background: #d6e8f0;
+    overflow: hidden;
+    padding-top: 5vw;
+  }
+  .mizu:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: #fafadd transparent transparent transparent;
+    border-width: 10vw 47.6vw 0 47.6vw;
+  }
   .mizu p {
     text-align: center;
     padding-right: 100px;
@@ -397,9 +460,32 @@
     padding-left: 40px;
     font-size: 4vw;
     line-height: 6vw;
+    text-align: left;
+    padding-bottom: 5vw;
   }
   /* ↑地元釜石の水 */
   /* ↓岩手県産の蕎麦粉 */
+  .sobako{
+    background: #ffefea;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5vw;
+    text-align: left;
+  }
+
+  .sobako:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0px;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-style: solid;
+    border-color: #d6e8f0 transparent transparent transparent;
+    border-width: 10vw 47.6vw 0 47.6vw;
+  }
   .sobako p {
     text-align: center;
     padding-right: 140px;
@@ -430,18 +516,35 @@
     padding-right: 40px;
     font-size: 4vw;
     line-height: 6vw;
+    text-align: left;
+    padding-bottom: 5vw;
   }
   /* ↑岩手県産の蕎麦粉 */
   /* ↓最後の説明文 */
   .explanatorytext {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+  .explanatorytext:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top:0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-style: solid;
+    border-color: #ffefea transparent transparent transparent;
+    border-width: 10vw 47.6vw 0 47.6vw;
   }
   .explanatorytext p {
     font-size: 5vw;
     text-align: center;
     letter-spacing: 0.4vw;
     padding-left: 0px;
+    line-height: 2em;
   }
   /* ↑最後の説明文 */
 }
