@@ -15,7 +15,8 @@
   }
 
   main{
-    background:url(../img/kodawari/background/background1.png);
+    background:url(../img/kodawari/background/background1.jpg);
+    background-attachment: fixed;
     
   }
   
