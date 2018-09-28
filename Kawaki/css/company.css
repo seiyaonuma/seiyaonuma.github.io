@@ -147,7 +147,7 @@ main p {
   #mobTop {
     display: block;
     width:100vw;
-    padding-bottom: 3vw;
+    margin-bottom: 3vw;
   }
 
   main p {

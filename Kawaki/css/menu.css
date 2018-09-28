@@ -305,7 +305,7 @@ main{
 .menufv img{
   width: 100%;
   height: 35vw;
-  padding-bottom: 3vw;
+  margin-bottom: 3vw;
 }
 
 .menufv p{
