@@ -165,6 +165,11 @@ main p {
   .nav{
     position: relative;
     margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  #pcTop{
+    margin-bottom: 30px;
   }
 
   .nav p{
@@ -185,7 +190,7 @@ main p {
 
 .speech {
   line-height: 2;
-  margin: 150px auto 0 auto;
+  margin: 100px auto 0 auto;
 }
 
 .infomation {
