@@ -23,6 +23,7 @@ main{
   width: 100%;
   height: 35vw;
   object-fit: cover;
+  margin-bottom: 70px;
 }
 
 .menufv p{
@@ -304,6 +305,7 @@ main{
 .menufv img{
   width: 100%;
   height: 35vw;
+  padding-bottom: 20vw;
 }
 
 .menufv p{
