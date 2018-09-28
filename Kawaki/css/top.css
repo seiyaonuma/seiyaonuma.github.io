@@ -434,6 +434,7 @@
 
 .example{
   display: flex;
+  justify-content: space-around;
 }
 .sns {
   width: 300px;
