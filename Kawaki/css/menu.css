@@ -19,7 +19,7 @@ main{
 .menufv{
   position: relative;
 }
-#pcTop {
+.menufv img {
   width: 100%;
   height: 35vw;
   object-fit: cover;
@@ -368,7 +368,7 @@ div.menu2 p{
 }
 #pcTop{
   display: none;
-}
+} 
 #mobtop{
   display: flex;
   margin-top: 100px;
