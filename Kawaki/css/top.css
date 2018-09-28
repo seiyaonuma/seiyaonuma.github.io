@@ -404,13 +404,14 @@
   margin-left: 40px;
 }
 .address{
-  width: 500px;
-  margin-left: 200px;
+  width: 300px;
+  margin-left: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .contact{
-  width: 500px;
+  width: 400px;
+  margin-left: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
