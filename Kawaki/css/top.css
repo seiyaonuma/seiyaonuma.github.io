@@ -944,3 +944,9 @@ h2 {
     right: -25vw;
   }
 }
+
+@media screen and (orientation:landscape){
+  .cd .button, .menuTop .button, .kawakiInfo .button, .tenpoTop .button {
+    margin: 80px auto 80px 45vw;
+  }
+}
