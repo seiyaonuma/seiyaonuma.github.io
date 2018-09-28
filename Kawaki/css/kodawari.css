@@ -107,8 +107,9 @@
     overflow: hidden;
   }
 
-  .mizu:after{
+  .mizu::after{
     content: "";
+    display: block;
     position: absolute;
     right: 0;
     left: 0;
@@ -176,8 +177,9 @@
     overflow: hidden;
   }
 
-  .sobako:after{
+  .sobako::after{
     content: "";
+    display: block;
     position: absolute;
     right: 0;
     top: 0px;
@@ -247,8 +249,9 @@
    margin: auto;
    overflow: hidden;
   }
-  .lastmessage:after{
+  .lastmessage::after{
     content: "";
+    display: block;
     position: absolute;
     right: 0;
     top: 0vw;
@@ -429,7 +432,7 @@
     overflow: hidden;
     padding-top: 5vw;
   }
-  .mizu:after{
+  .mizu::after{
     content: "";
     position: absolute;
     right: 0;
@@ -484,7 +487,7 @@
     text-align: left;
   }
 
-  .sobako:after{
+  .sobako::after{
     content: "";
     position: absolute;
     right: 0;
@@ -537,8 +540,9 @@
     padding-bottom: 30px;
     position: relative;
   }
-  .explanatorytext:after{
+  .explanatorytext::after{
     content: "";
+    display: block;
     position: absolute;
     right: 0;
     top:0;
@@ -565,3 +569,23 @@
  --モバイル版ここまで
  
   */
+
+  @supports (-ms-ime-align: auto) {
+    /* Edge のみ適用される */
+    /* after対策 */
+    @media only screen and (min-width:769px) {
+    .mizu::after,.sobako::after,.explanatorytext::after,.lastmessage::after{
+      content: "";
+      display: none;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0px;
+      width: 0px;
+      height: 0px;
+      border-style: none;
+    }
+  }
+
+    
+  }

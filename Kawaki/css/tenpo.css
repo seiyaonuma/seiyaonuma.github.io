@@ -174,13 +174,15 @@
       padding-left: 40%;
     }
   
-    .access .car .atitle {
+    .access .car .cartitle {
       position: absolute;
-      top: 60px;
-      left: 0;
-      -webkit-writing-mode: vertical-rl;
+      top: 425px;
+      width: 30px;
+      height: 60px;
+      left: 23px;
+      /* -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+      writing-mode: vertical-rl; */
       text-align: center;
     }
 
@@ -189,26 +191,30 @@
       margin-left: -200px;
     }
   
-    .access .bus .atitle {
+    .access .bus .busatitle {
+      width: 30px;
+      height: 60px;
       position: absolute;
-      top: 30px;
-      left: 0;
-      -webkit-writing-mode: vertical-rl;
+      top: auto;
+      bottom: auto;
+      left: 23px;  
+      /* -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+      writing-mode: vertical-rl; */
       text-align: center;
     }
   
-    .access .tetudo .atitle {
+    .access .tetudo .trainatitle {
+      width: 30px;
+      height: 60px;
       position: absolute;
-      top: 25px;
-      left: 0;
-      -webkit-writing-mode: vertical-rl;
+      top: 0px;
+      left: 23px;
+      /* -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+      writing-mode: vertical-rl; */
       text-align: center;
     }
-  
     /* ↑アクセス方法 */
 
 /* 
