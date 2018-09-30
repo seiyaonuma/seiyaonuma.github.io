@@ -919,12 +919,7 @@ h2 {
     padding-right: 3vw;
   }
   .sns {
-    /* width: 100%;
-    margin: auto;
-    padding-bottom: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around; */
+    text-decoration: none;
     display: block;
   }
   #instagram{
