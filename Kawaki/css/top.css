@@ -593,6 +593,7 @@ h2 {
   line-height: 47px;
   font-size: 4.7vw;
   text-align: center;
+  white-space:nowrap;
 }
 
 .cd .button{
