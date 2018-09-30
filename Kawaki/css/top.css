@@ -429,6 +429,9 @@
   padding-top: 5vw;
   padding-bottom: 50px;
 }
+.sns a{
+  text-decoration: none;
+}
 #facebook{
   margin-left: 4vw;
 }
