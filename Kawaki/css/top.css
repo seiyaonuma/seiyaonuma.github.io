@@ -214,13 +214,13 @@
 .menuTop p:nth-of-type(2n) {
   float: left;
   padding-left: 15%;
-  font-size: 3.2vw;
+  font-size: 2.5vw;
   margin-top: 15%;
 }
 .menuTop p:nth-of-type(2n+1) {
   float: right;
   padding-right: 15%;
-  font-size: 3.2vw;
+  font-size: 2.5vw;
   margin-top: 15%;
 }
 
