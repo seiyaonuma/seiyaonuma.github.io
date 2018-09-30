@@ -214,13 +214,13 @@
 .menuTop p:nth-of-type(2n) {
   float: left;
   padding-left: 15%;
-  font-size: 3.2vw;
+  font-size: 30px;
   margin-top: 15%;
 }
 .menuTop p:nth-of-type(2n+1) {
   float: right;
   padding-right: 15%;
-  font-size: 3.2vw;
+  font-size: 30px;
   margin-top: 15%;
 }
 
@@ -400,50 +400,53 @@
 
 .info p{
   display: inline-block;
-  width: 18vw;
-  /* margin-left: 40px; */
+  width: 350px;
+  margin-left: 40px;
 }
-/* ↓住所,連絡先,SNS */
-.example{
-  display: flex;
-  justify-content: space-around;
-}
-/* ↓住所 */
 .address{
-  padding-top: 5vw;
-  white-space: nowrap;
+  width: 300px;
+  margin-left: 40px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
-/* ↑住所 */
-/* ↓連絡先 */
 .contact{
-  padding-top: 5vw;
-  white-space: nowrap;
+  width: 400px;
+  margin-left: 40px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
-/* ↑連絡先 */
-/* ↓SNS */
-.sns{
-  width: auto;
-  padding-top: 5vw;
-  padding-bottom: 50px;
-}
-#facebook{
-  margin-left: 4vw;
-}
-/* ↑SNS */
-/* ↓共通 */
 .dai {
   font-size: 25px;
   width: 18vw!important;
 }
+
 .dai::before {
   content:'■';
   color:#006A46;
   padding-right: 3vw;
 }
-/* ↑共通 */
-/* ↑住所,連絡先,SNS */
+
+.coment {
+  font-size: 17px;
+  color: #333232;
+  margin-top: -20px;
+} 
+
+.example{
+  display: flex;
+  justify-content: space-around;
+}
+.sns {
+  width: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#facebook{
+  margin-left: 80px;
+}
+#instagram{
+  margin-left: 20px;
+}
 }
 
 
@@ -910,6 +913,11 @@ h2 {
     content: '■';
     color: #006A46;
     padding-right: 3vw;
+  }
+  .coment {
+    font-size: 14px;
+    color: #333232;
+    margin-left: 10px;
   }
   .sns {
     /* width: 100%;
