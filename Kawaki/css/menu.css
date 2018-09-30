@@ -187,7 +187,7 @@ main{
   padding-bottom: 20px;
 }
 main p{
-  font-size: 1.4rem;
+  font-size: 1.7vw;
   line-height: 2rem;
   font-weight: 500;
 }
@@ -330,8 +330,8 @@ main{
   padding-bottom: 20px;
 }
 p{
-  font-size: 1.1rem;
-  line-height: 1.8rem;
+  font-size: 4vw;
+  line-height: 7vw;
 }
 /* お品書きタイトル */
 .navinavi{
@@ -486,7 +486,7 @@ div#setmenu_menu{
 .Name_M{
   text-align: center;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 6vw;
   font-weight: 500;
 }
 #osoba{
@@ -500,7 +500,7 @@ div#setmenu_menu{
 .Menulist p{
   padding-left: 50px;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 5vw;
   font-weight: 300;
 }
 .Menulist ul{
@@ -508,19 +508,19 @@ div#setmenu_menu{
 }
 .Menulist li{
   color: #fff;
-  font-size:1rem;
+  font-size:4vw;
   font-weight: 300;
   letter-spacing: 0.1em;
-  line-height: 28px;
+  line-height: 8vw;
 }
 .Menulist span{
   overflow: hidden;
   padding-left: 80px;
   color: #fff;
-  font-size:1rem;
+  font-size:3.8vw;
   font-weight: 300;
   letter-spacing: 0.1em;
-  line-height: 28px;
+  line-height: 5.5vw;
 }
 
 #setmenu{

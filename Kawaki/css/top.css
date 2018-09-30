@@ -400,17 +400,19 @@
 
 .info p{
   display: inline-block;
-  width: 18vw;
-  /* margin-left: 40px; */
+  width: 5vw;
 }
 /* ↓住所,連絡先,SNS */
 .example{
   display: flex;
+  font-size: 1.5vw;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 /* ↓住所 */
 .address{
   padding-top: 5vw;
+  padding-right: 3vw;
   white-space: nowrap;
   padding-bottom: 50px;
 }
@@ -424,12 +426,14 @@
 /* ↑連絡先 */
 /* ↓SNS */
 .sns{
-  width: auto;
   padding-top: 5vw;
   padding-bottom: 50px;
 }
 #facebook{
   margin-left: 4vw;
+}
+#instagram{
+  margin-left: 1.5vw;
 }
 /* ↑SNS */
 /* ↓共通 */
