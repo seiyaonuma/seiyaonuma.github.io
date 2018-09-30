@@ -351,9 +351,7 @@
     text-align: center;
   }
   /* 見出しの画像切り替え */
-  #pctop {
-    display: none;
-  }
+  
   #pcTop {
     display: none;
   }
