@@ -569,8 +569,8 @@ h2 {
 }
 
 .news .links{
-  font-size: 16px;
-  line-height: 2.5em;
+  font-size: 4vw;
+  line-height: 3em;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -591,6 +591,7 @@ h2 {
 }
 .cd p {
   line-height: 47px;
+  font-size: 4.7vw;
   text-align: center;
 }
 
