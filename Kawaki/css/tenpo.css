@@ -124,6 +124,11 @@
   padding-bottom: 5%;
 }
 
+#contact img{
+  width: 250px;
+  height: 40px;
+}
+
 /* ↑商品一覧 */
 
   /* ↓Google Map */
@@ -333,6 +338,10 @@
   }
   #contact{
     padding-bottom: 5%;
+  }
+  #contact img{
+    width: 200px;
+    height: 35px;
   }
   /* ↑店舗情報 */
   /* ↓Google Map */
