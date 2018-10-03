@@ -313,6 +313,9 @@ footer {
 .form p {
   padding-right: 30px;
 }
+.textarea {
+  resize: vertical;
+}
 
 /* ↑form */
 
