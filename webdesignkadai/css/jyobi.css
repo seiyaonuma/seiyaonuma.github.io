@@ -606,6 +606,7 @@ footer {
   background: #f2f2f2;
   padding: 0 40px 0 30px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .form table td {
@@ -687,7 +688,7 @@ input[type="submit"] {
   .form table th {
     width: 90%;
     height: 4vh;
-    font-size: 3.5vw;
+    font-size: 3vw;
     padding-top: 2.4vw;
   }
   textarea {

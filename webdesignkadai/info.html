@@ -7,8 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MCL盛岡情報ビジネス専門学校|オープンキャンパスに関して</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- <link rel="stylesheet" href="css/common.css"> -->
+  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/jyobi.css">
+  <!-- ▼jQuery本体 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- ▼バリデーション -->
+  <script src="js/jquery.validationEngine.js"></script>
+  <script src="js/jquery.validationEngine-ja.js"></script>
+  <link rel="stylesheet" href="css/validationEngine.jquery.css">
+  <script>
+    $(function () {
+      jQuery("#form_1").validationEngine();
+    });
+  </script>
 </head>
 
 <body>
@@ -60,41 +71,44 @@
     <!-- ↑title -->
     <!-- ↓form -->
     <div class="form">
-      <table>
-        <tr>
-          <th>名前
-            <span class="required">必須</span>
-          </th>
-          <td>
-            <input type="text" size="50%">
-          </td>
-        </tr>
-        <tr>
-          <th>メールアドレス
-            <span class="required">必須</span>
-          </th>
-          <td>
-            <input type="mail" size="50%">
-          </td>
-        </tr>
-        <tr>
-          <th>お問い合わせ内容
-            <span class="required">必須</span>
-          </th>
-          <td>
-            <textarea name="form" cols="30" rows="10"></textarea>
-          </td>
-        </tr>
-      </table>
-      <input type="submit" value="送信する" class="wpcf7-form-control wpcf7-submit">
+      <!-- ▼フォーム -->
+      <form id="form_1" name="" post="">
+        <table>
+          <tr>
+            <th>名前
+              <span class="required">必須</span>
+            </th>
+            <td>
+              <input type="text" name="" class="validate[required]" size="50%">
+            </td>
+          </tr>
+          <tr>
+            <th>メールアドレス
+              <span class="required">必須</span>
+            </th>
+            <td>
+              <input type="text" name="" class="validate[custom[email]]" size="50%">
+            </td>
+          </tr>
+          <tr>
+            <th>お問い合わせ内容
+              <span class="required">必須</span>
+            </th>
+            <td>
+              <textarea name="form" class="validate[required]" cols="30" rows="10" size="50%"></textarea>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" name="" id="btn_submit">
     </div>
+    </form>
     <!-- ↑form-->
   </main>
   <!-- ↑main -->
   <footer>
     <p>©2018．Jyobi Web AP SeiyaOnuma</p>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
   <script>
     $(function () {
       $('#nav-toggle').on('click', function () {
