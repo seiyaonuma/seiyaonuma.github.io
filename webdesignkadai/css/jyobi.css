@@ -302,6 +302,21 @@ footer {
   text-align: center;
 }
 
+.title_1 h2 {
+  text-align: center;
+  padding-top: 5vw;
+  padding-bottom: 2vw;
+  font-size: 34px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.title_1 p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+}
 /* ↑FV */
 
 /* ↓form */
