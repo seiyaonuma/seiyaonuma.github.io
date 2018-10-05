@@ -188,7 +188,7 @@
     margin: auto;
     overflow: hidden;
   }
-  .lastmessage::after {
+  /* .lastmessage::after {
     content: "";
     display: block;
     position: absolute;
@@ -201,7 +201,7 @@
     border-style: solid;
     border-color: #ffefea55 transparent transparent transparent;
     border-width: 10vw 42vw 0 42vw;
-  }
+  } */
   .explanatorytext {
     margin-top: 10vw;
     width: 33%;
