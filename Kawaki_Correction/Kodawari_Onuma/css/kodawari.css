@@ -491,7 +491,7 @@
   .explanatorytext p {
     font-size: 3.5vw;
     text-align: center;
-    letter-spacing: 1vw;
+    letter-spacing: 0.5vw;
     padding-left: 0px;
     line-height: 3em;
   }
