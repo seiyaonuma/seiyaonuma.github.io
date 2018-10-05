@@ -220,7 +220,7 @@ main p {
 }
 
 .speech p {
-  font-size: 4vw;
+  font-size: 2.5vw;
 }
 
 .speech img  {
@@ -229,6 +229,7 @@ main p {
 
 .speech img.syachoimg  {
   margin: 50px auto 30px auto;
+  padding-top: 15vw;
 }
 
 .speech h3 {
@@ -277,6 +278,7 @@ main p {
 
 .infomation p {
   margin:5px;
+  font-size: 2.5vw;
 }
 
 .ptext{
