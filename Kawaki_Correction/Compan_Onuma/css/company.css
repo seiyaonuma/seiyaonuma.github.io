@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+/* 全体の記述 */
+
+#pcTop {
+  width: 100%;
+  height: 35vw;
+  object-fit: cover;
+  margin-bottom: 70px;
+}
+/*#mobTop {
+  
+}*/
+
+main p {
+  font-size: 20px;
+}
+
+.nav{
+  position: relative;
+}
+
+.nav p{
+  position: absolute;
+  color: #fff;
+  padding-left: 50px;
+  font-weight: 500;
+  font-size: 5vw;
+  text-shadow: 0 3px 6px #333333;
+  top: 10vw;
+  left: 0;
+}
+
+
+.company {
+  width: 100%;
+  background: url(../img/company/background/background1.jpg) fixed;
+}
+
+.company h2{
+  text-align: center;
+  border-bottom: 2px solid #006A46;
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+
+.speech, .infomation {
+  width: 80%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.speech {
+  line-height: 2;
+  margin: 150px auto 0 auto;
+}
+
+.infomation {
+  line-height: 1.5;
+  margin: 50px auto 0 auto;
+}
+
+.speech p {
+  font-size: 1.2vw;
+}
+
+.speech h2 {
+  position: absolute;
+  top: -120px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 30px;
+}
+
+.speech img  {
+  width: 100%;
+}
+
+.speech img.syachoimg  {
+  margin: 80px auto 30px auto;
+  padding-top: 4vw;
+}
+
+.speech img:nth-of-type(2), .speech img:nth-of-type(3) {
+  float: left;
+  width: 40%;
+  margin: 5%;
+}
+
+.speech h3 {
+  font-size:3vw;
+  color: #006A46;
+}
+
+.speech h3.first {
+  display: block;
+  position: absolute;
+  top: -100px;
+}
+
+.speech h3.second {
+  margin: 80px auto 20px auto;
+}
+
+.speechbg {
+  background-color: rgba(230, 230, 126,0.25);
+  width: 80%;
+  margin: auto;
+}
+
+.infomation {
+  max-width: 600px;
+  padding-bottom: 80px;
+}
+
+.name {
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.infomation h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 30px;
+}
+
+.infomation .content {
+  border-bottom: 1px solid #DBD5D5;
+  padding: 30px 0;
+}
+
+.infomation .dai {
+  color: #006A46;
+  font-weight: 600;
+  float: left;
+  display: block;
+  width: 30%;
+  /* margin-left: 200px; */
+}
+
+.infomation p {
+  margin:5px;
+}
+.ptext{
+  white-space: nowrap;
+  text-align: center;
+}
+
+@media only screen and (max-width:768px){
+
+  #mobTop {
+    display: block;
+    width:100vw;
+    margin-bottom: 3vw;
+  }
+
+  main p {
+    font-size: 4vw;
+  }
+
+  .company h2{
+    text-align: center;
+    border-bottom: 2px solid #006A46;
+    width: 150px;
+    display: block;
+    margin: auto;
+  }
+
+  .nav{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  #pcTop{
+    margin-bottom: 30px;
+  }
+
+  .nav p{
+    position: absolute;
+    color: #fff;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 7vw;
+    text-shadow: 0 3px 6px #333333;
+    left: 0;
+  }
+
+.speech, .infomation {
+  width: 90%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.speech {
+  line-height: 2;
+  margin: 100px auto 0 auto;
+}
+
+.infomation {
+  line-height: 1.5;
+  margin: 50px auto 0 auto;
+}
+
+.speech h2 {
+  position: absolute;
+  top: -90px;
+  left: 0;
+  right: 0;
+  line-height: 1.5;
+  font-size: 1.7em;
+}
+
+.speech p {
+  font-size: 4vw;
+}
+
+.speech img  {
+  width: 100%;
+}
+
+.speech img.syachoimg  {
+  margin: 50px auto 30px auto;
+}
+
+.speech h3 {
+  font-size: 5vw;
+  color: #006A46;
+}
+
+.speech h3.first {
+  display: block;
+  position: absolute;
+  top: -50px;
+}
+
+.speech h3.second {
+  margin: 80px auto 20px auto;
+}
+
+.speechbg {
+  background-color: rgba(230, 230, 126,0.25);
+  width: 90%;
+  margin: auto;
+}
+
+.name {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.infomation h2 {
+  margin-bottom: 20px;
+  font-size: 1.7em;
+}
+
+.infomation .content {
+  border-bottom: 1px solid #DBD5D5;
+  padding: 10px 0;
+}
+
+.infomation .dai {
+  color: #006A46;
+  font-weight: 600;
+  float: initial;
+  display: inherit;
+}
+
+.infomation p {
+  margin:5px;
+}
+
+.ptext{
+  font-size: 2.5vw;
+}
+
+}
