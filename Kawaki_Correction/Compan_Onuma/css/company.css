@@ -11,7 +11,9 @@
 /*#mobTop {
   
 }*/
-
+main{
+  display:block; /* IE対策に追加 */
+}
 main p {
   font-size: 1.5vw;
 }
