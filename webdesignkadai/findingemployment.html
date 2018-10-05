@@ -70,7 +70,7 @@
         <td>会社名</td>
       </tr>
       <tr>
-        <th>男性</th>
+        <th class="men">男性</th>
         <td>株式会社Web エンジニアリング</td>
       </tr>
       <tr>
@@ -85,8 +85,49 @@
         <th>男性</th>
         <td>Web Design Morioka</td>
       </tr>
+      <tr>
+        <th>男性</th>
+        <td>Jyobi Systems</td>
+      </tr>
+      <tr>
+        <th>男性</th>
+        <td>Web Mori</td>
+      </tr>
+      <tr>
+        <th>男性</th>
+        <td>MoriSystem</td>
+      </tr>
+      <tr>
+        <th>男性</th>
+        <td>PC Jyobi</td>
+      </tr>
+      <tr>
+        <th>男性</th>
+        <td>株式会社 Jyobi</td>
+      </tr>
+      <tr>
+        <th>男性</th>
+        <td>JyobiDesign</td>
+      </tr>
+      <tr>
+        <th>男性</th>
+        <td>MCL Design</td>
+      </tr>
+      <tr>
+        <th>男性</th>
+        <td>株式会社 MCL</td>
+      </tr>
+      <tr>
+        <th>男性</th>
+        <td>WebDesignNet</td>
+      </tr>
+      <tr>
+        <th>男性</th>
+        <td>株式会社WebApp</td>
+      </tr>
     </table>
     <!-- ↑会社一覧 -->
+    <p class="pagetop"><a href="#wrap"><img src="img/jyobijyobi.png" alt=""></a></p>
   </main>
   <!-- ↑main -->
   <footer>
@@ -100,6 +141,24 @@
         $('.nav-inner').toggleClass('open');
       });
     });</script>
+      <!-- ↓TOP戻る -->
+  <script>
+    $(document).ready(function () {
+      var pagetop = $('.pagetop');
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+      });
+    });
+  </script>
+  <!-- ↑TOP戻る -->
 </body>
 
 </html>

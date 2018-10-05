@@ -63,7 +63,7 @@
     <!-- ↓説明 -->
     <div class="jyobioc">
       <p>
-        <span class="morijyobi">モリジョビ</span>では月1でオープンキャンパスを実施しています。※詳細は(こちら)を確認下さい。</p>
+        <span class="morijyobi">モリジョビ</span>では月1でオープンキャンパスを実施しています。<a href="#calendar">※詳細は(こちら)を確認下さい。</a></p>
       <p>より
         <span class="morijyobi">モリジョビ</span>の雰囲気を感じで頂く為体験授業では実際普段の授業で習う内容を体験して頂きます。</p>
       <p>また参加して頂いた方には豪華特典もご用意しております。</p>
@@ -145,6 +145,7 @@
       </p>
     </div>
     <!-- ↑calendar -->
+    <p class="pagetop"><a href="#wrap"><img src="img/jyobijyobi.png" alt=""></a></p>
   </main>
   <!-- ↑main -->
   <footer>
@@ -158,6 +159,40 @@
         $('.nav-inner').toggleClass('open');
       });
     });</script>
+      <!-- ↓TOP戻る -->
+  <script>
+    $(document).ready(function () {
+      var pagetop = $('.pagetop');
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+      });
+    });
+  </script>
+  <!-- ↑TOP戻る -->
+  <!--  -->
+  <script>
+    $(function(){
+      // #で始まるリンクをクリックしたら実行されます
+      $('a[href^="#"]').click(function() {
+        // スクロールの速度
+        var speed = 900; // ミリ秒で記述
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+      });
+    });
+  </script>
+  <!--  -->
 </body>
 
 </html>

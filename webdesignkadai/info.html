@@ -80,14 +80,26 @@
             </th>
             <td>
               <input type="text" name="" class="validate[required]" size="50%">
+              <span class="name">例 : 盛岡 情報</span>
             </td>
           </tr>
           <tr>
+            <th>現在の状況
+              <span class="required">必須</span>
+            </th>
+            <td>
+              <input type="radio" class="validate[required] radio" name="radio_name" id="radio1" value="radio1"> <label for="radio1">高校1年生</label>
+              <input type="radio" class="validate[required] radio" name="radio_name" id="radio2" value="radio2"> <label for="radio2">高校2年生</label>
+              <input type="radio" class="validate[required] radio" name="radio_name" id="radio3" value="radio3"> <label for="radio3">高校3年生</label>
+              <input type="radio" class="validate[required] radio" name="radio_name" id="radio3" value="radio4"> <label for="radio3">既卒</label>
+            </td>
+          </tr>
             <th>メールアドレス
               <span class="required">必須</span>
             </th>
             <td>
               <input type="text" name="" class="validate[custom[email]]" size="50%">
+              <span class="email">例 : morijyobi@mcl.com</span>
             </td>
           </tr>
           <tr>
@@ -111,6 +123,7 @@
     </div>
     </form>
     <!-- ↑form-->
+    <p class="pagetop"><a href="#wrap"><img src="img/jyobijyobi.png" alt=""></a></p>
   </main>
   <!-- ↑main -->
   <footer>
@@ -124,6 +137,24 @@
         $('.nav-inner').toggleClass('open');
       });
     });</script>
+      <!-- ↓TOP戻る -->
+  <script>
+    $(document).ready(function () {
+      var pagetop = $('.pagetop');
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+      });
+    });
+  </script>
+  <!-- ↑TOP戻る -->
 </body>
 
 </html>

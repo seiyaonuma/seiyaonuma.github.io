@@ -95,6 +95,7 @@
         <span class="morijyobi">モリジョビ</span>では各学科ごとにレクリエーションの実施をしています。BBQ,スポーツ大会,お好み焼き...etc</p>
     </div>
     <!-- ↑study -->
+    <p class="pagetop"><a href="#wrap"><img src="img/jyobijyobi.png" alt=""></a></p>
   </main>
   <!-- ↑main -->
   <footer>
@@ -108,6 +109,24 @@
         $('.nav-inner').toggleClass('open');
       });
     });</script>
+  <!-- ↓TOP戻る -->
+  <script>
+    $(document).ready(function () {
+      var pagetop = $('.pagetop');
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+      });
+    });
+  </script>
+  <!-- ↑TOP戻る -->
 </body>
 
 </html>
