@@ -15,6 +15,7 @@
   main {
     background: url(../img/kodawari/background/background1.jpg);
     background-attachment: fixed;
+    display: block;
   }
   #pcTop {
     display: block;
