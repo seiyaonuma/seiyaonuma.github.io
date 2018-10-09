@@ -52,7 +52,7 @@
     object-fit: cover;
   }
   .title {
-    font-size: 60px;
+    font-size: 3.5vw;
     font-weight: 500;
     text-align: center;
     color: #fff;
@@ -191,7 +191,7 @@
     padding-bottom: 20px;
   }
   main p {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     line-height: 2rem;
     font-weight: 500;
   }
@@ -217,6 +217,7 @@
     text-align: center;
     margin: 0 auto;
     padding-bottom: 20px;
+    font-size: 2vw;
   }
   img.wayama {
     width: 50%;
