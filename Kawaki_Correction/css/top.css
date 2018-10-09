@@ -16,7 +16,9 @@
   width: 180px;
   padding-left: 0px;
 }
-
+main{
+  display:block; /* IE対策に追加 */
+}
 .navList li{
   text-align: right;
 }
