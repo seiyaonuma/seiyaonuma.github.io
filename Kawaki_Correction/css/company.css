@@ -8,9 +8,7 @@
   object-fit: cover;
   margin-bottom: 70px;
 }
-/*#mobTop {
-  
-}*/
+
 main{
   display:block; /* IE対策に追加 */
 }
