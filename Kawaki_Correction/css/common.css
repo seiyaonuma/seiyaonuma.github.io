@@ -56,8 +56,8 @@ header {
 header h1 a {
   display: block;
   height: 200px;
-  background: url(../img/gnav/logoPC.png) no-repeat;
-  margin: 20px 80px;
+  background: url(../img/gnav/logo_pc.png) no-repeat;
+  margin: 20px 63px;
 }
 
 header .leaf {
